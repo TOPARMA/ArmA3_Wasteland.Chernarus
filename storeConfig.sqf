@@ -612,30 +612,30 @@ headArray = compileFinal str
 [
 
 
-//AFRF
-//"6B27M Plain", "rhs_6b27m_green", 50, "hat"],
-//"6B27M", "rhs_6b27m_green_ess", 50, "hat"],
-//"6B27M", "rhs_6b27m_green_bala", 50, "hat"],
-//"6B27M", "rhs_6b27m_green_ess_bala", 50, "hat"],
-//"6B27M Flora", "rhs_6b27m", 50, "hat"],
-//"6B27M", "rhs_6b27m_ess", 50, "hat"],
-//"6B27M", "rhs_6b27m_bala", 50, "hat"],
-//"6B27M", "rhs_6b27m_ess_bala", 50, "hat"],
-//"6B27M EMR-Summer", "rhs_6b27m_digi", 50, "hat"],
-//"6B27M", "rhs_6b27m_digi_bala", 50, "hat"],
-//"6B27M Mountain", "rhs_6b27m_ml", 50, "hat"],
-//"6B28, "rhs_6b28_green", 50, "hat"],
-//"6B28", "rhs_6b28_green_ess", 50, "hat"],
-//"6B28", "rhs_6b28_green_bala", 50, "hat"],
-//"6B28", "rhs_6b28_green_ess_bala", 50, "hat"],
-//"6B28 EMR-Summer", "rhs_6b28", 50, "hat"],
-//"6B28", "rhs_6b28_ess", 50, "hat"],
-//"6B28", "rhs_6b28_bala", 50, "hat"],
-//"6B28", "rhs_6b28_ess_bala", 50, "hat"],
-//"6B28 Flora", "rhs_6b28_flora", 50, "hat"],
-//"6B28", "rhs_6b28_flora_ess", 50, "hat"],
-//"6B28", "rhs_6b28_flora_bala", 50, "hat"],
-//"6B28", "rhs_6b28_ess_bala", 50, "hat"],
+	//AFRF
+	//"6B27M Plain", "rhs_6b27m_green", 50, "hat"],
+	//"6B27M", "rhs_6b27m_green_ess", 50, "hat"],
+	//"6B27M", "rhs_6b27m_green_bala", 50, "hat"],
+	//"6B27M", "rhs_6b27m_green_ess_bala", 50, "hat"],
+	//"6B27M Flora", "rhs_6b27m", 50, "hat"],
+	//"6B27M", "rhs_6b27m_ess", 50, "hat"],
+	//"6B27M", "rhs_6b27m_bala", 50, "hat"],
+	//"6B27M", "rhs_6b27m_ess_bala", 50, "hat"],
+	//"6B27M EMR-Summer", "rhs_6b27m_digi", 50, "hat"],
+	//"6B27M", "rhs_6b27m_digi_bala", 50, "hat"],
+	//"6B27M Mountain", "rhs_6b27m_ml", 50, "hat"],
+	//"6B28, "rhs_6b28_green", 50, "hat"],
+	//"6B28", "rhs_6b28_green_ess", 50, "hat"],
+	//"6B28", "rhs_6b28_green_bala", 50, "hat"],
+	//"6B28", "rhs_6b28_green_ess_bala", 50, "hat"],
+	//"6B28 EMR-Summer", "rhs_6b28", 50, "hat"],
+	//"6B28", "rhs_6b28_ess", 50, "hat"],
+	//"6B28", "rhs_6b28_bala", 50, "hat"],
+	//"6B28", "rhs_6b28_ess_bala", 50, "hat"],
+	//"6B28 Flora", "rhs_6b28_flora", 50, "hat"],
+	//"6B28", "rhs_6b28_flora_ess", 50, "hat"],
+	//"6B28", "rhs_6b28_flora_bala", 50, "hat"],
+	//"6B28", "rhs_6b28_ess_bala", 50, "hat"],
 	["Boonie Flora", "rhs_Booniehat_flora", 50, "hat"],
 	["Boonie EMR-Summer", "rhs_Booniehat_digi", 50, "hat"],
 	["Field Cap", "rhs_fieldcap", 50, "hat"],
@@ -1109,10 +1109,12 @@ landArray = compileFinal str
 [
 
 
-	["URAL-4320", "rhs_ural_XX", 600, "vehicle"]
-
-/*
-	["Kart", "C_Kart_01_F", 500, "vehicle"],
+	["UAZ-3161", "rhs_uaz_vmf", 500, "vehicle"],
+	["UAZ-3161 (Open)", "rhs_uaz_open_vv", 500, "vehicle"],
+	["Ural-4320", "RHS_Ural_VDV_01", 1250, "vehicle"],
+	["Ural-4320 (Civ)", "RHS_Ural_Civ_01", 1250, "vehicle"],
+	["Ural-4320 (Open)", "RHS_Ural_Open_MSV_01", 1250, "vehicle"]
+/*	["Kart", "C_Kart_01_F", 500, "vehicle"],
 	["Quadbike (Civilian)", "C_Quadbike_01_F", 600, "vehicle"],
 	["Quadbike (NATO)", "B_Quadbike_01_F", 650, "vehicle"],
 	["Quadbike (CSAT)", "O_Quadbike_01_F", 650, "vehicle"],
@@ -1166,16 +1168,16 @@ landArray = compileFinal str
 armoredArray = compileFinal str
 [
 
-	["BM-21 122mm RL MSV", "RHS_BM21_MSV_01", 400, "vehicle"],
-//	["BM-21 122mm RL VDV", "RHS_BM21_VDV_01", 400, "vehicle"],
-//	["BM-21 122mm RL VMF", "RHS_BM21_VMF_01", 400, "vehicle"],
-//	["BM-21 122mm RL VV", "RHS_BM21_VV_01", 400, "vehicle"],
+	["BM-21 122mm RL MSV", "RHS_BM21_MSV_01", 15000, "vehicle"],
+	//	["BM-21 122mm RL VDV", "RHS_BM21_VDV_01", 400, "vehicle"],
+	//	["BM-21 122mm RL VMF", "RHS_BM21_VMF_01", 400, "vehicle"],
+	//	["BM-21 122mm RL VV", "RHS_BM21_VV_01", 400, "vehicle"],
 
-["BMD-1 Combat", "rhs_bmd1", 400, "vehicle"]
-//["BMD-1k Command", "rhs_bmd1k", 400, "vehicle"],
-//["BMD-1p Combat", "rhs_bmd1p", 400, "vehicle"],
-//["BMD-1pk Command", "rhs_bmd1pk", 400, "vehicle"],
-//["BMD-1R Rocket", "rhs_bmd1r", 400, "vehicle"],
+	["BMD-1 Combat", "rhs_bmd1", 25000, "vehicle"]
+	//["BMD-1k Command", "rhs_bmd1k", 400, "vehicle"],
+	//["BMD-1p Combat", "rhs_bmd1p", 400, "vehicle"],
+	//["BMD-1pk Command", "rhs_bmd1pk", 400, "vehicle"],
+	//["BMD-1R Rocket", "rhs_bmd1r", 400, "vehicle"],
 
 
 
@@ -1200,9 +1202,9 @@ armoredArray = compileFinal str
 tanksArray = compileFinal str
 [
 
-	["2S25(VDV)", "rhs_sprut_vdv", 400, "vehicle"],
-	["2S3M", "rhs_2s3_tv", 400, "vehicle"],
-	["PRP-3", "rhs_prp3_msv", 400, "vehicle"]
+	["2S25(VDV)", "rhs_sprut_vdv", 35000, "vehicle"],
+	["2S3M", "rhs_2s3_tv", 40000, "vehicle"],
+	["PRP-3", "rhs_prp3_msv", 50000, "vehicle"]
 
 
 /*
@@ -1224,9 +1226,10 @@ tanksArray = compileFinal str
 helicoptersArray = compileFinal str
 [
 
-	["Ka52 Grey", "RHS_Ka52_vvs", 400, "vehicle"],
-	["Mi-8AMT", "RHS_Mi8AMT_vdv", 400, "vehicle"]
-
+	["Mi-8AMT", "RHS_Mi8AMT_vdv", 10000, "vehicle"],
+	["CH-47F", "RHS_CH_47F", 20000, "vehicle"],
+	["AH-64D", "RHS_AH64D", 70000, "vehicle"],
+	["Ka52 Grey", "RHS_Ka52_vvs", 85000, "vehicle"]
 
 /*
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
@@ -1259,7 +1262,7 @@ helicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
 
-	["Su-25SM Grey", "RHS_Su25SM_vvs", 400, "vehicle"]
+	["Su-25SM Grey", "RHS_Su25SM_vvs", 190000, "vehicle"]
 
 /*
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
