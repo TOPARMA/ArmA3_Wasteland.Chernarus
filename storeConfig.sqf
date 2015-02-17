@@ -1121,7 +1121,32 @@ landArray = compileFinal str
 	["UAZ-469", "rhs_uaz_XX", 600, "vehicle"],
 	["URAL-4320", "rhs_ural_XX", 600, "vehicle"],
 	["URAL-4320 (Open)", "rhs_ural_open_XX", 600, "vehicle"],  
-	["URAL-4320 (Fuel)", "RHS_Ural_Fuel_XX_01", 600, "vehicle"]
+	["URAL-4320 (Fuel)", "RHS_Ural_Fuel_XX_01", 600, "vehicle"],
+
+
+//USAF
+	["M1083A1P2 Wood", "rhsusf_M1083A1P2_wd_fmtv_usarmy", 600, "vehicle"],
+	["M1083A1P2 Desert", "rhsusf_M1083A1P2_d_fmtv_usarmy", 600, "vehicle"],
+	["M1083A1P2-B Wood", "rhsusf_M1083A1P2_B_wd_fmtv_usarmy", 600, "vehicle"],
+	["M1083A1P2-B Desert", "rhsusf_M1083A1P2_B_d_fmtv_usarmy", 600, "vehicle"],
+	["M109A6 Paladin Wood", "rhsusf_m109_usarmy", 600, "vehicle"],
+	["M109A6 Paladin Desert", "rhsusf_m109d_usarmy", 600, "vehicle"],
+
+	["M113A3 Wood", "rhsusf_m113_usarmy", 600, "vehicle"],
+	["M113A3 Desert", "rhsusf_m113d_usarmy", 600, "vehicle"],
+
+	["M1A1AIM Wood", "rhsusf_m1a1aimwd_usarmy", 600, "vehicle"],
+	["M1A1AIM Desert", "rhsusf_m1a1aimd_usarmy", 600, "vehicle"],
+	["M1A1AIM TUSK I Wood", "rhsusf_m1a1aim_tuski_wd", 600, "vehicle"],
+	["M1A1AIM TUSK I Desert", "rhsusf_m1a1aim_tuski_d", 600, "vehicle"],
+	["M1A1FEP Wood", "rhsusf_m1a1fep_wd", 600, "vehicle"],
+	["M1A1FEP Desert", "rhsusf_m1a1fep_d", 600, "vehicle"],
+
+	["M1A2SEPv1 Wood", "rhsusf_m1a2sep1wd_usarmy", 600, "vehicle"],
+	["M1A2SEPv1 Desert", "rhsusf_m1a2sep1d_usarmy", 600, "vehicle"],
+	["M1A2SEPv1 (Tusk I) Wood", "rhsusf_m1a2sep1tuskiwd_usarmy", 600, "vehicle"],
+	["M1A2SEPv1 (Tusk I) Desert", "rhsusf_m1a2sep1tuskid_usarmy", 600, "vehicle"],
+
 
 
 
@@ -1260,8 +1285,38 @@ armoredArray = compileFinal str
 	["PRP-3 TV", "rhs_prp3_tv", 400, "vehicle"],
 	["PRP-3 VDV", "rhs_prp3_vdv", 400, "vehicle"],
 	["PRP-3 VV", "rhs_prp3_vv", 400, "vehicle"],
-	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 400, "vehicle"]
-	//["", "", 400, "vehicle"],
+	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 400, "vehicle"],
+
+
+//USAF
+
+	["M1025 (Unarmed) Wood", "rhsusf_m1025_w", 400, "vehicle"],
+	["M1025 (Unarmed) Desert", "rhsusf_m1025_d", 400, "vehicle"],
+	["M1025 (Unarmed/Snorkel)W", "rhsusf_m1025_w_s", 400, "vehicle"],
+	//["M1025 (Unarmed/Snorkel)D", "rhsusf_m1025_d_s", 400, "vehicle"], //class name wrong online. uncomment to test
+	["M1025 (M2)W", "rhsusf_m1025_w_m2", 400, "vehicle"],
+	["M1025 (M2)D", "rhsusf_m1025_d_m2", 400, "vehicle"],
+	["M1025 (M2/Snorkel)W", "rhsusf_m1025_w_s_m2", 400, "vehicle"],
+	["M1025 (M2/Snorkel)D", "rhsusf_m1025_d_s_m2", 400, "vehicle"],
+	["M1025 (Mk19)W", "rhsusf_m1025_w_mk19", 400, "vehicle"],
+	["M1025 (Mk19)D", "rhsusf_m1025_d_mk19", 400, "vehicle"],
+	["M1025 (Mk19/Snorkel)W", "rhsusf_m1025_w_s_mk19", 400, "vehicle"],
+	["M1025 (Mk19/Snorkel)D", "rhsusf_m1025_d_s_mk19", 400, "vehicle"],
+
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
+	["", "", 400, "vehicle"],
 
 /*
 	["Hunter", "B_MRAP_01_F", 4000, "vehicle"],
@@ -1349,7 +1404,16 @@ helicoptersArray = compileFinal str
 	["Mi-8MT Camo", "RHS_Mi8mt_vvsc", 400, "vehicle"],
 	["Mi-8MTV-3 VDV", "RHS_Mi8MTV3_vdv", 400, "vehicle"],
 	["Mi-8MTV-3 Grey", "RHS_Mi8MTV3_vvs", 400, "vehicle"],
-	["Mi-8MTV-3 Camo", "RHS_Mi8MTV3_vvsc", 400, "vehicle"]
+	["Mi-8MTV-3 Camo", "RHS_Mi8MTV3_vvsc", 400, "vehicle"],
+
+
+//USAF
+	["AH-64D Apache Wood", "rhs_ah64d_wd", 400, "vehicle"],
+	["AH-64D Apache Desert", "rhs_ah64d", 400, "vehicle"],
+	["CH-47 Chinook Wood", "rhs_ch_47f", 400, "vehicle"],
+	["CH-47 Chinook Desert", "rhs_ch_47f_light", 400, "vehicle"],
+
+
 
 
 
@@ -1386,8 +1450,13 @@ helicoptersArray = compileFinal str
 planesArray = compileFinal str
 [
 
+
+//AFRF
 	["Su-25SM Grey", "RHS_Su25SM_vvs", 400, "vehicle"],
-	["Su-25SM Camo", "RHS_Su25SM_vvsc", 400, "vehicle"]
+	["Su-25SM Camo", "RHS_Su25SM_vvsc", 400, "vehicle"],
+
+//USAF
+	["A-10A Thunderbolt II", "rhs_a10", 400, "vehicle"],
 
 /*
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
