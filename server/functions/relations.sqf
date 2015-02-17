@@ -26,5 +26,3 @@ INDEPENDENT setFriend [INDEPENDENT, 1];
 CIVILIAN setFriend [BLUFOR, 0];
 CIVILIAN setFriend [OPFOR, 0];
 CIVILIAN setFriend [INDEPENDENT, 0];
-
-diag_log "WASTELAND SERVER - Initializing Server Relations -Complete";
