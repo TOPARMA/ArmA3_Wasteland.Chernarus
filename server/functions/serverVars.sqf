@@ -19,13 +19,10 @@ currentStaticHelis = []; // Storage for the heli marker numbers so that we don't
 civilianVehicles =
 [
 	"C_Quadbike_01_F",
-	"C_Hatchback_01_F",
-	"C_Hatchback_01_sport_F",
-	"C_SUV_01_F",
-	"C_Offroad_01_F",
-	"I_G_Offroad_01_F",
-	"C_Van_01_box_F",
-	"C_Van_01_transport_F"
+	"rhs_uaz_vmf",
+	"rhs_uaz_open_vv",
+	"RHS_Ural_VDV_01",
+	"RHS_Ural_Open_MSV_01"
 ];
 
 //Light Military Vehicle List - Random Spawns
@@ -142,10 +139,8 @@ staticWeaponsList =
 //Object List - Random Helis.
 staticHeliList =
 [
-	"C_Heli_Light_01_civil_F",
-	"B_Heli_Light_01_F",
-	"O_Heli_Light_02_unarmed_F",
-	"I_Heli_light_03_unarmed_F"
+	"RHS_Mi8AMT_vdv",
+	"RHS_CH_47F"
 	// don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 
