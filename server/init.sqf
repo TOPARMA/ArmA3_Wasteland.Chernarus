@@ -52,8 +52,6 @@ call compile preprocessFileLineNumbers "server\antihack\setup.sqf";
 _serverCompileHandle = [] spawn compile preprocessFileLineNumbers "server\functions\serverCompile.sqf"; // scriptDone stays stuck on false when using execVM on Linux
 [] execVM "server\functions\broadcaster.sqf";
 [] execVM "server\functions\relations.sqf";
-
-diag_log "WASTELAND SERVER - Init ExternalConfigFolder init.sqf";
 [] execVM (externalConfigFolder + "\init.sqf");
 
 waitUntil {scriptDone _serverCompileHandle};
