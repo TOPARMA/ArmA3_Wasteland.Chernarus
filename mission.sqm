@@ -2265,19 +2265,12 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={5722.5273,303.73166,7294.9229};
-			name="SunkenMission_5";
-			type="Empty";
-			colorName="ColorWhite";
-		};
-		class Item26
-		{
 			position[]={3924.8464,313.14496,8881.3594};
 			name="heliSpawn_1";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item27
+		class Item26
 		{
 			position[]={6820.6543,6,2473.5454};
 			name="heliSpawn_2";
@@ -2285,14 +2278,14 @@ class Mission
 			colorName="ColorGreen";
 			angle=47.208965;
 		};
-		class Item28
+		class Item27
 		{
 			position[]={6889.146,6.3678083,2830.5649};
 			name="heliSpawn_3";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item29
+		class Item28
 		{
 			position[]={12048.666,48.630711,9224.3594};
 			name="heliSpawn_4";
@@ -2300,14 +2293,14 @@ class Mission
 			colorName="ColorGreen";
 			angle=122.025;
 		};
-		class Item30
+		class Item29
 		{
 			position[]={13376.342,5.9429622,6249.8564};
 			name="GunStore1_objSpawn_1";
 			type="Empty";
 			colorName="ColorBlack";
 		};
-		class Item31
+		class Item30
 		{
 			position[]={6897.5215,6,2498.4014};
 			name="GunStore2_objSpawn";
@@ -2315,14 +2308,14 @@ class Mission
 			colorName="ColorBlack";
 			angle=-123.39913;
 		};
-		class Item32
+		class Item31
 		{
 			position[]={1905.1871,6.9582057,2267.8406};
 			name="GenStore2_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 		};
-		class Item33
+		class Item32
 		{
 			position[]={3766.3909,310.98999,8886.9463};
 			name="GenStore3_objSpawn";
@@ -2330,187 +2323,187 @@ class Mission
 			colorName="ColorBlack";
 			angle=75.75425;
 		};
-		class Item34
+		class Item33
 		{
 			position[]={6755.6768,343.30124,5625.9458};
 			name="Mission_1";
 			type="Empty";
 		};
-		class Item35
+		class Item34
 		{
 			position[]={2454.575,289.83307,6206.9653};
 			name="Mission_2";
 			type="Empty";
 		};
-		class Item36
+		class Item35
 		{
 			position[]={2654.2156,262.17947,9808.7021};
 			name="Mission_3";
 			type="Empty";
 		};
-		class Item37
+		class Item36
 		{
 			position[]={11797.447,158.89929,12826.913};
 			name="Mission_4";
 			type="Empty";
 		};
-		class Item38
+		class Item37
 		{
 			position[]={8740.4893,382.8573,9303.0996};
 			name="Mission_5";
 			type="Empty";
 		};
-		class Item39
+		class Item38
 		{
 			position[]={4634.3481,9,2561.0669};
 			name="Mission_6";
 			type="Empty";
 		};
-		class Item40
+		class Item39
 		{
 			position[]={1189.4562,6.2106032,2404.2297};
 			name="Mission_7";
 			type="Empty";
 		};
-		class Item41
+		class Item40
 		{
 			position[]={1650.3499,161.09171,4559.0586};
 			name="Mission_8";
 			type="Empty";
 		};
-		class Item42
+		class Item41
 		{
 			position[]={5145.5288,189.3127,3737.71};
 			name="Mission_9";
 			type="Empty";
 		};
-		class Item43
+		class Item42
 		{
 			position[]={3278.9026,194.30716,3879.2249};
 			name="Mission_10";
 			type="Empty";
 		};
-		class Item44
+		class Item43
 		{
 			position[]={5043.2896,316.97891,5578.106};
 			name="Mission_11";
 			type="Empty";
 		};
-		class Item45
+		class Item44
 		{
 			position[]={3950.637,303.98511,8242.1758};
 			name="Mission_12";
 			type="Empty";
 		};
-		class Item46
+		class Item45
 		{
 			position[]={6836.1021,390.2998,11381.7};
 			name="Mission_13";
 			type="Empty";
 		};
-		class Item47
+		class Item46
 		{
 			position[]={11439.954,317.05347,11364.313};
 			name="Mission_14";
 			type="Empty";
 		};
-		class Item48
+		class Item47
 		{
 			position[]={12334.774,89.400574,10721.375};
 			name="Mission_15";
 			type="Empty";
 		};
-		class Item49
+		class Item48
 		{
 			position[]={13369.054,98.681404,12769.715};
 			name="Mission_16";
 			type="Empty";
 		};
-		class Item50
+		class Item49
 		{
 			position[]={12001.857,18.325634,3801.3767};
 			name="Mission_17";
 			type="Empty";
 		};
-		class Item51
+		class Item50
 		{
 			position[]={13219.021,36.808949,3140.8574};
 			name="Mission_18";
 			type="Empty";
 		};
-		class Item52
+		class Item51
 		{
 			position[]={13417.517,6.2617011,3931.2644};
 			name="Mission_19";
 			type="Empty";
 		};
-		class Item53
+		class Item52
 		{
 			position[]={12518.504,189.9758,4450.999};
 			name="Mission_20";
 			type="Empty";
 		};
-		class Item54
+		class Item53
 		{
 			position[]={9627.0645,17.952436,1766.6538};
 			name="Mission_21";
 			type="Empty";
 		};
-		class Item55
+		class Item54
 		{
 			position[]={8364.2441,33.109501,2498.1172};
 			name="Mission_22";
 			type="Empty";
 		};
-		class Item56
+		class Item55
 		{
 			position[]={6076.5806,16.78307,1945.7501};
 			name="Mission_23";
 			type="Empty";
 		};
-		class Item57
+		class Item56
 		{
 			position[]={9692.4893,251.30457,6277.3506};
 			name="Mission_24";
 			type="Empty";
 		};
-		class Item58
+		class Item57
 		{
 			position[]={12231.36,110.93612,5660.4971};
 			name="Mission_25";
 			type="Empty";
 		};
-		class Item59
+		class Item58
 		{
 			position[]={11766.784,202.61839,4536.9404};
 			name="Mission_26";
 			type="Empty";
 		};
-		class Item60
+		class Item59
 		{
 			position[]={10744.513,347.17896,5669.8271};
 			name="Mission_27";
 			type="Empty";
 		};
-		class Item61
+		class Item60
 		{
 			position[]={10877.629,265.21683,7309.4121};
 			name="Mission_28";
 			type="Empty";
 		};
-		class Item62
+		class Item61
 		{
 			position[]={8129.8545,447.3038,7847.9443};
 			name="Mission_29";
 			type="Empty";
 		};
-		class Item63
+		class Item62
 		{
 			position[]={10278.87,41.364346,3702.0977};
 			name="Mission_30";
 			type="Empty";
 		};
-		class Item64
+		class Item63
 		{
 			position[]={10067.61,6,1790.7412};
 			name="VehStore2_landSpawn";
@@ -2518,7 +2511,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=-91.592415;
 		};
-		class Item65
+		class Item64
 		{
 			position[]={10090.022,6.0110359,1778.5269};
 			name="VehStore2_heliSpawn";
@@ -2526,98 +2519,98 @@ class Mission
 			colorName="ColorBlack";
 			angle=-1.5046186;
 		};
-		class Item66
+		class Item65
 		{
 			position[]={10273.658,8.6985664,2199.9453};
 			name="heliSpawn_5";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item67
+		class Item66
 		{
 			position[]={13380.413,5.1515536,6333.3462};
 			name="heliSpawn_6";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item68
+		class Item67
 		{
 			position[]={12039.44,159,12739.479};
 			name="heliSpawn_7";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item69
+		class Item68
 		{
 			position[]={12215.236,159,12676.536};
 			name="heliSpawn_8";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item70
+		class Item69
 		{
 			position[]={4537.1865,339,10611.709};
 			name="heliSpawn_9";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item71
+		class Item70
 		{
 			position[]={4832.6499,339,10115.648};
 			name="heliSpawn_10";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item72
+		class Item71
 		{
 			position[]={4927.2891,9,2392.1814};
 			name="heliSpawn_11";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item73
+		class Item72
 		{
 			position[]={1735.9949,143.7,3747.8667};
 			name="heliSpawn_12";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item74
+		class Item73
 		{
 			position[]={2574.8438,292.56638,6282.9429};
 			name="heliSpawn_13";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item75
+		class Item74
 		{
 			position[]={6164.7666,301.72137,7800.6392};
 			name="heliSpawn_14";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item76
+		class Item75
 		{
 			position[]={8625.5527,185.61609,11933.374};
 			name="heliSpawn_15";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item77
+		class Item76
 		{
 			position[]={10114.919,245.45612,5554.6299};
 			name="heliSpawn_16";
 			type="Empty";
 			colorName="ColorGreen";
 		};
-		class Item78
+		class Item77
 		{
 			position[]={7727.2725,-6.1586924,2992.6125};
 			name="SunkenMission_1";
 			type="Empty";
 			colorName="ColorBlue";
 		};
-		class Item79
+		class Item78
 		{
 			position[]={10073.062,-0.005665347,1754.9467};
 			name="VehStore2_seaSpawn";
@@ -2625,13 +2618,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=182.39557;
 		};
-		class Item80
-		{
-			position[]={6805.7363,0.29065934,2228.7644};
-			name="test3";
-			type="Empty";
-		};
-		class Item81
+		class Item79
 		{
 			position[]={13030.656,6.0022039,9961.292};
 			name="VehStore5_landSpawn";
@@ -2639,7 +2626,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=-149.27979;
 		};
-		class Item82
+		class Item80
 		{
 			position[]={13036.289,6.0127869,9972.7588};
 			name="VehStore5_heliSpawn";
@@ -2647,7 +2634,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=-155.82504;
 		};
-		class Item83
+		class Item81
 		{
 			position[]={13084.737,0.17257994,9971.6729};
 			name="VehStore5_seaSpawn";
@@ -2655,7 +2642,7 @@ class Mission
 			colorName="ColorBlack";
 			angle=473.93942;
 		};
-		class Item84
+		class Item82
 		{
 			position[]={7054.3154,6.0127869,2624.5029};
 			name="TERRITORY_0_CHERNOGORSK_B";
@@ -2666,7 +2653,7 @@ class Mission
 			a=50;
 			b=50;
 		};
-		class Item85
+		class Item83
 		{
 			position[]={7050.5171,6.0127869,2626.105};
 			name="FLAG_0_CHERNOGORSK_B";
@@ -2676,7 +2663,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item86
+		class Item84
 		{
 			position[]={7221.397,6.8493814,2237.6169};
 			name="TERRITORY_0_CHERNOGORSK_C";
@@ -2688,7 +2675,7 @@ class Mission
 			b=35;
 			angle=-9.5256004;
 		};
-		class Item87
+		class Item85
 		{
 			position[]={7216.1133,6.5230689,2239.9614};
 			name="FLAG_0_CHERNOGORSK_C";
@@ -2698,7 +2685,7 @@ class Mission
 			a=0.5;
 			b=0.5;
 		};
-		class Item88
+		class Item86
 		{
 			position[]={6669.9893,6,2618.3418};
 			name="TERRITORY_0_CHERNOGORSK_A";
@@ -2710,7 +2697,7 @@ class Mission
 			b=10;
 			angle=-52.050026;
 		};
-		class Item89
+		class Item87
 		{
 			position[]={6669.4067,6,2620.4023};
 			name="FLAG_0_CHERNOGORSK_A";
@@ -2719,6 +2706,20 @@ class Mission
 			colorName="ColorYellow";
 			a=0.5;
 			b=0.5;
+		};
+		class Item88
+		{
+			position[]={13915.527,0.41896755,2519.2585};
+			name="SunkenMission_2";
+			type="Empty";
+			colorName="ColorBlue";
+		};
+		class Item89
+		{
+			position[]={13219.331,0.4757359,8247.5205};
+			name="SunkenMission_3";
+			type="Empty";
+			colorName="ColorBlue";
 		};
 	};
 };
