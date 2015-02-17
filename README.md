@@ -1,4 +1,4 @@
-*Wasteland.Altis* by Team Wasteland!
+*Wasteland.Chernarus* by Team Wasteland!
 ===================
 Modified by TOPARMA.COM
 
