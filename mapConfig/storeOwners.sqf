@@ -17,7 +17,7 @@ storeOwnerConfig = compileFinal str
 	["GenStore5", 5, 350, []],
 
 	["GunStore1", 3, 90, []],
-	["GunStore2", 1, 280, []],
+	["GunStore2", 1, 180, []],
 	["GunStore3", 6, 165, []],
 	["GunStore4", 1, 60, []],
 

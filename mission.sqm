@@ -29,8 +29,8 @@ class Mission
 	randomSeed=7312376;
 	class Intel
 	{
-		briefingName="TOP A3Wasteland Chernarus v1.1";
-		overviewText="TOP Wasteland Conquest Chernarus - Core developed by A3Wasteland.com";
+		briefingName="TOP A3Wasteland Chernarus v1.1 extDB";
+		overviewText="TOP Wasteland Conquest Chernarus by TOPARMA.com - Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		startWeather=0.25;
 		startWind=0.099999994;
@@ -1802,7 +1802,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={6902.6553,6,2493.0417};
+					position[]={6903.5981,6,2491.7627};
 					azimut=197.78493;
 					id=150;
 					side="LOGIC";
@@ -2082,7 +2082,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=90;
+		items=102;
 		class Item0
 		{
 			position[]={428.31763,634.75702,15125.764};
@@ -2720,6 +2720,90 @@ class Mission
 			name="SunkenMission_3";
 			type="Empty";
 			colorName="ColorBlue";
+		};
+		class Item90
+		{
+			position[]={2528.2749,300.32117,6356.2393};
+			name="Town_16";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item91
+		{
+			position[]={3058.6736,301.98526,7920.4609};
+			name="Town_17";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item92
+		{
+			position[]={5326.5923,333.09012,8587.2305};
+			name="Town_18";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item93
+		{
+			position[]={7115.8901,293.99213,7693.1831};
+			name="Town_19";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item94
+		{
+			position[]={9562.3906,299.12012,8806.623};
+			name="Town_20";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item95
+		{
+			position[]={10688.354,210.99001,8047.4248};
+			name="Town_21";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item96
+		{
+			position[]={2745.6704,274.00961,9988.3477};
+			name="Town_22";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item97
+		{
+			position[]={12299.448,106.36178,10904.55};
+			name="Town_23";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item98
+		{
+			position[]={12922.539,9.6249847,8038.0786};
+			name="Town_24";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item99
+		{
+			position[]={12082.719,6.1849079,3490.6597};
+			name="Town_25";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item100
+		{
+			position[]={4482.7681,5.98,2453.1804};
+			name="Town_26";
+			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item101
+		{
+			position[]={3642.7227,6.9299998,2467.5798};
+			name="Town_27";
+			type="Empty";
+			colorName="ColorRed";
 		};
 	};
 };
