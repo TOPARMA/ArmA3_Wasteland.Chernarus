@@ -1120,7 +1120,7 @@ landArray = compileFinal str
 
 	["UAZ-469", "rhs_uaz_XX", 600, "vehicle"],
 	["URAL-4320", "rhs_ural_XX", 600, "vehicle"],
-	["URAL-4320 (Open)", "rhs_ural_open_XX", 600, "vehicle"],  
+	["URAL-4320 (Open)", "rhs_ural_open_XX", 600, "vehicle"],
 	["URAL-4320 (Fuel)", "RHS_Ural_Fuel_XX_01", 600, "vehicle"],
 
 
@@ -1147,8 +1147,51 @@ landArray = compileFinal str
 	["M1A2SEPv1 (Tusk I) Wood", "rhsusf_m1a2sep1tuskiwd_usarmy", 600, "vehicle"],
 	["M1A2SEPv1 (Tusk I) Desert", "rhsusf_m1a2sep1tuskid_usarmy", 600, "vehicle"],
 
+	["M2A2ODS", "RHS_M2A2_wd", 600, "vehicle"],
+	["M2A2ODS", "RHS_M2A2", 600, "vehicle"],
+	["M2A2ODS (BUSK I) Wood", "RHS_M2A2_BUSKI_wd", 600, "vehicle"],
+	["M2A2ODS (BUSK I) Desert", "RHS_M2A2_BUSKI", 600, "vehicle"],
 
+	["M2A3 Wood", "RHS_M2A3", 600, "vehicle"],
+	["M2A3 Desert", "RHS_M2A3", 600, "vehicle"],
+	["M2A3 (BUSK I) Wood", "RHS_M2A3_BUSKI_wd", 600, "vehicle"],
+	["M2A3 (BUSK I) Desert", "RHS_M2A3_BUSKI", 600, "vehicle"],
+	["M2A3 (BUSK III) Wood", "RHS_M2A3_BUSKIII_wd", 600, "vehicle"],
+	["M2A3 (BUSK III) Desert", "RHS_M2A3_BUSKIII", 600, "vehicle"],
+	["M6 Wood", "RHS_M6_wd", 600, "vehicle"],
+	["M6 Desert", "RHS_M6", 600, "vehicle"],
+//W.I.P
+	//["M997A2", "rhsusf_M977A2_usarmy_wd", 600, "vehicle"],
+	//["M997A2 (CPK)", "rhsusf_M977A2_CPK_usarmy_wd", 600, "vehicle"],
+//W.I.P
+	["M998A2", "rhsusf_M977A2_usarmy_wd", 600, "vehicle"],
+	["M998A2 (CPK)", "rhsusf_M977A2_CPK_usarmy_wd", 600, "vehicle"],
 
+	["M998, 2dr cgo/trp carr, open", "rhsusf_m998_w_2dr", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, open", "rhsusf_m998_d_2dr", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_w_s_2dr", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_d_s_2dr", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, halfsoftop", "rhsusf_m998_w_2dr_halftop", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, halfsoftop", "rhsusf_m998_d_2dr_halftop", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, halfsoftop w/ snorkel	", "rhsusf_m998_w_s_2dr_halftop", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, halfsoftop w/ snorkel	", "rhsusf_m998_d_s_2dr_halftop", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, softop", "rhsusf_m998_w_2dr_fulltop", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, softop", "rhsusf_m998_d_2dr_fulltop", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_w_s_2dr_fulltop", 600, "vehicle"],
+	["M998, 2dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_d_s_2dr_fulltop", 600, "vehicle"],
+
+	["M998, 4dr cgo/trp carr, open", "rhsusf_m998_w_4dr", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, open", "rhsusf_m998_d_4dr", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_w_s_4dr", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, open w/ snorkel", "rhsusf_m998_d_s_4dr", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, halfsoftop", "rhsusf_m998_w_4dr_halftop", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, halfsoftop", "rhsusf_m998_d_4dr_halftop", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, halfsoftop w/ snorkel", "rhsusf_m998_w_s_4dr_halftop", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, halfsoftop w/ snorkel", "rhsusf_m998_d_s_4dr_halftop", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, softop", "rhsusf_m998_w_4dr_fulltop", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, softop", "rhsusf_m998_d_4dr_fulltop", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_w_s_4dr_fulltop", 600, "vehicle"],
+	["M998, 4dr cgo/trp carr, softop w/ snorkel", "rhsusf_m998_d_s_4dr_fulltop", 600, "vehicle"]
 
 
 /*
@@ -1236,6 +1279,8 @@ armoredArray = compileFinal str
 	//["BMP-3", "rhs_bmp3_msv", 400, "vehicle"],
 	//["BMP-3M", "rhs_bmp3m_msv", 400, "vehicle"],
 	//["BMP-3M (A)", "rhs_bmp3mera_msv", 400, "vehicle"],
+	//Marked as W.I.P -uncomment to test
+
 
 	["BRM-1K MSV", "rhs_brm1k_msv", 400, "vehicle"],
 	["BRM-1K TV", "rhs_brm1k_tv", 400, "vehicle"],
@@ -1301,22 +1346,7 @@ armoredArray = compileFinal str
 	["M1025 (Mk19)W", "rhsusf_m1025_w_mk19", 400, "vehicle"],
 	["M1025 (Mk19)D", "rhsusf_m1025_d_mk19", 400, "vehicle"],
 	["M1025 (Mk19/Snorkel)W", "rhsusf_m1025_w_s_mk19", 400, "vehicle"],
-	["M1025 (Mk19/Snorkel)D", "rhsusf_m1025_d_s_mk19", 400, "vehicle"],
-
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
-	["", "", 400, "vehicle"],
+	["M1025 (Mk19/Snorkel)D", "rhsusf_m1025_d_s_mk19", 400, "vehicle"]
 
 /*
 	["Hunter", "B_MRAP_01_F", 4000, "vehicle"],
@@ -1342,7 +1372,6 @@ tanksArray = compileFinal str
 	["2S25(VDV)", "rhs_sprut_vdv", 400, "vehicle"],
 	["2S3M", "rhs_2s3_tv", 400, "vehicle"],
 	["PRP-3", "rhs_prp3_msv", 400, "vehicle"],
-
 	["T-72Ba", "rhs_t72ba_tv", 400, "vehicle"],
 	["T-72Bb", "rhs_t72bb_tv", 400, "vehicle"],
 	["T-72Bc", "rhs_t72bc_tv", 400, "vehicle"],
@@ -1354,10 +1383,6 @@ tanksArray = compileFinal str
 	["T-80BV", "rhs_t80bv", 400, "vehicle"],
 	["T-80BVK", "rhs_t80bvk", 400, "vehicle"],
 	["T-80U", "rhs_t80u", 400, "vehicle"]
-	//["", "", 400, "vehicle"],
-	
-
-
 
 /*
 	["CRV-6e Bobcat", "B_APC_Tracked_01_CRV_F", 32500, "vehicle"],
@@ -1413,11 +1438,10 @@ helicoptersArray = compileFinal str
 	["CH-47 Chinook Wood", "rhs_ch_47f", 400, "vehicle"],
 	["CH-47 Chinook Desert", "rhs_ch_47f_light", 400, "vehicle"],
 
-
-
-
-
-
+	["UH-60M Woodland", "rhs_uh60m", 400, "vehicle"],
+	["UH-60M Desert", "rhs_uh60m_d", 400, "vehicle"],
+	["UH-60M MEV Woodland", "rhs_uh60m_mev", 400, "vehicle"],
+	["UH-60M MEV Desert", "rhs_uh60m_mev_d", 400, "vehicle"]
 
 /*
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
@@ -1475,8 +1499,6 @@ planesArray = compileFinal str
 
 boatsArray = compileFinal str
 [
-
-
 
 	["Rescue Boat", "C_Rubberboat", 500, "boat"],
 	["Rescue Boat (NATO)", "B_Lifeboat", 500, "boat"],
