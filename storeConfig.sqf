@@ -1113,24 +1113,27 @@ landArray = compileFinal str
 	["Kamaz-63968 VDV", "rhs_typhoon_vdv", 600, "vehicle"],
 
 	//======== in for testing (maybe radar placement)=========
-	["Kung Truck Shelter", "rhs_typhoon_vdv", 600, "vehicle"],
-	["P-37 Radar", "rhs_p37", 600, "vehicle"],
-	["PRV-13 Radar", "rhs_prv13", 600, "vehicle"],
+	//["Kung Truck Shelter", "rhs_typhoon_vdv", 600, "vehicle"],
+	//["P-37 Radar", "rhs_p37", 600, "vehicle"],
+	//["PRV-13 Radar", "rhs_prv13", 600, "vehicle"],
 	//=============================================================
 
-	["UAZ-469", "rhs_uaz_XX", 600, "vehicle"],
-	["URAL-4320", "rhs_ural_XX", 600, "vehicle"],
-	["URAL-4320 (Open)", "rhs_ural_open_XX", 600, "vehicle"],
-	["URAL-4320 (Fuel)", "RHS_Ural_Fuel_XX_01", 600, "vehicle"],
-
+	// Bugged - research required
+	//["UAZ-469", "rhs_uaz_XX", 600, "vehicle"],
+	//["URAL-4320", "rhs_ural_XX", 600, "vehicle"],
+	//["URAL-4320 (Open)", "rhs_ural_open_XX", 600, "vehicle"],
+	//["URAL-4320 (Fuel)", "RHS_Ural_Fuel_XX_01", 600, "vehicle"],
+	// Bugged - research required
 
 //USAF
-	["M1083A1P2 Wood", "rhsusf_M1083A1P2_wd_fmtv_usarmy", 600, "vehicle"],
-	["M1083A1P2 Desert", "rhsusf_M1083A1P2_d_fmtv_usarmy", 600, "vehicle"],
-	["M1083A1P2-B Wood", "rhsusf_M1083A1P2_B_wd_fmtv_usarmy", 600, "vehicle"],
-	["M1083A1P2-B Desert", "rhsusf_M1083A1P2_B_d_fmtv_usarmy", 600, "vehicle"],
-	["M109A6 Paladin Wood", "rhsusf_m109_usarmy", 600, "vehicle"],
-	["M109A6 Paladin Desert", "rhsusf_m109d_usarmy", 600, "vehicle"],
+	// Bugged - research required
+	//["M1083A1P2 Wood", "rhsusf_M1083A1P2_wd_fmtv_usarmy", 600, "vehicle"],
+	//["M1083A1P2 Desert", "rhsusf_M1083A1P2_d_fmtv_usarmy", 600, "vehicle"],
+	//["M1083A1P2-B Wood", "rhsusf_M1083A1P2_B_wd_fmtv_usarmy", 600, "vehicle"],
+	//["M1083A1P2-B Desert", "rhsusf_M1083A1P2_B_d_fmtv_usarmy", 600, "vehicle"],
+	//["M109A6 Paladin Wood", "rhsusf_m109_usarmy", 600, "vehicle"],
+	//["M109A6 Paladin Desert", "rhsusf_m109d_usarmy", 600, "vehicle"],
+	// Bugged - research required
 
 	["M113A3 Wood", "rhsusf_m113_usarmy", 600, "vehicle"],
 	["M113A3 Desert", "rhsusf_m113d_usarmy", 600, "vehicle"],
@@ -1480,7 +1483,7 @@ planesArray = compileFinal str
 	["Su-25SM Camo", "RHS_Su25SM_vvsc", 400, "vehicle"],
 
 //USAF
-	["A-10A Thunderbolt II", "rhs_a10", 400, "vehicle"],
+	["A-10A Thunderbolt II", "rhs_a10", 400, "vehicle"]
 
 /*
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
