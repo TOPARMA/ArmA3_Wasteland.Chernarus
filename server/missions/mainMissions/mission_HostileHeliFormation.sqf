@@ -28,9 +28,9 @@ _setupObjects =
 
 	if (missionDifficultyHard) then
 	{
-		(_heliChoices select 0) set [0, "B_Heli_Attack_01_F"];
-		(_heliChoices select 1) set [0, "O_Heli_Attack_02_F"];
-		(_heliChoices select 2) set [0, "O_Heli_Attack_02_black_F"];
+		(_heliChoices select 0) set [0, "rhs_ah64d_wd"];
+		(_heliChoices select 1) set [0, "rhs_uh60m_mev"];
+		(_heliChoices select 2) set [0, "RHS_Mi24V_vvsc"];
 	};
 
 	_convoyVeh = _heliChoices call BIS_fnc_selectRandom;
