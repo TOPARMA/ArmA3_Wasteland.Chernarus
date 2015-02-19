@@ -21,7 +21,7 @@ _setupObjects =
 
 	_vehicleClass = if (missionDifficultyHard) then
 	{
-		["B_Heli_Attack_01_F", "O_Heli_Attack_02_black_F"] call BIS_fnc_selectRandom;
+		["rhs_ah64d_wd", "RHS_Ka52_vvsc"] call BIS_fnc_selectRandom;
 	}
 	else
 	{
