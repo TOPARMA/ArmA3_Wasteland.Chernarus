@@ -545,7 +545,7 @@ accessoriesArray = compileFinal str
 	["HK53/33 Suppressor)", "hlc_muzzle_snds_HK33", 150, "item"],
 	["G3 Suppressor(PSG excluded)", "hlc_muzzle_snds_G3", 150, "item"],
 	["M14 Suppressor", "hlc_muzzle_snds_M14", 150, "item"],
-	["5.56MM NATO AR15 Suppressor", "hlc_muzzle_556NATO_KAC", 150, "item"],
+	["HLC 556 Suppressor", "hlc_muzzle_556NATO_KAC", 150, "item"],
 	[".300 Blackout AR15 Suppressor", "hlc_muzzle_300blk_KAC", 150, "item"],
 	["9x19mm Mp5s EXCEPT MP5k/MP5k-pdw", "hlc_muzzle_Agendasix", 150, "item"],
 	["all 9x19mm Mp5s", "hlc_muzzle_Tundra", 150, "item"],
