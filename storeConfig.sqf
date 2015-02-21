@@ -129,10 +129,7 @@ rifleArray = compileFinal str
 	["H&K G3KA4", "hlc_rifle_g3ka4", 550],
 	["H&K G3KA4 M203", "HLC_Rifle_g3ka4_GL", 750],
 	["FR Ordnance MC51 (G3)", "hlc_rifle_hk51", 700],
-	
-	// bugged
-		["H&K HK53", "hlc_rifle_hk53", 600],
-	// bugged
+	["H&K HK53", "hlc_rifle_hk53", 600],
 
 
 //AR
@@ -398,15 +395,10 @@ ammoArray = compileFinal str
 	["7.62x51mm Ball 20Rnd", "hlc_20Rnd_762x51_B_G3", 50],
 	["7.62x51mm Tracer 20Rnd", "hlc_20rnd_762x51_T_G3", 50],
 	["7.62x51mm Mixed 50Rnd", "hlc_50rnd_762x51_M_G3", 100],
-
-// bugged
-//	["5.56x45mm Ball", "hlc_30rnd_556x45_b_HK33?, 10],
-//	["5.56x45mm Tracer", "hlc_30rnd_556x45_t_HK33?, 10],
-//	["5.565mm EPR", "hlc_30rnd_556x45_epr_HK33?, 10],
-//	["5.56x45mm SOST", "hlc_30rnd_556x45_sost_HK33?, 10],
-// bugged
-
-
+	["5.56x45mm Ball", "hlc_30rnd_556x45_b_HK33", 10],
+	["5.56x45mm Tracer", "hlc_30rnd_556x45_t_HK33", 10],
+	["5.565mm EPR", "hlc_30rnd_556x45_epr_HK33", 10],
+	["5.56x45mm SOST", "hlc_30rnd_556x45_sost_HK33", 10],
 	["7.62x51mm Ball", "hlc_20Rnd_762x51_B_M14", 50],
 	["7.62x51mm Tracer", "hlc_20rnd_762x51_T_M14", 50],
 	["7.62x51mm Mixed", "hlc_50rnd_762x51_M_M14", 50],
@@ -539,8 +531,8 @@ accessoriesArray = compileFinal str
 	
 	["TGPA (Suppressor)", "rhs_acc_tgpa", 150, "item"],
 	["Suppressor M2010S", "rhsusf_acc_M2010S", 150, "item"],
-		//["PBS4 Suppressor(5.45x39)", "hlc_muzzle_545SUP_AK", 150, "item"],
-		//["PBS1 Suppressor(7.62x39)", "hlc_muzzle_762SUP_AK", 150, "item"],
+	["PBS4 Suppressor(5.45x39)", "hlc_muzzle_545SUP_AK", 150, "item"],
+	["PBS1 Suppressor(7.62x39)", "hlc_muzzle_762SUP_AK", 150, "item"],
 	["FAL Suppressor", "hlc_muzzle_snds_fal", 150, "item"],
 	["HK53/33 Suppressor)", "hlc_muzzle_snds_HK33", 150, "item"],
 	["G3 Suppressor(PSG excluded)", "hlc_muzzle_snds_G3", 150, "item"],
@@ -574,7 +566,7 @@ accessoriesArray = compileFinal str
 	["M68 CCO Aimpoint M4", "rhsusf_acc_compm4", 500, "item"],
 
 	["PSO1 Sniper Optic", "HLC_Optic_PSO1", 1500, "item"],
-		//?? ["1P29 Rifle Combat Optic", "HLC_Optic_1p29", 50, "item"],
+	["1P29 Rifle Combat Optic", "HLC_Optic_1p29", 500, "item"],
 	["Kobra Collimator Sight", "hlc_optic_kobra", 500, "item"],
 		//?? ["Goshawk Thermal Sight", "hlc_optic_goshawk", 50, "item"],
 
@@ -617,30 +609,30 @@ headArray = compileFinal str
 [
 
 
-	//AFRF
-	//"6B27M Plain", "rhs_6b27m_green", 50, "hat"],
-	//"6B27M", "rhs_6b27m_green_ess", 50, "hat"],
-	//"6B27M", "rhs_6b27m_green_bala", 50, "hat"],
-	//"6B27M", "rhs_6b27m_green_ess_bala", 50, "hat"],
-	//"6B27M Flora", "rhs_6b27m", 50, "hat"],
-	//"6B27M", "rhs_6b27m_ess", 50, "hat"],
-	//"6B27M", "rhs_6b27m_bala", 50, "hat"],
-	//"6B27M", "rhs_6b27m_ess_bala", 50, "hat"],
-	//"6B27M EMR-Summer", "rhs_6b27m_digi", 50, "hat"],
-	//"6B27M", "rhs_6b27m_digi_bala", 50, "hat"],
-	//"6B27M Mountain", "rhs_6b27m_ml", 50, "hat"],
-	//"6B28, "rhs_6b28_green", 50, "hat"],
-	//"6B28", "rhs_6b28_green_ess", 50, "hat"],
-	//"6B28", "rhs_6b28_green_bala", 50, "hat"],
-	//"6B28", "rhs_6b28_green_ess_bala", 50, "hat"],
-	//"6B28 EMR-Summer", "rhs_6b28", 50, "hat"],
-	//"6B28", "rhs_6b28_ess", 50, "hat"],
-	//"6B28", "rhs_6b28_bala", 50, "hat"],
-	//"6B28", "rhs_6b28_ess_bala", 50, "hat"],
-	//"6B28 Flora", "rhs_6b28_flora", 50, "hat"],
-	//"6B28", "rhs_6b28_flora_ess", 50, "hat"],
-	//"6B28", "rhs_6b28_flora_bala", 50, "hat"],
-	//"6B28", "rhs_6b28_ess_bala", 50, "hat"],
+//AFRF
+	["6B27M Plain", "rhs_6b27m_green", 50, "hat"],
+	["6B27M", "rhs_6b27m_green_ess", 50, "hat"],
+	["6B27M", "rhs_6b27m_green_bala", 50, "hat"],
+	["6B27M", "rhs_6b27m_green_ess_bala", 50, "hat"],
+	["6B27M Flora", "rhs_6b27m", 50, "hat"],
+	["6B27M", "rhs_6b27m_ess", 50, "hat"],
+	["6B27M", "rhs_6b27m_bala", 50, "hat"],
+	["6B27M", "rhs_6b27m_ess_bala", 50, "hat"],
+	["6B27M EMR-Summer", "rhs_6b27m_digi", 50, "hat"],
+	["6B27M", "rhs_6b27m_digi_bala", 50, "hat"],
+	["6B27M Mountain", "rhs_6b27m_ml", 50, "hat"],
+	["6B28", "rhs_6b28_green", 50, "hat"],
+	["6B28", "rhs_6b28_green_ess", 50, "hat"],
+	["6B28", "rhs_6b28_green_bala", 50, "hat"],
+	["6B28", "rhs_6b28_green_ess_bala", 50, "hat"],
+	["6B28 EMR-Summer", "rhs_6b28", 50, "hat"],
+	["6B28", "rhs_6b28_ess", 50, "hat"],
+	["6B28", "rhs_6b28_bala", 50, "hat"],
+	["6B28", "rhs_6b28_ess_bala", 50, "hat"],
+	["6B28 Flora", "rhs_6b28_flora", 50, "hat"],
+	["6B28", "rhs_6b28_flora_ess", 50, "hat"],
+	["6B28", "rhs_6b28_flora_bala", 50, "hat"],
+	["6B28", "rhs_6b28_ess_bala", 50, "hat"],
 	["Boonie Flora", "rhs_Booniehat_flora", 50, "hat"],
 	["Boonie EMR-Summer", "rhs_Booniehat_digi", 50, "hat"],
 	["Field Cap", "rhs_fieldcap", 50, "hat"],
@@ -787,22 +779,53 @@ uniformArray = compileFinal str
 
 
 //AFRF
-		//["AFRF Flora", "rhs_uniform_flora", 300, "uni"],
-		//["AFRF Flora", "rhs_uniform_vdv_flora", 300, "uni"],
-		//["AFRF Flora", "rhs_uniform_flora_patchless", 300, "uni"],
+	["AFRF Flora", "rhs_uniform_flora", 300, "uni"],
+	["AFRF Flora", "rhs_uniform_vdv_flora", 300, "uni"],
+	["AFRF Flora", "rhs_uniform_flora_patchless", 300, "uni"],
 	["AFRF Mountain", "rhs_uniform_vdv_mflora", 300, "uni"],
-		//["AFRF Mountain", "rhs_uniform_mflora_patchless", 300, "uni"],
-		//["AFRF EMR-Summer", "rhs_uniform_msv_emr", 300, "uni"],
+	["AFRF Mountain", "rhs_uniform_mflora_patchless", 300, "uni"],
+	["AFRF EMR-Summer", "rhs_uniform_msv_emr", 300, "uni"],
 	["AFRF EMR-Summer", "rhs_uniform_vdv_emr", 300, "uni"],
-		//["AFRF EMR-Summer", "rhs_uniform_emr_patchless", 300, "uni"],
+	["AFRF EMR-Summer", "rhs_uniform_emr_patchless", 300, "uni"],
 	["AFRF Pilot", "rhs_uniform_df15", 300, "uni"],
-
+	["Guerilla Smocks 1", "U_OG_Guerilla1_1", 25, "uni"], // OPFOR
+	["Guerilla Smocks 2", "U_OG_Guerilla2_1", 25, "uni"],
+	["Guerilla Smocks 3", "U_OG_Guerilla2_2", 25, "uni"],
+	["Guerilla Smocks 4", "U_OG_Guerilla2_3", 25, "uni"],
+	["Guerilla Smocks 5", "U_OG_Guerilla3_1", 25, "uni"],
+	["Guerilla Smocks 6", "U_OG_Guerilla3_2", 25, "uni"],
+	["Guerilla Smocks 7", "U_OG_leader", 25, "uni"],
+	
 //USAF
 	["USAF UCP", "rhs_uniform_cu_ucp", 300, "uni"],
 	["USAF UCP patchless", "rhs_uniform_cu_ocp_patchless", 300, "uni"],
 	["USAF OCP", "rhs_uniform_cu_ucp", 300, "uni"],
-	["USAF OCP patchless", "rhs_uniform_cu_ucp_patchless", 300, "uni"]
+	["USAF OCP patchless", "rhs_uniform_cu_ucp_patchless", 300, "uni"],
+	["Guerilla Smocks 1", "U_BG_Guerilla1_1", 25, "uni"], // BLUFOR
+	["Guerilla Smocks 2", "U_BG_Guerilla2_1", 25, "uni"],
+	["Guerilla Smocks 3", "U_BG_Guerilla2_2", 25, "uni"],
+	["Guerilla Smocks 4", "U_BG_Guerilla2_3", 25, "uni"],
+	["Guerilla Smocks 5", "U_BG_Guerilla3_1", 25, "uni"],
+	["Guerilla Smocks 6", "U_BG_Guerilla3_2", 25, "uni"],
+	["Guerilla Smocks 7", "U_BG_leader", 25, "uni"],
 
+
+//INDIE
+	["Ghillie Suit (AAF)", "U_I_GhillieSuit", 300, "uni"],
+	["Wetsuit (AAF)", "U_I_Wetsuit", 200, "uni"],
+	["Default Uniform (AAF)", "U_I_CombatUniform", 50, "uni"],
+	["Combat Fatigues Short (Digi)", "U_I_CombatUniform_shortsleeve", 50, "uni"],
+	["Combat Fatigues Shirt (Digi)", "U_I_CombatUniform_tshirt", 50, "uni"],
+	["Officer Fatigues (Digi)", "U_I_OfficerUniform", 50, "uni"],
+	["Pilot Coveralls (AAF)", "U_I_pilotCoveralls", 50, "uni"],
+	["Heli Pilot Coveralls (AAF)", "U_I_HeliPilotCoveralls", 50, "uni"],
+	["Guerilla Smocks 1", "U_IG_Guerilla1_1", 25, "uni"], // Independent
+	["Guerilla Smocks 2", "U_IG_Guerilla2_1", 25, "uni"],
+	["Guerilla Smocks 3", "U_IG_Guerilla2_2", 25, "uni"],
+	["Guerilla Smocks 4", "U_IG_Guerilla2_3", 25, "uni"],
+	["Guerilla Smocks 5", "U_IG_Guerilla3_1", 25, "uni"],
+	["Guerilla Smocks 6", "U_IG_Guerilla3_2", 25, "uni"],
+	["Guerilla Smocks 7", "U_IG_leader", 25, "uni"]
 
 
 /*
@@ -928,6 +951,7 @@ vestArray = compileFinal str
 	["6Sh46", "rhs_6sh46", 200, "vest"],
 	["Holster and map", "rhs_vest_commander", 200, "vest"],
 	["Vydra 3M", "rhs_vydra_3m", 200, "vest"],
+	["Rebreather (CSAT)", "V_RebreatherIR", 200, "vest"],
 
 //USAF
 	["IOTV UCP", "rhsusf_iotv_ucp", 200, "vest"],
@@ -945,12 +969,13 @@ vestArray = compileFinal str
 	["IOTV OCP Rifleman", "rhsusf_iotv_ocp_rifleman", 200, "vest"],
 	["IOTV OCP SAW", "rhsusf_iotv_ocp_SAW", 200, "vest"],
 	["IOTV OCP Squad Leader", "rhsusf_iotv_ocp_squadleader", 200, "vest"],
-	["IOTV OCP Team Leader", "rhsusf_iotv_ocp_teamleader", 200, "vest"]
+	["IOTV OCP Team Leader", "rhsusf_iotv_ocp_teamleader", 200, "vest"],
+	["Rebreather (NATO)", "V_RebreatherB", 200, "vest"],
+
+//INDIE
+	["Rebreather (AAF)", "V_RebreatherIA", 200, "vest"]
 
 /*
-	["Rebreather (NATO)", "V_RebreatherB", 200, "vest"],
-	["Rebreather (CSAT)", "V_RebreatherIR", 200, "vest"],
-	["Rebreather (AAF)", "V_RebreatherIA", 200, "vest"],
 	["Carrier Lite (Green)", "V_PlateCarrier1_rgr", -1, "vest"],
 	["Carrier Lite (Black)", "V_PlateCarrier1_blk", -1, "vest"],
 	["Carrier Rig (Green)", "V_PlateCarrier3_rgr", -1, "vest"],
@@ -1045,7 +1070,7 @@ genItemArray = compileFinal str
 	["Medikit", "Medikit", 150, "item"],
 	["Toolkit", "ToolKit", 150, "item"],
 	["Mine Detector", "MineDetector", 100, "item"],
-	["NV Goggles", "NVGoggles", 100, "nvg"],
+//	["NV Goggles", "NVGoggles", 100, "nvg"],
 	["NV AN PVS-14", "rhsusf_ANPVS_14", 100, "nvg"],
 	["NV AN PVS-15", "rhsusf_ANPVS_15", 100, "nvg"],
 	["Diving Goggles", "G_Diving", 100, "gogg"],
@@ -1346,7 +1371,7 @@ armoredArray = compileFinal str
 	["M1025 (Unarmed) Wood", "rhsusf_m1025_w", 10000, "vehicle"],
 	["M1025 (Unarmed) Desert", "rhsusf_m1025_d", 10000, "vehicle"],
 	["M1025 (Unarmed/Snorkel)W", "rhsusf_m1025_w_s", 10000, "vehicle"],
-		//["M1025 (Unarmed/Snorkel)D", "rhsusf_m1025_d_s", 10000, "vehicle"], //class name wrong online. uncomment to test
+	["M1025 (Unarmed/Snorkel)D", "rhsusf_m1025_d_s", 10000, "vehicle"], //class name wrong online. uncomment to test
 	["M1025 (M2)W", "rhsusf_m1025_w_m2", 10000, "vehicle"],
 	["M1025 (M2)D", "rhsusf_m1025_d_m2", 10000, "vehicle"],
 	["M1025 (M2/Snorkel)W", "rhsusf_m1025_w_s_m2", 10000, "vehicle"],
