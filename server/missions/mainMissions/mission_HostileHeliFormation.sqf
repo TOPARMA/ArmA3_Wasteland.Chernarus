@@ -21,16 +21,29 @@ _setupObjects =
 
 	_heliChoices =
 	[
-		["B_Heli_Transport_01_F", "B_Heli_Light_01_armed_F"],
-		["B_Heli_Transport_01_camo_F", "O_Heli_Light_02_F"],
-		["B_Heli_Transport_01_F", "I_Heli_light_03_F"]
+	["rhs_ka60_grey", "RHS_Ka52_vvs"],
+	["rhs_ka60_c", "RHS_Ka52_vvsc"],
+	["RHS_Mi8mt_vdv", "RHS_Mi24P_vdv"],
+	["RHS_Mi8mt_vv", "RHS_Mi24V_vdv"],
+	["RHS_Mi8mt_vvs", "RHS_Mi24P_vvs"],
+	["RHS_Mi8mt_vvsc", "RHS_Mi24V_vvs"], 
+	["rhs_uh60m_mev", "RHS_Mi24P_vvsc"], 
+	["rhs_uh60m_mev_d", "RHS_Mi24V_vvsc"],
+	["rhs_ka60_grey", "RHS_Mi8AMT_vdv"],
+	["rhs_ka60_c", "RHS_Mi8AMT_vvs"],
+	["RHS_Mi8mt_vdv", "RHS_Mi8AMT_vvsc"],
+	["RHS_Mi8mt_vv", "RHS_Mi8AMTSh_vdv"],
+	["RHS_Mi8mt_vvs", "RHS_Mi8AMTSh_vvs"],
+	["RHS_Mi8mt_vvsc", "RHS_Mi8AMTSh_vvsc"],
+	["rhs_uh60m_mev", "rhs_ah64d_wd"],
+	["rhs_uh60m_mev_d", "rhs_ah64d"]
 	];
 
 	if (missionDifficultyHard) then
 	{
 		(_heliChoices select 0) set [0, "rhs_ah64d_wd"];
-		(_heliChoices select 1) set [0, "rhs_uh60m_mev"];
-		(_heliChoices select 2) set [0, "RHS_Mi24V_vvsc"];
+		(_heliChoices select 1) set [0, "RHS_Mi8AMTSh_vvsc"];
+		(_heliChoices select 2) set [0, "RHS_Ka52_vvs"];
 	};
 
 	_convoyVeh = _heliChoices call BIS_fnc_selectRandom;
