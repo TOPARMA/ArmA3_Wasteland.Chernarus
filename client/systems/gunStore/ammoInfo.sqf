@@ -9,7 +9,19 @@
 #include "dialog\gunstoreDefines.sqf";
 
 disableSerialization;
-private ["_weap_type", "_picture", "_price", "_ammolist", "_dialog", "_ammolist", "_ammoText", "_itemIndex", "_itemText", "_itemData"];
+
+private [
+	"_weap_type",
+	"_picture",
+	"_price",
+	"_ammolist",
+	"_dialog",
+	"_ammolist",
+	"_ammoText",
+	"_itemIndex",
+	"_itemText",
+	"_itemData"
+];
 
 //Initialize Values
 _weap_type = "";
@@ -35,16 +47,4 @@ _ammoText ctrlSetText "";
 		_price = _x select 2;
 		_ammoText ctrlSetText format ["Price: $%1", [_price] call fn_numbersText];
 	};
-} forEach (call ammoArray);
-
-
-
-//{
-//	if (_itemText == _x select 0 && _itemData == _x select 1) then
-//	{
-//		_weap_type = _x select 1;
-//		_price = _x select 2;
-//		_ammoText ctrlSetText format ["Price: $%1", [_price] call fn_numbersText];
-//	};
-//} forEach (call accessoriesArray);
-
+} forEach ((call accessoriesArray) + (call ammoArray));
