@@ -20,7 +20,23 @@ storePurchaseHandle = _this spawn
 {
 	disableSerialization;
 
-	private ["_name", "_switch", "_price", "_dialog", "_ammoList", "_playerMoneyText", "_playerMoney", "_itemIndex", "_itemText", "_itemData", "_handleMoney", "_class", "_name", "_mag", "_type", "_backpack"];
+	private [
+		"_name",
+		"_switch",
+		"_price",
+		"_dialog",
+		"_ammoList",
+		"_playerMoneyText",
+		"_playerMoney",
+		"_itemIndex",
+		"_itemText",
+		"_itemData",
+		"_handleMoney",
+		"_class",
+		"_name",
+		"_type",
+		"_backpack"
+	];
 
 	//Initialize Values
 	_switch = _this select 0;
@@ -61,8 +77,6 @@ storePurchaseHandle = _this spawn
 				{
 					_class = _x select 1;
 					_price = _x select 2;
-					_mag = configFile >> "CfgMagazines" >> _class;
-
 					//ensure the player has enough money
 					if (_price > _playerMoney) exitWith
 					{
@@ -78,14 +92,15 @@ storePurchaseHandle = _this spawn
 						[_itemText] call _showInsufficientSpaceError;
 					};
 				}
-			} forEach (call ammoArray);
+			} forEach ((call accessoriesArray) + (call ammoArray));
 		};
 	};
 
 	if (!isNil "_price" && {_price > -1}) then
 	{
 		player setVariable ["cmoney", _playerMoney - _price, true];
-		_playerMoneyText ctrlSetText format ["Cash: $%1", [player getVariable ["cmoney", 0]] call fn_numbersText];
+		_cash = [player getVariable ["cmoney", 0]] call fn_numbersText;
+		_playerMoneyText ctrlSetText format ["Cash: $%1", _cash];
 		hint "Purchase successful!";
 		playSound "FD_Finish_F";
 	};
