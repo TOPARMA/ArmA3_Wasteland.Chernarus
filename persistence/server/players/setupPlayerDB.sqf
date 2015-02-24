@@ -70,6 +70,14 @@ fn_kickPlayerIfFlagged = "persistence\server\players\fn_kickPlayerIfFlagged.sqf"
 				{
 					_player setVariable ["donator", _x select 1, true];
 				};
+				if (_x select 0 == "TeamKiller") then
+				{
+					_player setVariable ["teamkiller", _x select 1, true];
+				};
+				if (_x select 0 == "CustomUniform") then
+				{
+					_player setVariable ["uniform", _x select 1, true];
+				};
 			} forEach _data;
 
 			diag_log format ["pvar_requestPlayerData: %1", [owner _player, _player, objectFromNetId _pNetId]];
