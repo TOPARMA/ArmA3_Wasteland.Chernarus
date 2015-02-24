@@ -47,12 +47,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_B_CombatUniform_mcam" };
+				if (_item == "uniform") then { _result = "rhs_uniform_cu_ocp" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_mcamo" };
+		if (_item == "headgear") then { _result = "rhsusf_patrolcap_ocp" };
 	};
 	case OPFOR:
 	{
@@ -71,12 +71,12 @@ switch (_side) do
 			};
 			default
 			{
-				if (_item == "uniform") then { _result = "U_O_CombatUniform_ocamo" };
+				if (_item == "uniform") then { _result = "rhs_uniform_emr_patchless" };
 				if (_item == "vest") then { _result = _defaultVest };
 			};
 		};
 
-		if (_item == "headgear") then { _result = "H_MilCap_ocamo" };
+		if (_item == "headgear") then { _result = "rhs_fieldcap" };
 	};
 	default
 	{
