@@ -91,6 +91,7 @@ if (["A3W_playerSaving"] call isConfigOn) then
 	});
 };
 
+
 if (isNil "playerData_alive") then
 {
 	player call playerSetupGear;
@@ -162,3 +163,8 @@ call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 		};
 	} forEach crew _x;
 } forEach allUnitsUAV;
+
+if (["A3W_disableArtilleryComputer"] call isConfigOn) then
+{
+  enableEngineArtillery false;
+};
