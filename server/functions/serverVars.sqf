@@ -224,3 +224,70 @@ vehicleAddition2 =
 	"rhs_mag_fakels",
 	"rhs_mag_nspn_green"
 ];
+
+// crate type, crate class, maximum weapons, weapon attachments, maximum items
+boxSpawningTypes = [
+  ["west_basic", "rhsusf_weapons_crate", 5, 1, 2],
+  ["west_special", "rhsusf_weapons_crate", 4, 1, 2],
+  ["west_explosive", "rhsusf_weapons_crate", 2, 0, 6],
+  ["east_basic", "rhs_weapons_crate_ak", 5, 1, 2],
+  ["east_special", "rhs_weapons_crate_ak", 4, 1, 2],
+  ["east_explosive", "rhs_weapons_crate_ak", 2, 0, 6],
+  ["ind_basic", "Box_IND_Wps_F", 5, 1, 2],
+  ["ind_special", "Box_IND_WpsSpecial_F", 4, 1, 2]
+];
+
+boxSpawningWeapons = [
+  ["rhs_weap_m4a1", ["west_basic"]],
+  ["rhs_weap_m4a1_grip2", ["west_basic"]],
+  ["rhs_weap_m4a1_bipod", ["west_basic"]],
+  ["rhs_weap_m4a1_grip", ["west_basic"]],
+  ["rhs_m4a1_m320", ["west_basic"]],
+  ["rhs_weap_m16a4", ["west_basic"]],
+  ["rhs_weap_m16a4_carryhandle", ["west_basic"]],
+  ["rhs_weap_m249_pip", ["west_basic"]],
+  ["rhs_weap_m240B", ["west_basic"]],
+  ["rhs_weap_M320", ["west_basic"]],
+  ["hlc_rifle_M14", ["west_basic"]],
+  ["rhs_weap_m249_pip", ["west_basic"]],
+
+  ["rhs_weap_ak74m_gp25", ["east_basic"]],
+  ["rhs_weap_ak74m_2mag_camo", ["east_basic"]],
+  ["rhs_weap_ak74m_desert", ["east_basic"]],
+  ["rhs_weap_ak74m_folded", ["east_basic"]],
+  ["rhs_weap_pkp", ["east_basic"]],
+  ["hlc_rifle_akm", ["east_basic"]],
+  
+  ["hlc_smg_mp5a2", ["ind_basic"]],
+  ["hlc_smg_mp510", ["ind_basic"]],
+  ["hlc_rifle_augpara", ["ind_basic"]],
+  ["hlc_rifle_FAL5061", ["ind_basic"]],
+  ["hlc_rifle_g3a3", ["ind_basic"]],
+  ["hlc_rifle_aug", ["ind_basic"]],
+  ["hlc_rifle_l1a1slr", ["ind_basic"]],
+  ["hlc_rifle_hk53", ["ind_basic"]]
+];
+
+boxSpawningItems = [
+  ["rhs_mag_mk3a2", ["west_basic", "west_explosive"]],
+  ["rhs_mag_mk84", ["west_special", "west_explosive"]],
+  ["rhs_mag_m67", ["west_basic", "west_special", "west_explosive"]],
+  ["rhs_mag_an_m14_th3", ["west_explosive"]],
+  ["rhs_mine_M19_ammo", ["west_explosive"]],
+
+  ["rhs_mag_rgd5", ["east_basic", "east_special", "east_explosive"]],
+  ["rhs_mag_fakel", ["east_special", "east_explosive"]],
+  ["rhs_mag_fakels", ["east_special", "east_explosive"]],
+  ["rhs_mag_zarya2", ["east_explosive"]],
+  ["rhs_mag_plamyam", ["east_explosive"]],
+  ["rhs_mine_pmn2", ["east_explosive"]],
+  ["rhs_mine_tm62m", ["east_explosive"]]
+];
+
+
+// params
+// 0 - random weapon amount
+// 1 - random item amount
+// 2 - 
+
+
