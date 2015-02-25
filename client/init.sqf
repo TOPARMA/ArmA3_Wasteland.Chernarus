@@ -91,6 +91,7 @@ if (["A3W_playerSaving"] call isConfigOn) then
 	});
 };
 
+
 if (isNil "playerData_alive") then
 {
 	player call playerSetupGear;
@@ -131,6 +132,7 @@ A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
 };
 
 [] spawn playerSpawn;
+[] spawn playerCustomUniform;
 
 A3W_scriptThreads pushBack execVM "addons\fpsFix\vehicleManager.sqf";
 A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
@@ -161,3 +163,8 @@ call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 		};
 	} forEach crew _x;
 } forEach allUnitsUAV;
+
+if (["A3W_disableArtilleryComputer"] call isConfigOn) then
+{
+  enableEngineArtillery false;
+};

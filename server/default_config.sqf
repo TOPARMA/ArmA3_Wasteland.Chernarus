@@ -24,6 +24,10 @@ A3W_resupplyCostPR = 4;			   // Determine resupply cost by vehicle store cost / 
 A3W_firstPersonCamOnFoot = 0;	   // Lock infantry to first person view
 A3W_firstPersonCamNotDriver = 0;   // Lock all vehicle seating positions besides driver to first person view
 A3W_donatorEnabled = 1;				// Enable/Disable Donator Features
+A3W_customUniformEnabled = 1;		// Enable/Disable Custom Uniforms
+A3W_tkAutoKickEnabled = 1;			// Enable/Disable Autokick for teamkillers
+A3W_tkKickAmount = 10;			// TeamKill amount needed before Kick.
+A3W_disableArtilleryComputer = 0;  // Disable use of the ARMA 3 artillery computer for artillery/ortars
 
 // Store settings
 A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)
@@ -93,6 +97,7 @@ A3W_buildingLootWeapons = 0;       // Spawn weapon loot in all buildings (0 = no
 A3W_buildingLootSupplies = 1;      // Spawn supply loot (backpacks & player items) in all buildings (0 = no, 1 = yes)
 A3W_buildingLootChances = 25;      // Chance percentage that loot will spawn at each spot in a building (0 to 100)
 A3W_vehicleLoot = 2;               // Level of loot added to vehicles (0 = none, 1 = weapon OR items, 2 = weapon AND items, 3 = two weapons AND items) - 2 or 3 recommended if buildingLoot = 0
+A3W_vehicleLootAttachments = 0;		 // Amount of random compatible attachments to spawn for each weapon
 
 // Territory settings
 A3W_territoryCaptureTime = 3*60;   // Time in seconds needed to capture a territory

@@ -9,7 +9,20 @@
 
 if (!isServer) exitWith {};
 
-private ["_car", "_additionArray", "_nightTime", "_weapon", "_mag", "_additionOne", "_additionTwo", "_additionThree", "_buildingLootOn", "_random"];
+private [
+	"_car",
+	"_additionArray",
+	"_nightTime",
+	"_weapon",
+	"_mag",
+	"_additionOne",
+	"_additionTwo",
+	"_additionThree",
+	"_buildingLootOn",
+	"_random",
+	"_attachments",
+	"_attachmentAmount"
+];
 
 //Grabs car object from array in execVM
 _car = _this select 0;
@@ -37,6 +50,13 @@ _additionThree = vehicleAddition2 call BIS_fnc_selectRandom;
 
 _buildingLootOn = (["A3W_buildingLootWeapons"] call isConfigOn && (isNil "A3W_buildingLoot" || {["A3W_buildingLoot"] call isConfigOn}));
 
+_attachments = [];
+_attachmentAmount = ["A3W_vehicleLootAttachments", 0] call getPublicVar;
+
+if(_attachmentAmount > 0) then {
+	_attachments = [_weapon, _attachmentAmount] call randomAttachments;
+};
+
 // A3W_vehicleloot
 //Add guns and magazines, note the Global at the end
 //add a probability of 50% of a vehicle getting a gun or some more additional loot instead
@@ -51,10 +71,15 @@ switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 		{
 			_car addWeaponCargoGlobal [_weapon, 1];
 			_car addMagazineCargoGlobal [_mag, 2 + floor random 3];
+
+			{
+				_car addItemCargoGlobal [_x, 1];
+			} forEach _attachments;
 		};
+
 		if (_random >= 0.5 || !_buildingLootOn) then
 		{
-			_car addItemCargoGlobal [_additionTwo, 1];
+			if (_attachmentAmount < 1) then { _car addItemCargoGlobal [_additionTwo, 1] };
 			if (_nightTime) then { _car addMagazineCargoGlobal [_additionThree, 1] };
 		};
 
@@ -65,9 +90,17 @@ switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 		_car addWeaponCargoGlobal [_weapon, 1];
 		_car addMagazineCargoGlobal [_mag, 2 + floor random 3];
 
+		{
+			_car addItemCargoGlobal [_x, 1];
+		} forEach _attachments;
+
 		_car addItemCargoGlobal ["FirstAidKit", 1];
-		_car addItemCargoGlobal [_additionOne, 1];
-		_car addItemCargoGlobal [_additionTwo, 1];
+
+		if(_attachmentAmount < 1) then { 
+			_car addItemCargoGlobal [_additionOne, 1];
+			_car addItemCargoGlobal [_additionTwo, 1];
+		};
+
 		if (_nightTime) then { _car addMagazineCargoGlobal [_additionThree, 1] };
 	};
 	case 3:
@@ -75,15 +108,30 @@ switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 		_car addWeaponCargoGlobal [_weapon, 1];
 		_car addMagazineCargoGlobal [_mag, 2 + floor random 3];
 
+		{
+			_car addItemCargoGlobal [_x, 1];
+		} forEach _attachments;
+
 		// 2nd weapon
 		_weapon = vehicleWeapons call BIS_fnc_selectRandom;
 		_mag = ((getArray (configFile >> "CfgWeapons" >> _weapon >> "magazines")) select 0) call getBallMagazine;
 		_car addWeaponCargoGlobal [_weapon, 1];
 		_car addMagazineCargoGlobal [_mag, 2 + floor random 3];
 
+		if(_attachmentAmount > 0) then {
+			_attachments = [_weapon, _attachmentAmount] call randomAttachments;
+			{
+				_car addItemCargoGlobal [_x, 1];
+			} forEach _attachments;
+		};
+
 		_car addItemCargoGlobal ["FirstAidKit", 2];
-		_car addItemCargoGlobal [_additionOne, 2];
-		_car addItemCargoGlobal [_additionTwo, 2];
+
+		if(_attachmentAmount < 1) then { 
+			_car addItemCargoGlobal [_additionOne, 2];
+			_car addItemCargoGlobal [_additionTwo, 2];
+		};
+
 		if (_nightTime) then { _car addMagazineCargoGlobal [_additionThree, 1] };
 	};
 };
