@@ -2,8 +2,8 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 1.0
-//	@file Name: randomWeapon.sqf
-//	@file Author: [404] Deadbeat, AgentRev
+//	@file Name: vehicleWeapons.sqf
+//	@file Author: [404] Deadbeat, AgentRev, Shizweak
 //	@file Created: 20/11/2012 05:19
 //	@file Args: Element 0 = Vehicle.
 
@@ -24,7 +24,7 @@ private [
 	"_attachmentAmount"
 ];
 
-//Grabs car object from array in execVM
+// Grabs car object from array in execVM
 _car = _this select 0;
 _additionArray = vehicleAddition;
 _nightTime = (date select 3 >= 18 || date select 3 < 5); // spawn night items between 18:00 and 05:00 (sunlight is completely gone by 20:00)
@@ -38,7 +38,7 @@ if (_nightTime) then
 
 if (random 1 < 0.45) then { _car addWeaponCargoGlobal ["Binocular", 1]};
 
-//Get Random Gun From randomWeapons Array.
+// Get Random Gun From vehicleWeapons Array.
 _weapon = vehicleWeapons call BIS_fnc_selectRandom;
 _mag = ((getArray (configFile >> "CfgWeapons" >> _weapon >> "magazines")) select 0) call getBallMagazine;
 
@@ -57,9 +57,8 @@ if(_attachmentAmount > 0) then {
 	_attachments = [_weapon, _attachmentAmount] call randomAttachments;
 };
 
-// A3W_vehicleloot
-//Add guns and magazines, note the Global at the end
-//add a probability of 50% of a vehicle getting a gun or some more additional loot instead
+// Add guns and magazines, note the Global at the end
+// add a probability of 50% of a vehicle getting a gun or some more additional loot instead
 switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 {
 	case 1:

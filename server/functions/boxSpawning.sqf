@@ -33,7 +33,7 @@ _counter = 0;
 	{
     _pos = getMarkerPos (_x select 0);
 		_safePos = [_pos, 10, (_x select 1) / 2, 1, 0, 60 * (pi / 180), 0] call findSafePos; // spawns somewhere within half the town radius
-    _box = [_pos,false,true] call randomWeaponsBox;
+    _box = [_pos] call randomWeaponsBox;
 		_counter = _counter + 1;
 	};
 } forEach (call cityList);

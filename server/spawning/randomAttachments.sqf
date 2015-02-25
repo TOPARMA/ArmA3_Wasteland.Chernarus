@@ -8,37 +8,45 @@
 //	@file Args: Weapon, Amount
 
 private [
-	'_weapon',
-	'_amount',
-	'_all_attachments',
-	'_attachments',
-	'_attachment',
-	'_result'
+	"_weapon",
+	"_amount",
+	"_attachments",
+	"_allowed",
+	"_result"
 ];
+
+diag_log "randomAttachments.sqf";
+
+_weapon = _this select 0;
+_amount = _this select 1;
 
 _result = [];
 _allowed = [];
 
-_weapon = _this select 0;
-_amount = _this select 1;
+// get compatible attachments using asdg getCompatibleAttachments
 _attachments = [_weapon] call asdg_jointrails_fnc_getCompatibleAttachments;
 
-{
-	_class = _x select 1;
-	if ({_x == _class} count _attachments > 0) then {
-		_allowed set [count _allowed, _class];
-	};
-} forEach (call accessoriesArray);
+// if amount parameter is greater than zero and
+// compatible attachments have been found
+if(_amount > 0 && count _attachments > 0) then {
 
-if(count _allowed > _amount) then {
-	while {count _result < _amount} do {
+	// loop over accessoriesArray and add allowed
+	// attachments to allowed array
+	{
+		private ["_class"];
+		_class = _x select 1;
+		if ({_x == _class} count _attachments > 0) then {
+			_allowed set [count _allowed, _class];
+		};
+	} forEach (call accessoriesArray);
+
+	// randomly select allowed accessories into the result
+	// array until exhausted or maximum is reached
+	while {count _allowed > 0 && count _result < _amount} do {
+		private ["_attachment"];
 		_attachment = _allowed call BIS_fnc_selectRandom;
 		_allowed = _allowed - [_attachment];
 		_result set [count _result, _attachment];
-	};
-} else {
-	if(_amount > 0 && count _allowed <= _amount) then {
-		_result = _allowed;
 	};
 };
 
