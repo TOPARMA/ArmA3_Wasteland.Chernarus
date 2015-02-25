@@ -179,10 +179,18 @@ vehicleWeapons =
 	"rhs_weap_ak74m_2mag_camo",
 	"rhs_weap_ak74m_desert",
 	"rhs_weap_ak74m_folded",
-	"rhs_weap_pkp"
-	
-	
-	
+	"rhs_weap_pkp",
+  "hlc_smg_mp5a2",
+  "hlc_smg_mp510",
+  "hlc_rifle_augpara",
+  "hlc_rifle_M14",
+  "hlc_rifle_akm",
+  "hlc_rifle_FAL5061",
+  "hlc_rifle_g3a3",
+  "hlc_rifle_aug",
+  "rhs_weap_m249_pip",
+  "hlc_rifle_l1a1slr",
+  "hlc_rifle_hk53"
 ];
 
 vehicleAddition =
