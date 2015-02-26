@@ -40,7 +40,7 @@ smgArray = compileFinal str
 	["MP5/10 Navy", "hlc_smg_mp510", 700],
 	["MP5SD5 Navy", "hlc_smg_mp5sd5", 750],
 	["MP5SD6 Navy", "hlc_smg_mp5sd6", 800],
-	["Navy SMG (Half-Life)", "hlc_smg_9mmar", 1000],
+	["Navy SMG (Half-Life)", "hlc_smg_9mmar", 800],
 	["Steyr AUGA1 9mm Para", "hlc_rifle_augpara", 500],
 		//["Steyr AUGA1 9mm Para(Tan)", "hlc_rifle_augpara_t", 500],
 		//["Steyr AUGA1 9mm Para(Black)", "hlc_rifle_augpara_b", 500],
