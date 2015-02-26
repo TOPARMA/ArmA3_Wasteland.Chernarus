@@ -17,7 +17,8 @@ pistolArray = compileFinal str
 [
 	// Handguns
 
-	["MP-443", "rhs_weap_pya", 50]
+	["MP-443", "rhs_weap_pya", 50],
+	["HK MP5k", "hlc_smg_mp5k", 50]
 
 	//["P07 Pistol", "hgun_P07_F", 50],
 	//["Rook-40 Pistol", "hgun_Rook40_F", 50],
@@ -31,6 +32,7 @@ pistolArray = compileFinal str
 smgArray = compileFinal str
 [
 
+	["HK MP5k PDW", "hlc_smg_mp5k_PDW", 500],
 	["MP5A2 no rail", "hlc_smg_mp5a2", 500],
 	["MP5A3 no rail", "hlc_smg_mp5a3", 600],
 	["MP5A4 Navy", "hlc_smg_mp5a4", 700],
@@ -67,7 +69,6 @@ rifleArray = compileFinal str
 
 //Mx
 	["M14", "hlc_rifle_M14", 600],
-	["M21", "hlc_rifle_M21", 700],
 	["M14 DMR(ArmA2 DMR)", "hlc_rifle_M14DMR", 700],
 	["Troy M14 SOPMOD", "hlc_rifle_m14sopmod", 700],
 	["Mk14 EBR-RI", "rhs_weap_m14ebrri", 700],
@@ -102,15 +103,17 @@ rifleArray = compileFinal str
 	["AK-74M (2 mag)", "rhs_weap_ak74m_2mag", 550],
 		//["AK-74M (2 mag and camo)", "rhs_weap_ak74m_2mag_camo", 550],
 	["AK-74M (GP-25 Kostyor)", "rhs_weap_ak74m_gp25", 700],
-
-	["AK74", "hlc_rifle_ak74", 500],
-	["AKS74", "hlc_rifle_aks74", 500],
-	["AKS74U", "hlc_rifle_aks74u", 500],
-	["AKM", "hlc_rifle_akm", 500],
-	["RPK", "hlc_rifle_rpk", 500],
 	["AK12", "hlc_rifle_ak12", 500],
-	["AKM GP25", "hlc_rifle_akmgl", 700],
-	["AKS74 GP30", "hlc_rifle_aks74_GL", 750],
+
+	["Izhmash EAK971", "hlc_rifle_aek971", 500],
+	["Izhmash AKS74", "hlc_rifle_aks74", 500],
+	["Izhmash AKS74 GL", "hlc_rifle_aks74_GL", 700],
+	["Izhmash AKS74U", "hlc_rifle_aks74u", 500],
+	["Izhmash AK74", "hlc_rifle_ak74", 500],
+	["Izhmash AKS74 GP30", "hlc_rifle_aks74_GL", 750],
+	["Izhmash AKM", "hlc_rifle_akm", 500],
+	["Izhmash AKM GL GP25", "hlc_rifle_akmgl", 700],
+
 
 //FALs
 	["Enfield L1A1 SLR", "hlc_rifle_l1a1slr", 700],
@@ -141,6 +144,8 @@ rifleArray = compileFinal str
 	["Bushmaster .300 Carbine", "hlc_rifle_Bushmaster300", 700],
 	["AR15 .300 Dissipator", "hlc_rifle_vendimus", 750],
 	["Rock River Arms LAR-15 AMR", "hlc_rifle_SAMR", 700],
+	["Rock River Arms LAR-15 AMR N", "hlc_rifle_samr2", 700],
+
 		//["AAC Honey-Badger", "hlc_rifle_honeybase", 400],
 	["AAC Honey-Badger Carbine", "hlc_rifle_honeybadger", 750],
 
@@ -187,7 +192,8 @@ rifleArray = compileFinal str
 		//["M2010 ESR (camo)", "rhs_weap_XM2010_wd", 1000],
 		//["M2010 ESR (desert)", "rhs_weap_XM2010_d", 1000],
 		//["M2010 ESR (semi-arid)", "rhs_weap_XM2010_sa", 1000],
-	["H&K PSG1", "hlc_rifle_psg1", 2000]
+	["H&K PSG1", "hlc_rifle_psg1", 2000],
+	["M21", "hlc_rifle_M21", 1000]
 
 
 //LEGACY GUNS
@@ -237,6 +243,8 @@ rifleArray = compileFinal str
 lmgArray = compileFinal str
 [
 	["PKP (Pecheneg)", "rhs_weap_pkp", 500],
+	["Izhmash RPK12", "hlc_rifle_RPK12", 450],
+	["Izhmash RPK", "hlc_rifle_rpk", 500],
 	["M249 PIP(SAW)", "rhs_weap_m249_pip", 500],
 	["M240B", "rhs_weap_m240B", 600],
 	["M60 (no optic)", "hlc_lmg_m60", 500],
@@ -386,11 +394,18 @@ ammoArray = compileFinal str
 	["5.45x39mm Ball 30Rnd", "hlc_30Rnd_545x39_B_AK", 50],
 	["5.45x39mm Tracer 30Rnd", "hlc_30Rnd_545x39_T_AK", 50],
 	["5.45x39mm EPR 30Rnd", "hlc_30Rnd_545x39_EP_AK", 50],
+
+	["5.45x39mm S 30Rnd", "hlc_30Rnd_545x39_S_AK", 50],
+
 	["5.45x39mm Mixed 45Rnd", "hlc_45Rnd_545x39_t_rpk", 60],
 	["7.62x39mm Ball 30Rnd", "hlc_30Rnd_762x39_b_ak", 60],
 	["7.62x39mm Tracer 30Rnd", "hlc_30Rnd_762x39_t_ak", 60],
 	["7.62x39mm Tracer 45Rnd", "hlc_45Rnd_762x39_t_rpk", 70],
+
 	["7.62x39mm Mixed 45Rnd", "hlc_45Rnd_762x39_m_rpk", 70],
+	["7.62x39mm Tracer 45Rnd", "HLC_45Rnd_762x39_T_RPK", 70],
+	["7.62x39mm Mixed 75Rnd", "hlc_75Rnd_762x39_m_rpk", 70],
+
 	["7.62x51mm Ball 20Rnd", "hlc_20Rnd_762x51_B_fal", 50],
 	["7.62x51mm Tracer 20Rnd", "hlc_20Rnd_762x51_t_fal", 50],
 	["7.62x51mm Subsonic 20Rnd", "hlc_20Rnd_762x51_S_fal", 50],
@@ -440,7 +455,7 @@ ammoArray = compileFinal str
 	["TBG-7V RPG-7V2", "rhs_rpg7_TBG7V_mag", 1000], //5k
 	["RShG-2", "rhs_rshg2_mag", 500],
 	["HEAT missile", "rhs_fgm148_magazine_AT", 1000],  //5k
-	["Stinger missile", "rhs_fim92_mag", 5000],   
+	["Stinger missile", "rhs_fim92_mag", 1000],    //5k
 	["84mm HEAT", "rhs_m136_mag", 500],
 	["84mm HEDP", "rhs_m136_hedp_mag", 500],
 	["84mm HP", "rhs_m136_hp_mag", 500],
