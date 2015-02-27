@@ -27,6 +27,7 @@ A3W_donatorEnabled = 1;				// Enable/Disable Donator Features
 A3W_customUniformEnabled = 1;		// Enable/Disable Custom Uniforms
 A3W_tkAutoKickEnabled = 1;			// Enable/Disable Autokick for teamkillers
 A3W_tkKickAmount = 10;			// TeamKill amount needed before Kick.
+A3W_disableArtilleryComputer = 0;  // Disable use of the ARMA 3 artillery computer for artillery/ortars
 
 // Store settings
 A3W_showGunStoreStatus = 1;        // Show enemy and friendly presence at gunstores on map (0 = no, 1 = yes)
