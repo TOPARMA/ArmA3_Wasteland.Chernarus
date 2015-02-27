@@ -264,7 +264,7 @@ launcherArray = compileFinal str
 	["RShG-2", "rhs_weap_rshg2", 700],
 
 //USAF
-	["FGM-148 Javelin", "rhs_weap_fgm148", 3000],  //20k
+	["FGM-148 Javelin", "rhs_weap_fgm148", 3500],  //20k
 	["FIM-92F", "rhs_weap_fim92", 1500],    //20k
 	["M136 (HEAT)", "rhs_weap_M136", 700],
 	["M136 (HEDP)", "rhs_weap_M136_hedp", 700],
@@ -445,7 +445,7 @@ ammoArray = compileFinal str
 	["OG-7V RPG-7V2", "rhs_rpg7_OG7V_mag", 550],  
 	["TBG-7V RPG-7V2", "rhs_rpg7_TBG7V_mag", 550], 
 	["RShG-2", "rhs_rshg2_mag", 550],
-	["HEAT missile", "rhs_fgm148_magazine_AT", 550],  //5k
+	["HEAT missile", "rhs_fgm148_magazine_AT", 850],  //5k
 	["Stinger missile", "rhs_fim92_mag", 650],   
 	["84mm HEAT", "rhs_m136_mag", 250],
 	["84mm HEDP", "rhs_m136_hedp_mag", 300],
