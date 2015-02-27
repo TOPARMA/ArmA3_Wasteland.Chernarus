@@ -17,7 +17,8 @@ pistolArray = compileFinal str
 [
 	// Handguns
 
-	["MP-443", "rhs_weap_pya", 50]
+	["MP-443", "rhs_weap_pya", 50],
+	["HK MP5k", "hlc_smg_mp5k", 200]
 
 	//["P07 Pistol", "hgun_P07_F", 50],
 	//["Rook-40 Pistol", "hgun_Rook40_F", 50],
@@ -31,6 +32,7 @@ pistolArray = compileFinal str
 smgArray = compileFinal str
 [
 
+	["HK MP5k PDW", "hlc_smg_mp5k_PDW", 200],
 	["MP5A2 no rail", "hlc_smg_mp5a2", 500],
 	["MP5A3 no rail", "hlc_smg_mp5a3", 600],
 	["MP5A4 Navy", "hlc_smg_mp5a4", 700],
@@ -38,7 +40,7 @@ smgArray = compileFinal str
 	["MP5/10 Navy", "hlc_smg_mp510", 700],
 	["MP5SD5 Navy", "hlc_smg_mp5sd5", 750],
 	["MP5SD6 Navy", "hlc_smg_mp5sd6", 800],
-	["Navy SMG (Half-Life)", "hlc_smg_9mmar", 1000],
+	["Navy SMG (Half-Life)", "hlc_smg_9mmar", 800],
 	["Steyr AUGA1 9mm Para", "hlc_rifle_augpara", 500],
 		//["Steyr AUGA1 9mm Para(Tan)", "hlc_rifle_augpara_t", 500],
 		//["Steyr AUGA1 9mm Para(Black)", "hlc_rifle_augpara_b", 500],
@@ -62,12 +64,11 @@ rifleArray = compileFinal str
 
 
 //SHOTGUN
-	["Izhmash Saiga12K", "hlc_rifle_saiga12k", 600],
+	["Izhmash Saiga12K", "hlc_rifle_saiga12k", 400],
 
 
 //Mx
 	["M14", "hlc_rifle_M14", 600],
-	["M21", "hlc_rifle_M21", 700],
 	["M14 DMR(ArmA2 DMR)", "hlc_rifle_M14DMR", 700],
 	["Troy M14 SOPMOD", "hlc_rifle_m14sopmod", 700],
 	["Mk14 EBR-RI", "rhs_weap_m14ebrri", 700],
@@ -102,15 +103,17 @@ rifleArray = compileFinal str
 	["AK-74M (2 mag)", "rhs_weap_ak74m_2mag", 550],
 		//["AK-74M (2 mag and camo)", "rhs_weap_ak74m_2mag_camo", 550],
 	["AK-74M (GP-25 Kostyor)", "rhs_weap_ak74m_gp25", 700],
-
-	["AK74", "hlc_rifle_ak74", 500],
-	["AKS74", "hlc_rifle_aks74", 500],
-	["AKS74U", "hlc_rifle_aks74u", 500],
-	["AKM", "hlc_rifle_akm", 500],
-	["RPK", "hlc_rifle_rpk", 500],
 	["AK12", "hlc_rifle_ak12", 500],
-	["AKM GP25", "hlc_rifle_akmgl", 700],
-	["AKS74 GP30", "hlc_rifle_aks74_GL", 750],
+
+	["Izhmash EAK971", "hlc_rifle_aek971", 500],
+	["Izhmash AKS74", "hlc_rifle_aks74", 500],
+	["Izhmash AKS74 GL", "hlc_rifle_aks74_GL", 700],
+	["Izhmash AKS74U", "hlc_rifle_aks74u", 500],
+	["Izhmash AK74", "hlc_rifle_ak74", 500],
+	["Izhmash AKS74 GP30", "hlc_rifle_aks74_GL", 750],
+	["Izhmash AKM", "hlc_rifle_akm", 500],
+	["Izhmash AKM GL GP25", "hlc_rifle_akmgl", 700],
+
 
 //FALs
 	["Enfield L1A1 SLR", "hlc_rifle_l1a1slr", 700],
@@ -141,6 +144,8 @@ rifleArray = compileFinal str
 	["Bushmaster .300 Carbine", "hlc_rifle_Bushmaster300", 700],
 	["AR15 .300 Dissipator", "hlc_rifle_vendimus", 750],
 	["Rock River Arms LAR-15 AMR", "hlc_rifle_SAMR", 700],
+	["Rock River Arms LAR-15 AMR N", "hlc_rifle_samr2", 700],
+
 		//["AAC Honey-Badger", "hlc_rifle_honeybase", 400],
 	["AAC Honey-Badger Carbine", "hlc_rifle_honeybadger", 750],
 
@@ -187,7 +192,8 @@ rifleArray = compileFinal str
 		//["M2010 ESR (camo)", "rhs_weap_XM2010_wd", 1000],
 		//["M2010 ESR (desert)", "rhs_weap_XM2010_d", 1000],
 		//["M2010 ESR (semi-arid)", "rhs_weap_XM2010_sa", 1000],
-	["H&K PSG1", "hlc_rifle_psg1", 2000]
+	["H&K PSG1", "hlc_rifle_psg1", 2000],
+	["M21", "hlc_rifle_M21", 1000]
 
 
 //LEGACY GUNS
@@ -237,6 +243,8 @@ rifleArray = compileFinal str
 lmgArray = compileFinal str
 [
 	["PKP (Pecheneg)", "rhs_weap_pkp", 500],
+	["Izhmash RPK12", "hlc_rifle_RPK12", 450],
+	["Izhmash RPK", "hlc_rifle_rpk", 500],
 	["M249 PIP(SAW)", "rhs_weap_m249_pip", 500],
 	["M240B", "rhs_weap_m240B", 600],
 	["M60 (no optic)", "hlc_lmg_m60", 500],
@@ -253,17 +261,17 @@ launcherArray = compileFinal str
 [
 
 //AFRF
-	["9K38 Igla AA", "rhs_weap_igla", 1500],
-	["RPG-26", "rhs_weap_rpg26", 1500],
-	["RPG-7", "rhs_weap_rpg7", 5000],
-	["RShG-2", "rhs_weap_rshg2", 1500],
+	["9K38 Igla AA", "rhs_weap_igla", 1000],
+	["RPG-26", "rhs_weap_rpg26", 1000],
+	["RPG-7", "rhs_weap_rpg7", 1000],
+	["RShG-2", "rhs_weap_rshg2", 1000],
 
 //USAF
-	["FGM-148 Javelin", "rhs_weap_fgm148", 5000],  //20k
-	["FIM-92F", "rhs_weap_fim92", 5000],    //20k
-	["M136 (HEAT)", "rhs_weap_M136", 1500],
-	["M136 (HEDP)", "rhs_weap_M136_hedp", 1500],
-	["M136 (HP)", "rhs_weap_M136_hp", 1500]
+	["FGM-148 Javelin", "rhs_weap_fgm148", 1000],  //20k
+	["FIM-92F", "rhs_weap_fim92", 1000],    //20k
+	["M136 (HEAT)", "rhs_weap_M136", 500],
+	["M136 (HEDP)", "rhs_weap_M136_hedp", 500],
+	["M136 (HP)", "rhs_weap_M136_hp", 500]
 
 	//LEGACY 
 	//=======================================================================
@@ -386,11 +394,18 @@ ammoArray = compileFinal str
 	["5.45x39mm Ball 30Rnd", "hlc_30Rnd_545x39_B_AK", 50],
 	["5.45x39mm Tracer 30Rnd", "hlc_30Rnd_545x39_T_AK", 50],
 	["5.45x39mm EPR 30Rnd", "hlc_30Rnd_545x39_EP_AK", 50],
+
+	["5.45x39mm S 30Rnd", "hlc_30Rnd_545x39_S_AK", 50],
+
 	["5.45x39mm Mixed 45Rnd", "hlc_45Rnd_545x39_t_rpk", 60],
 	["7.62x39mm Ball 30Rnd", "hlc_30Rnd_762x39_b_ak", 60],
 	["7.62x39mm Tracer 30Rnd", "hlc_30Rnd_762x39_t_ak", 60],
 	["7.62x39mm Tracer 45Rnd", "hlc_45Rnd_762x39_t_rpk", 70],
+
 	["7.62x39mm Mixed 45Rnd", "hlc_45Rnd_762x39_m_rpk", 70],
+	["7.62x39mm Tracer 45Rnd", "HLC_45Rnd_762x39_T_RPK", 70],
+	["7.62x39mm Mixed 75Rnd", "hlc_75Rnd_762x39_m_rpk", 70],
+
 	["7.62x51mm Ball 20Rnd", "hlc_20Rnd_762x51_B_fal", 50],
 	["7.62x51mm Tracer 20Rnd", "hlc_20Rnd_762x51_t_fal", 50],
 	["7.62x51mm Subsonic 20Rnd", "hlc_20Rnd_762x51_S_fal", 50],
@@ -436,11 +451,11 @@ ammoArray = compileFinal str
 	["RPG-26 rocket", "rhs_rpg26_mag", 500],
 	["PG-7VL RPG-7V2", "rhs_rpg7_PG7VL_mag", 500],
 	["PG-7VR RPG-7V2", "rhs_rpg7_PG7VR_mag", 500],
-	["OG-7V RPG-7V2", "rhs_rpg7_OG7V_mag", 1000],  //15k
-	["TBG-7V RPG-7V2", "rhs_rpg7_TBG7V_mag", 1000], //5k
+	["OG-7V RPG-7V2", "rhs_rpg7_OG7V_mag", 500],  //15k
+	["TBG-7V RPG-7V2", "rhs_rpg7_TBG7V_mag", 100], //5k
 	["RShG-2", "rhs_rshg2_mag", 500],
-	["HEAT missile", "rhs_fgm148_magazine_AT", 1000],  //5k
-	["Stinger missile", "rhs_fim92_mag", 5000],   
+	["HEAT missile", "rhs_fgm148_magazine_AT", 5000],  //5k
+	["Stinger missile", "rhs_fim92_mag", 5000],    //5k
 	["84mm HEAT", "rhs_m136_mag", 500],
 	["84mm HEDP", "rhs_m136_hedp_mag", 500],
 	["84mm HP", "rhs_m136_hp_mag", 500],
@@ -1347,38 +1362,38 @@ armoredArray = compileFinal str
 	["PRP-3 TV", "rhs_prp3_tv", 10000, "vehicle"],
 	["PRP-3 VDV", "rhs_prp3_vdv", 10000, "vehicle"],
 	["PRP-3 VV", "rhs_prp3_vv", 10000, "vehicle"],
-	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 10000, "vehicle"],
+	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 60000, "vehicle"],
 
 
 //USAF
 
-	["M1025 (Unarmed) Wood", "rhsusf_m1025_w", 10000, "vehicle"],
-	["M1025 (Unarmed) Desert", "rhsusf_m1025_d", 10000, "vehicle"],
-	["M1025 (Unarmed/Snorkel)W", "rhsusf_m1025_w_s", 10000, "vehicle"],
-	["M1025 (Unarmed/Snorkel)D", "rhsusf_m1025_d_s", 10000, "vehicle"], //class name wrong online. uncomment to test
-	["M1025 (M2)W", "rhsusf_m1025_w_m2", 10000, "vehicle"],
-	["M1025 (M2)D", "rhsusf_m1025_d_m2", 10000, "vehicle"],
-	["M1025 (M2/Snorkel)W", "rhsusf_m1025_w_s_m2", 10000, "vehicle"],
-	["M1025 (M2/Snorkel)D", "rhsusf_m1025_d_s_m2", 10000, "vehicle"],
-	["M1025 (Mk19)W", "rhsusf_m1025_w_mk19", 10000, "vehicle"],
-	["M1025 (Mk19)D", "rhsusf_m1025_d_mk19", 10000, "vehicle"],
-	["M1025 (Mk19/Snorkel)W", "rhsusf_m1025_w_s_mk19", 10000, "vehicle"],
-	["M1025 (Mk19/Snorkel)D", "rhsusf_m1025_d_s_mk19", 10000, "vehicle"],
+	["M1025 (Unarmed) Wood", "rhsusf_m1025_w", 5000, "vehicle"],
+	["M1025 (Unarmed) Desert", "rhsusf_m1025_d", 5000, "vehicle"],
+	["M1025 (Unarmed/Snorkel)W", "rhsusf_m1025_w_s", 5000, "vehicle"],
+	["M1025 (Unarmed/Snorkel)D", "rhsusf_m1025_d_s", 5000, "vehicle"], //class name wrong online. uncomment to test
+	["M1025 (M2)W", "rhsusf_m1025_w_m2", 12000, "vehicle"],
+	["M1025 (M2)D", "rhsusf_m1025_d_m2", 12000, "vehicle"],
+	["M1025 (M2/Snorkel)W", "rhsusf_m1025_w_s_m2", 12000, "vehicle"],
+	["M1025 (M2/Snorkel)D", "rhsusf_m1025_d_s_m2", 12000, "vehicle"],
+	["M1025 (Mk19)W", "rhsusf_m1025_w_mk19", 16000, "vehicle"],
+	["M1025 (Mk19)D", "rhsusf_m1025_d_mk19", 16000, "vehicle"],
+	["M1025 (Mk19/Snorkel)W", "rhsusf_m1025_w_s_mk19", 16000, "vehicle"],
+	["M1025 (Mk19/Snorkel)D", "rhsusf_m1025_d_s_mk19", 16000, "vehicle"],
 
-	["M113A3 Wood", "rhsusf_m113_usarmy", 600, "vehicle"],
-	["M113A3 Desert", "rhsusf_m113d_usarmy", 600, "vehicle"],
+	["M113A3 Wood", "rhsusf_m113_usarmy", 20000, "vehicle"],
+	["M113A3 Desert", "rhsusf_m113d_usarmy", 20000, "vehicle"],
 
-	["M2A2ODS", "RHS_M2A2_wd", 600, "vehicle"],
-	["M2A2ODS", "RHS_M2A2", 600, "vehicle"],
-	["M2A2ODS (BUSK I) Wood", "RHS_M2A2_BUSKI_wd", 600, "vehicle"],
-	["M2A2ODS (BUSK I) Desert", "RHS_M2A2_BUSKI", 600, "vehicle"],
+	["M2A2ODS", "RHS_M2A2_wd", 30000, "vehicle"],
+	["M2A2ODS", "RHS_M2A2", 30000, "vehicle"],
+	["M2A2ODS (BUSK I) Wood", "RHS_M2A2_BUSKI_wd", 35000, "vehicle"],
+	["M2A2ODS (BUSK I) Desert", "RHS_M2A2_BUSKI", 35000, "vehicle"],
 
-	["M2A3 Wood", "RHS_M2A3", 600, "vehicle"],
-	["M2A3 Desert", "RHS_M2A3", 600, "vehicle"],
-	["M2A3 (BUSK I) Wood", "RHS_M2A3_BUSKI_wd", 600, "vehicle"],
-	["M2A3 (BUSK I) Desert", "RHS_M2A3_BUSKI", 600, "vehicle"],
-	["M2A3 (BUSK III) Wood", "RHS_M2A3_BUSKIII_wd", 600, "vehicle"],
-	["M2A3 (BUSK III) Desert", "RHS_M2A3_BUSKIII", 600, "vehicle"]
+	["M2A3 Wood", "RHS_M2A3", 40000, "vehicle"],
+	["M2A3 Desert", "RHS_M2A3", 40000, "vehicle"],
+	["M2A3 (BUSK I) Wood", "RHS_M2A3_BUSKI_wd", 45000, "vehicle"],
+	["M2A3 (BUSK I) Desert", "RHS_M2A3_BUSKI", 45000, "vehicle"],
+	["M2A3 (BUSK III) Wood", "RHS_M2A3_BUSKIII_wd", 46000, "vehicle"],
+	["M2A3 (BUSK III) Desert", "RHS_M2A3_BUSKIII", 46000, "vehicle"]
 
 
 /*
@@ -1502,7 +1517,9 @@ helicoptersArray = compileFinal str
 	["UH-60M Woodland", "rhs_uh60m", 40000, "vehicle"],
 	["UH-60M Desert", "rhs_uh60m_d", 40000, "vehicle"],
 	["UH-60M MEV Woodland", "rhs_uh60m_mev", 10000, "vehicle"],
-	["UH-60M MEV Desert", "rhs_uh60m_mev_d", 10000, "vehicle"]
+	["UH-60M MEV Desert", "rhs_uh60m_mev_d", 10000, "vehicle"],
+
+	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"] // MH-6, no flares
 
 /*
 	["M-900 Civilian", "C_Heli_Light_01_civil_F", 4000, "vehicle"], // MH-6, no flares
