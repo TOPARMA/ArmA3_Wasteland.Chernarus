@@ -35,7 +35,8 @@ storePurchaseHandle = _this spawn
 		"_class",
 		"_name",
 		"_type",
-		"_backpack"
+		"_backpack",
+		"_cash"
 	];
 
 	//Initialize Values

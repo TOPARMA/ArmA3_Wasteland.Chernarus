@@ -92,4 +92,4 @@ if (_vehicleType isKindOf "Helicopter_Base_F") then
 
 if (_type > 1) then { _vehicle setVehicleAmmo (random 1.0) };
 
-[_vehicle] call randomWeapons;
+[_vehicle] call randomVehicleWeapons;
