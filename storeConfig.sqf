@@ -108,7 +108,7 @@ rifleArray = compileFinal str
 	["AKS74U", "hlc_rifle_aks74u", 300],
 	["AKS74 GP30", "hlc_rifle_aks74_GL", 400],
 	
-	["A47", "hlc_rifle_ak47, 375],
+	["A47", "hlc_rifle_ak47", 375],
 	["AKM", "hlc_rifle_akm", 375],
 	["AKM GP25", "hlc_rifle_akmgl", 450],
 	
@@ -336,7 +336,7 @@ throwputArray = compileFinal str
 	["Plamya-M", "rhs_mag_plamyam", 100],
 	["PMN-2 AP", "rhs_mine_pmn2", 300],
 	["TM-62M AT", "rhs_mine_tm62m", 350],
-	["M67 Frag Grenade", "rhs_mag_m67", 100],
+	["M67 Frag Grenade", "rhs_mag_m67", 100]
 	
 	//["M84 Stun Grenade", "rhs_ammo_m84", 100],
 	//["M19 AT", "rhs_mine_M19_ammo", 300]
@@ -1390,7 +1390,7 @@ armoredArray = compileFinal str
 	["M2A3 (BUSK III) Wood", "RHS_M2A3_BUSKIII_wd", 36000, "vehicle"],
 	["M2A3 (BUSK III) Desert", "RHS_M2A3_BUSKIII", 36000, "vehicle"],
 	["M6 Wood", "RHS_M6_wd", 36000, "vehicle"],
-	["M6 Desert", "RHS_M6", 36000, "vehicle"],
+	["M6 Desert", "RHS_M6", 36000, "vehicle"]
 
 
 /*
