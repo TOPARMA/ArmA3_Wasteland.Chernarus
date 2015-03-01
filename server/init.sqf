@@ -335,7 +335,7 @@ if (["A3W_serverSpawning"] call isConfigOn) then
 		call compile preprocessFileLineNumbers "server\functions\objectsSpawning.sqf";
 	};
 
-	if (["A3W_boxSpawning"] call isConfigOn) then
+	if ((["A3W_boxSpawning", 0] call getPublicVar) > 0) then
 	{
 		call compile preprocessFileLineNumbers "server\functions\boxSpawning.sqf";
 	};
