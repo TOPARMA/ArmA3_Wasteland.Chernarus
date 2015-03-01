@@ -20,13 +20,13 @@ _setupObjects =
 {
 	_missionPos = markerPos _missionLocation;
 
-	_box1 = createVehicle ["Box_IND_WpsSpecial_F", _missionPos, [], 5, "None"];
+	_box1 = createVehicle ["rhs_weapons_crate_ak_standard", _missionPos, [], 5, "None"];
 	_box1 setDir random 360;
-	[_box1, "mission_Main_A3snipers"] call fn_refillbox;
+	[_box1, randomMissionCargo, 1] call randomCargoFill;
 
-	_box2 = createVehicle ["Box_NATO_WpsSpecial_F", _missionPos, [], 5, "None"];
+	_box2 = createVehicle ["rhs_weapons_crate_ak_ammo_545x39_standard", _missionPos, [], 5, "None"];
 	_box2 setDir random 360;
-	[_box2, "mission_USSpecial2"] call fn_refillbox;
+	[_box2, randomMissionExplosiveCargo, 1] call randomCargoFill;
 
 	{
 		_boxPos = getPosASL _x;

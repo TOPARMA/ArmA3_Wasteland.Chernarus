@@ -231,6 +231,11 @@ vehicleAddition2 =
 // item duplicates] to be passed to randomCargoFill.sqf, used to fill
 // already existing box/vehicle.
 
+randomMissionBasicCargo = [
+  ["box_west_basic", 5, 5, true, true],
+  ["box_east_basic", 5, 5, true, true]
+];
+
 randomMissionSpecialCargo = [
   ["box_west_special", 5, 5, true, true],
   ["box_east_special", 5, 5, true, true]
@@ -241,6 +246,12 @@ randomMissionExplosiveCargo = [
   ["box_east_explosive", 3, 5, true, true]
 ];
 
+// Combine all into a randomMissionCargo array
+randomMissionCargo = (
+  randomMissionBasicCargo +
+  randomMissionSpecialCargo +
+  randomMissionExplosiveCargo
+);
 
 // Each array item in the randomWeaponBoxes arrays is an array
 // containg [cargo type, weapon amount, item amount, box class] to

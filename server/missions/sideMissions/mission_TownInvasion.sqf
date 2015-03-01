@@ -35,13 +35,13 @@ _setupVars =
 _setupObjects =
 {
 	// spawn some crates in the middle of town (Town marker position)
-	_box1 = createVehicle ["Box_NATO_Wps_F", _missionPos, [], 5, "None"];
+	_box1 = createVehicle ["rhs_weapons_crate_ak_standard", _missionPos, [], 5, "None"];
 	_box1 setDir random 360;
-	[_box1, "mission_USSpecial"] call fn_refillbox;
+	[_box1, randomMissionSpecialCargo, 1] call randomCargoFill;
 
-	_box2 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
+	_box2 = createVehicle ["rhs_weapons_crate_ak_ammo_545x39_standard", _missionPos, [], 5, "None"];
 	_box2 setDir random 360;
-	[_box2, "mission_USLaunchers"] call fn_refillbox;
+	[_box2, randomMissionExplosiveCargo, 1] call randomCargoFill;
 
 	// create some atmosphere around the crates 8)
 	_tent1 = createVehicle ["Land_cargo_addon02_V2_F", _missionPos, [], 3, "None"];
