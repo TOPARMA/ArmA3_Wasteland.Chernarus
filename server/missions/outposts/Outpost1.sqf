@@ -34,8 +34,8 @@
 	["Land_BagBunker_Small_F", [-15.6963, -0.902344, 0], 90],
 	["Land_LampShabby_F", [14.8219, 1.71777, 0], 85],
 	["Land_LampShabby_F", [-15.5142, -4.27295, 0], 275],
-	["RHS_M2StaticMG_WD", [6.15, 8.8, 0], 0, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
-	["RHS_M2StaticMG_WD", [-6.25, -9.8, 0], 180, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
-	["RHS_M2StaticMG_WD", [14.7, -0.95, 0], 90, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
-	["RHS_M2StaticMG_WD", [-16, -0.15, 0], 270, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
+	["I_HMG_01_high_F", [6.15, 8.8, 0], 0, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
+	["I_HMG_01_high_F", [-6.25, -9.8, 0], 180, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
+	["I_HMG_01_high_F", [14.7, -0.95, 0], 90, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }],
+	["I_HMG_01_high_F", [-16, -0.15, 0], 270, { if (random 1 < 0.5) exitWith { deleteVehicle _this }; [_this] call vehicleSetup }]
 ]
