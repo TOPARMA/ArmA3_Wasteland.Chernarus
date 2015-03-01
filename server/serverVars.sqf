@@ -225,16 +225,37 @@ vehicleAddition2 =
   "rhs_mag_nspn_green"
 ];
 
-// Each item is an array containg [cargo type, weapon amount,
-// item amount, box class] to be used by randomWeaponsBox.sqf
-randomWeaponBoxes = [
-  ["box_west_basic", 5, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"],
-  ["box_west_special", 5, 5, "rhs_weapons_crate_ak_standard"],
-  ["box_west_explosive", 2, 6, "rhs_weapons_crate_ak_ammo_545x39_standard"],
-  ["box_east_basic", 5, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"],
-  ["box_east_special", 5, 5, "rhs_weapons_crate_ak_standard"],
-  ["box_east_explosive", 2, 6, "rhs_weapons_crate_ak_ammo_545x39_standard"]
+
+// Each array item in the following random*Cargo arrays is an array
+// containg [cargo type, weapon amount, item amount, weapon duplicates,
+// item duplicates] to be passed to randomCargoFill.sqf, used to fill
+// already existing box/vehicle.
+
+randomMissionSpecialCargo = [
+  ["box_west_special", 5, 5, true, true],
+  ["box_east_special", 5, 5, true, true]
 ];
+
+randomMissionExplosiveCargo = [
+  ["box_west_explosive", 3, 5, true, true],
+  ["box_east_explosive", 3, 5, true, true]
+];
+
+
+// Each array item in the randomWeaponBoxes arrays is an array
+// containg [cargo type, weapon amount, item amount, box class] to
+// be passed to randomWeaponsBox.sqf, used to spawn and fill a 
+// box/vehicle (e.g. box class could be a vehicle class).
+
+randomWeaponBoxes = [
+  ["box_west_basic", 4, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"],
+  ["box_west_special", 4, 5, "rhs_weapons_crate_ak_standard"],
+  ["box_west_explosive", 2, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"],
+  ["box_east_basic", 4, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"],
+  ["box_east_special", 4, 5, "rhs_weapons_crate_ak_standard"],
+  ["box_east_explosive", 2, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"]
+];
+
 
 // Each item is an array containing a [weapon class, magazine
 // amount, random attachment amount, random alt muzzle
