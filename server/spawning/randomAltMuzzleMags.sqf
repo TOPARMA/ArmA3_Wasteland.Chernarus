@@ -15,8 +15,6 @@ private [
   "_allowed"
 ];
 
-diag_log "randomAltMuzzleMags.sqf";
-
 _weapon = _this select 0;
 _amount = _this select 1;
 
