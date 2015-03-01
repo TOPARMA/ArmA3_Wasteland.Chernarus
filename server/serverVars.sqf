@@ -228,14 +228,12 @@ vehicleAddition2 =
 // Each item is an array containg [cargo type, weapon amount,
 // item amount, box class] to be used by randomWeaponsBox.sqf
 randomWeaponBoxes = [
-  ["box_west_basic", 6, 2, "rhs_weapons_crate_ak_ammo_545x39_standard"],
-  ["box_west_special", 6, 2, "rhs_weapons_crate_ak_standard"],
+  ["box_west_basic", 5, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"],
+  ["box_west_special", 5, 5, "rhs_weapons_crate_ak_standard"],
   ["box_west_explosive", 2, 6, "rhs_weapons_crate_ak_ammo_545x39_standard"],
-  ["box_east_basic", 6, 2, "rhs_weapons_crate_ak_ammo_545x39_standard"],
-  ["box_east_special", 6, 2, "rhs_weapons_crate_ak_standard"],
-  ["box_east_explosive", 2, 6, "rhs_weapons_crate_ak_ammo_545x39_standard"]/*,
-  ["box_ind_basic", 5, 2, "rhs_weapons_crate_ak_ammo_545x39_standard"],
-  ["box_ind_special", 4, 2, "rhs_weapons_crate_ak_standard"]*/
+  ["box_east_basic", 5, 5, "rhs_weapons_crate_ak_ammo_545x39_standard"],
+  ["box_east_special", 5, 5, "rhs_weapons_crate_ak_standard"],
+  ["box_east_explosive", 2, 6, "rhs_weapons_crate_ak_ammo_545x39_standard"]
 ];
 
 // Each item is an array containing a [weapon class, magazine
@@ -243,142 +241,181 @@ randomWeaponBoxes = [
 // magazine amount] followed by an array of cargo types it has
 // a chance to  randomly spawn in
 randomCargoWeapons = [
-  [["hlc_smg_mp5a2", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_smg_mp5a3", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_smg_mp5a4", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_smg_mp5n", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_smg_mp510", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_smg_mp5sd5", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_smg_mp5sd6", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_smg_9mmar", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_augpara", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga2para", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
 
-  [["hlc_rifle_saiga12k", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
+// PISTOL/SMG/SHOTGUN
+  [["rhs_weap_pya", 2, 2, 0], ["box_west_basic", "box_east_basic"]],                    // MP-443
+  [["hlc_smg_mp5k", 2, 2, 0], ["box_west_basic", "box_east_basic"]],                    // HK MP5k
 
-  [["hlc_rifle_M14", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_M21", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_M14DMR", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_rifle_m14sopmod", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["rhs_weap_m14ebrri", 2, 2, 2], ["box_east_special", "box_west_special"]],
+  [["hlc_smg_mp5k_PDW", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                // HK MP5k PDW
+  [["hlc_smg_mp5a2", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                   // MP5A2 no rail
+  [["hlc_smg_mp5a3", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                   // MP5A3 no rail
+  [["hlc_smg_mp5a4", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                   // MP5A4 Navy
+  [["hlc_smg_mp5n", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                    // MP5N Navy
+  [["hlc_smg_mp510", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                   // MP5/10 Navy
+  [["hlc_smg_mp5sd5", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                  // MP5SD5 Navy
+  [["hlc_smg_mp5sd6", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                  // MP5SD6 Navy
+  [["hlc_smg_9mmar", 3, 1, 0], ["box_west_basic", "box_east_basic"]],                   // Navy SMG (Half-Life)
+  [["hlc_rifle_augpara", 3, 1, 0], ["box_west_basic", "box_east_basic"]],               // Steyr AUGA1 9mm Para
+  [["hlc_rifle_auga2para", 3, 1, 0], ["box_west_basic", "box_east_basic"]],             // Steyr AUGA2 9mm Para
 
-  [["rhs_weap_m16a4", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m16a4_bipod", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m16a4_grip", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m16a4_carryhandle", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m16a4_carryhandle_pmag", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-
-  [["rhs_weap_M320", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-
-  [["rhs_weap_m4", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4_grip2", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4_bipod", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4_grip", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4_carryhandle", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4_carryhandle_pmag", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_m4_m320", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-
-  [["rhs_weap_m4a1", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4a1_grip2", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4a1_bipod", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_m4a1_grip", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_m4a1_m320", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
+  [["hlc_rifle_saiga12k", 3, 1, 0], ["box_west_basic", "box_east_basic"]],              // Izhmash Saiga12K
 
 
-  [["rhs_weap_ak74m", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_ak74m_folded", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_ak74m_2mag", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["rhs_weap_ak74m_gp25", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-
-  [["hlc_rifle_ak74", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_aks74", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_aks74u", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_akm", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_rpk", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_rifle_ak12", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_akmgl", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_aks74_GL", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
+// M16/M4/M4A1/M320
+  [["rhs_weap_m16a4", 3, 2, 2], ["box_west_basic"]],                                    // M16A4 RIS
+  [["rhs_weap_m16a4_bipod", 3, 2, 2], ["box_west_basic"]],                              // M16A4 (Bipod)
+  [["rhs_weap_m16a4_grip", 3, 2, 2], ["box_west_basic"]],                               // M16A4 (Grippod)
+  [["rhs_weap_m16a4_carryhandle", 3, 2, 2], ["box_west_basic"]],                        // M16A4 (Carryhandle)
+  [["rhs_weap_m16a4_carryhandle_pmag", 3, 2, 2], ["box_west_basic"]],                   // M16A4 (Carryhandle/Pmag)
 
 
-  [["hlc_rifle_l1a1slr", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_SLR", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_STG58F", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_FAL5061", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_c1A1", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_LAR", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_SLRchopmod", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_falosw", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_osw_GL", 2, 2, 2], ["box_east_special", "box_west_special"]],
+  [["rhs_weap_m4", 3, 2, 2], ["box_west_basic"]],                                       // M4 RIS
+  [["rhs_weap_m4_grip2", 3, 2, 2], ["box_west_basic"]],                                 // M4 (AFG)
+  [["rhs_weap_m4_bipod", 3, 2, 2], ["box_west_basic"]],                                 // M4 (Bipod)
+  [["rhs_weap_m4_grip", 3, 2, 2], ["box_west_basic"]],                                  // M4 (Grippod)
+  [["rhs_weap_m4_carryhandle", 3, 2, 2], ["box_west_basic"]],                           // M4 (Carryhandle)
+  [["rhs_weap_m4_carryhandle_pmag", 3, 2, 2], ["box_west_basic"]],                      // M4 (Carryhandle/PMAG)
+  [["rhs_m4_m320", 3, 2, 2], ["box_west_basic"]],                                       // M4 (M320)
+
+  [["rhs_weap_m4a1", 3, 2, 2], ["box_west_basic"]],                                     // M4A1 RIS
+  [["rhs_weap_m4a1_grip2", 3, 2, 2], ["box_west_basic"]],                               // M4A1 (AFG)
+  [["rhs_weap_m4a1_bipod", 3, 2, 2], ["box_west_basic"]],                               // M4A1 (Bipod)
+  [["rhs_weap_m4a1_grip", 3, 2, 2], ["box_west_basic"]],                                // M4A1 (Grippod)
+  [["rhs_m4a1_m320", 3, 2, 2], ["box_west_basic"]],                                     // M4A1 (M320)
+
+  [["rhs_weap_M320", 3, 2, 2], ["box_west_basic"]],                                     // M320 GLM
 
 
-  [["hlc_rifle_g3sg1", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_g3a3", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_g3ka4", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["HLC_Rifle_g3ka4_GL", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_hk51", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_hk53", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
+// AK
+  [["rhs_weap_ak74m", 3, 2, 2], ["box_east_basic"]],                                    // AK-74M
+  [["rhs_weap_ak74m_folded", 3, 2, 2], ["box_east_basic"]],                             // AK-74M (folded)
+  [["rhs_weap_ak74m_2mag", 3, 2, 2], ["box_east_basic"]],                               // AK-74M (2 mag)
+  [["rhs_weap_ak74m_gp25", 3, 2, 2], ["box_east_basic"]],                               // AK-74M (GP-25 Kostyor)
+  [["hlc_rifle_ak12", 3, 2, 2], ["box_east_basic"]],                                    // AK12
+
+  [["hlc_rifle_aek971", 3, 2, 2], ["box_east_basic"]],                                  // Izhmash EAK971
+  [["hlc_rifle_aks74", 3, 2, 2], ["box_east_basic"]],                                   // Izhmash AKS74
+  [["hlc_rifle_aks74_GL", 3, 2, 2], ["box_east_basic"]],                                // Izhmash AKS74 GL
+  [["hlc_rifle_aks74u", 3, 2, 2], ["box_east_basic"]],                                  // Izhmash AKS74U
+  [["hlc_rifle_ak74", 3, 2, 2], ["box_east_basic"]],                                    // Izhmash AK74
+  [["hlc_rifle_aks74_GL", 3, 2, 2], ["box_east_basic"]],                                // Izhmash AKS74 GP30
+  [["hlc_rifle_akm", 3, 2, 2], ["box_east_basic"]],                                     // Izhmash AKM
+  [["hlc_rifle_akmgl", 3, 2, 2], ["box_east_basic"]],                                   // Izhmash AKM GL GP25
 
 
+// AUG
+  [["hlc_rifle_aug", 3, 2, 2], ["box_west_basic"]],                                     // Steyr AUGA1 Rifle
+  [["hlc_rifle_auga1carb", 3, 2, 2], ["box_west_basic"]],                               // Steyr AUGA1 Carbine
+  [["hlc_rifle_aughbar", 3, 2, 2], ["box_west_basic"]],                                 // Steyr AUGA1 Heavy
+  [["hlc_rifle_auga2", 3, 2, 2], ["box_west_basic"]],                                   // Steyr AUGA2 Rifle
+  [["hlc_rifle_auga2carb", 3, 2, 2], ["box_west_basic"]],                               // Steyr AUGA2 Carbine
+  [["hlc_rifle_auga2lsw", 3, 2, 2], ["box_west_basic"]],                                // Steyr AUGA2 Heavy
+  [["hlc_rifle_augsr", 3, 2, 2], ["box_west_basic"]],                                   // Steyr AUGSR Rifle
+  [["hlc_rifle_augsrcarb", 3, 2, 2], ["box_west_basic"]],                               // Steyr AUGSR Carbine
+  [["hlc_rifle_augsrhbar", 3, 2, 2], ["box_west_basic"]],                               // Steyr AUGSR Heavy
+  [["hlc_rifle_auga3", 3, 2, 2], ["box_west_basic"]],                                   // Steyr AUGA3 Rifle (Green)
+  [["hlc_rifle_auga3_b", 3, 2, 2], ["box_west_basic"]],                                 // Steyr AUGA3 Rifle (Black)
+  [["hlc_rifle_auga3_GL", 3, 2, 2], ["box_west_basic"]],                                // Steyr AUGA3 with M203A1 (Green)
 
-  [["hlc_rifle_RU556", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_RU5562", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_Colt727", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_Colt727_GL", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_bcmjack", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_rifle_Bushmaster300", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_rifle_vendimus", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_rifle_SAMR", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_honeybadger", 2, 2, 2], ["box_east_special", "box_west_special"]],
 
-  [["hlc_rifle_aug", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga1carb", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_aughbar", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga2", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga2carb", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga2lsw", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_augsr", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_augsrcarb", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_augsrhbar", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga3", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga3_b", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
-  [["hlc_rifle_auga3_GL", 2, 2, 2], ["box_west_basic", "box_east_basic"]],
+// FAL
+  [["hlc_rifle_l1a1slr", 3, 2, 2], ["box_east_special"]],                               // Enfield L1A1 SLR
+  [["hlc_rifle_SLR", 3, 2, 2], ["box_east_special"]],                                   // Lithgow SLR (Aussy L1A1)
+  [["hlc_rifle_STG58F", 3, 2, 2], ["box_east_special"]],                                // Steyr STG.58
+  [["hlc_rifle_FAL5061", 3, 2, 2], ["box_east_special"]],                               // FN FAL (Para)
+  [["hlc_rifle_c1A1", 3, 2, 2], ["box_east_special"]],                                  // FN C1A1 (CAN SLR)
+  [["hlc_rifle_LAR", 3, 2, 2], ["box_east_special"]],                                   // FN LAR (Israel)
+  [["hlc_rifle_SLRchopmod", 3, 2, 2], ["box_east_special"]],                            // Lithgow SLR Chopmod
+  [["hlc_rifle_falosw", 3, 2, 2], ["box_east_special"]],                                // DSA FAL OSW
+  [["hlc_rifle_osw_GL", 3, 2, 2], ["box_east_special"]],                                // DSA FAL OSW M203GL
 
-  [["rhs_weap_svdp", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["rhs_weap_svds", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["rhs_weap_XM2010", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_rifle_psg1", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["rhs_weap_pkp", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["rhs_weap_m249_pip", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["rhs_weap_m240B", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_lmg_m60", 2, 2, 2], ["box_east_special", "box_west_special"]],
-  [["hlc_lmg_M60E4", 2, 2, 2], ["box_east_special", "box_west_special"]],
 
-  [["rhs_weap_igla", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
-  [["rhs_weap_rpg26", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
-  [["rhs_weap_rpg7", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
-  [["rhs_weap_rshg2", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
+// G3
+  [["hlc_rifle_g3sg1", 3, 2, 2], ["box_east_special"]],                                 // H&K G3SG1
+  [["hlc_rifle_g3a3", 3, 2, 2], ["box_east_special"]],                                  // H&K G3A3
+  [["hlc_rifle_g3ka4", 3, 2, 2], ["box_east_special"]],                                 // H&K G3KA4
+  [["HLC_Rifle_g3ka4_GL", 3, 2, 2], ["box_east_special"]],                              // H&K G3KA4 M203
+  [["hlc_rifle_hk51", 3, 2, 2], ["box_east_special"]],                                  // FR Ordnance MC51 (G3)
+  [["hlc_rifle_hk53", 3, 2, 2], ["box_east_special"]],                                  // H&K HK53
 
-  [["rhs_weap_fgm148", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
-  [["rhs_weap_fim92", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
-  [["rhs_weap_M136", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
-  [["rhs_weap_M136_hedp", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]],
-  [["rhs_weap_M136_hp", 2, 2, 2], ["box_west_explosive", "box_east_explosive"]]
+
+// AR
+  [["hlc_rifle_RU556", 3, 2, 2], ["box_west_special"]],                                 // AR15 Sanitied Carbine
+  [["hlc_rifle_RU5562", 3, 2, 2], ["box_west_special"]],                                // AR15 Magpul Carbine
+  [["hlc_rifle_Colt727", 3, 2, 2], ["box_west_special"]],                               // Colt Carbine(727 Commando)
+  [["hlc_rifle_Colt727_GL", 3, 2, 2], ["box_west_special"]],                            // Colt Carbine M203(727 Commando)
+  [["hlc_rifle_bcmjack", 3, 2, 2], ["box_west_special"]],                               // Bravo Company MFG/Haley
+  [["hlc_rifle_Bushmaster300", 3, 2, 2], ["box_west_special"]],                         // Bushmaster .300 Carbine
+  [["hlc_rifle_vendimus", 3, 2, 2], ["box_west_special"]],                              // AR15 .300 Dissipator
+  [["hlc_rifle_SAMR", 3, 2, 2], ["box_west_special"]],                                  // Rock River Arms LAR-15 AMR
+  [["hlc_rifle_samr2", 3, 2, 2], ["box_west_special"]],                                 // Rock River Arms LAR-15 AMR N
+  [["hlc_rifle_honeybadger", 3, 2, 2], ["box_west_special"]],                           // AAC Honey-Badger Carbine
+
+
+// M14
+  [["hlc_rifle_M14", 3, 1, 0], ["box_west_special"]],                                   // M14
+  [["hlc_rifle_M14DMR", 3, 1, 0], ["box_west_special"]],                                // M14 DMR(ArmA2 DMR)
+  [["hlc_rifle_m14sopmod", 3, 1, 0], ["box_west_special"]],                             // Troy M14 SOPMOD
+  [["rhs_weap_m14ebrri", 3, 1, 0], ["box_west_special"]],                               // Mk14 EBR-RI
+
+
+// SNIPER
+  [["rhs_weap_svdp", 4, 1, 0], ["box_east_special"]],                                   // SVD-M Dragunov
+  [["rhs_weap_svds", 4, 1, 0], ["box_east_special"]],                                   // SVD-S Dragunov
+
+  [["rhs_weap_XM2010", 4, 1, 0], ["box_west_special"]],                                 // M2010 ESR
+  [["hlc_rifle_psg1", 4, 1, 0], ["box_west_special"]],                                  // H&K PSG1
+  [["hlc_rifle_M21", 4, 1, 0], ["box_west_special"]],                                   // M21
+
+
+// LMG
+  [["rhs_weap_pkp", 1, 2, 2], ["box_east_special"]],                                    // PKP (Pecheneg)
+  [["hlc_rifle_RPK12", 2, 2, 2], ["box_east_special"]],                                 // Izhmash RPK12
+  [["hlc_rifle_rpk", 2, 2, 2], ["box_east_special"]],                                   // Izhmash RPK
+
+  [["rhs_weap_m249_pip", 1, 2, 2], ["box_west_special"]],                               // M249 PIP(SAW)
+  [["rhs_weap_m240B", 1, 2, 2], ["box_west_special"]],                                  // M240B
+  [["hlc_lmg_m60", 1, 2, 2], ["box_west_special"]],                                     // M60 (no optic)
+  [["hlc_lmg_M60E4", 1, 2, 2], ["box_west_special"]],                                   // M60E4
+
+
+// LAUNCHER
+  [["rhs_weap_igla", 2, 2, 0], ["box_east_explosive"]],                                 // 9K38 Igla AA
+  [["rhs_weap_rpg26", 2, 2, 0], ["box_east_explosive"]],                                // RPG-26
+  [["rhs_weap_rpg7", 2, 2, 0], ["box_east_explosive"]],                                 // RPG-7
+  [["rhs_weap_rshg2", 2, 2, 0], ["box_east_explosive"]],                                // RShG-2
+
+  [["rhs_weap_fgm148", 2, 2, 0], ["box_west_explosive"]],                               // FGM-148 Javelin
+  [["rhs_weap_fim92", 2, 2, 0], ["box_west_explosive"]],                                // FIM-92F
+  [["rhs_weap_M136", 2, 2, 0], ["box_west_explosive"]],                                 // M136 (HEAT)
+  [["rhs_weap_M136_hedp", 2, 2, 0], ["box_west_explosive"]],                            // M136 (HEDP)
+  [["rhs_weap_M136_hp", 2, 2, 0], ["box_west_explosive"]]                               // M136 (HP)
 ];
 
 // Each item is an array containg an item class, followed by
 // an array of each cargo type it has a chance to randomly
 randomCargoItems = [
-  ["rhs_mag_mk3a2", ["box_west_basic","box_west_explosive"]],
-  ["rhs_mag_mk84", ["box_west_special","box_west_explosive"]],
-  ["rhs_mag_m67", ["box_west_basic","box_west_special","box_west_explosive"]],
-  ["rhs_mag_an_m14_th3", ["box_west_explosive"]],
-  ["rhs_mine_M19_ammo", ["box_west_explosive"]],
+  ["rhs_mag_mk3a2", ["box_west_basic","box_west_explosive"]],                           // M84 Stun Grenade
+  ["rhs_mag_mk84", ["box_west_special","box_west_explosive"]],                          // Mk84 Stun Grenade
+  ["rhs_mag_m67", ["box_west_basic","box_west_special","box_west_explosive"]],          // M67 Frag Grenade
+  ["rhs_mag_an_m14_th3", ["box_west_explosive"]],                                       // M14/Th3 Incendiary Grenade
+  ["rhs_mine_M19_ammo", ["box_west_explosive"]],                                        // M19 AT Mine
 
-  ["rhs_mag_rgd5", ["box_east_basic", "box_east_special", "box_east_explosive"]],
-  ["rhs_mag_fakel", ["box_east_special", "box_east_explosive"]],
-  ["rhs_mag_fakels", ["box_east_special", "box_east_explosive"]],
-  ["rhs_mag_zarya2", ["box_east_explosive"]],
-  ["rhs_mag_plamyam", ["box_east_explosive"]],
-  ["rhs_mine_pmn2", ["box_east_explosive"]],
-  ["rhs_mine_tm62m", ["box_east_explosive"]]
+  ["rhs_mag_rgd5", ["box_east_basic", "box_east_special", "box_east_explosive"]],       // RGD-5 Grenade
+  ["rhs_mag_fakel", ["box_east_special", "box_east_explosive"]],                        // Fakel Grenade
+  ["rhs_mag_fakels", ["box_east_special", "box_east_explosive"]],                       // Fakel-S Grenade
+  ["rhs_mag_zarya2", ["box_east_explosive"]],                                           // Zarya-2 Grenade
+  ["rhs_mag_plamyam", ["box_east_explosive"]],                                          // Plamya-M Grenade
+  ["rhs_mine_pmn2", ["box_east_explosive"]],                                            // PMN-2 AP Mine
+  ["rhs_mine_tm62m", ["box_east_explosive"]],                                           // TM-62M AT Mine
+
+  ["ItemGPS", ["box_west_basic", "box_east_basic"]],                                    // GPS
+  ["FirstAidKit", ["box_west_basic", "box_east_basic"]],                                // First Aid Kit
+  ["Medikit", ["box_west_basic", "box_east_basic"]],                                    // Medikit
+  ["ToolKit", ["box_west_basic", "box_east_basic"]],                                    // Toolkit
+  ["rhsusf_ANPVS_14", ["box_west_basic", "box_east_basic"]],                            // NV AN PVS-14
+  ["rhsusf_ANPVS_15", ["box_west_basic", "box_east_basic"]],                            // NV AN PVS-15
+  ["Binocular", ["box_west_basic", "box_east_basic"]],                                  // Binoculars
+  ["Rangefinder", ["box_west_basic", "box_east_basic"]],                                // Rangefinder
+  ["Laserdesignator", ["box_west_basic", "box_east_basic"]]                             // Laser Designator
 ];
