@@ -95,3 +95,4 @@ addRandomCargoItems = [_path, "addRandomCargoItems.sqf"] call mf_compile;
 addRandomCargoWeapons = [_path, "addRandomCargoWeapons.sqf"] call mf_compile;
 randomWeaponsBox = [_path, "randomWeaponsBox.sqf"] call mf_compile;
 randomVehicleWeapons = [_path, "randomVehicleWeapons.sqf"] call mf_compile;
+randomCargoFill = [_path, "randomCargoFill.sqf"] call mf_compile;

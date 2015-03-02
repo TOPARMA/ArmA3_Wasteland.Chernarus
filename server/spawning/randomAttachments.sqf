@@ -15,8 +15,6 @@ private [
 	"_result"
 ];
 
-diag_log "randomAttachments.sqf";
-
 _weapon = _this select 0;
 _amount = _this select 1;
 
