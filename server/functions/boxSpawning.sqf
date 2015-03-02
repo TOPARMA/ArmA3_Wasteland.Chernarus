@@ -26,10 +26,14 @@ private [
 ];
 
 _counter = 0;
+_percentage = ["A3W_boxSpawning", 0] call getPublicVar;
 
+if(_percentage > 1) then {
+  _percentage = 1;
+};
 
 {
-	if (random 1 < 0.50) then // 50% chance of box spawning at each town
+	if (random 1 < _percentage) then // 50% chance of box spawning at each town
 	{
     _pos = getMarkerPos (_x select 0);
 		_safePos = [_pos, 10, (_x select 1) / 2, 1, 0, 60 * (pi / 180), 0] call findSafePos; // spawns somewhere within half the town radius
