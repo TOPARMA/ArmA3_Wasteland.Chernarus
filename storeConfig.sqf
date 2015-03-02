@@ -17,7 +17,9 @@ pistolArray = compileFinal str
 [
 	// Handguns
 
-	["MP-443", "rhs_weap_pya", 50]
+	["MP-443", "rhs_weap_pya", 50],
+	["HK MP5k", "hlc_smg_mp5k", 100]
+
 
 	//["P07 Pistol", "hgun_P07_F", 50],
 	//["Rook-40 Pistol", "hgun_Rook40_F", 50],
@@ -31,6 +33,7 @@ pistolArray = compileFinal str
 smgArray = compileFinal str
 [
 
+	["HK MP5k PDW", "hlc_smg_mp5k_PDW", 125],
 	["MP5A2 no rail", "hlc_smg_mp5a2", 125],
 	["MP5A3 no rail", "hlc_smg_mp5a3", 125],
 	["MP5A4 Navy", "hlc_smg_mp5a4", 150],
@@ -67,7 +70,6 @@ rifleArray = compileFinal str
 
 //Mx
 	["M14", "hlc_rifle_M14", 375],
-	["M21", "hlc_rifle_M21", 375],
 	["M14 DMR(ArmA2 DMR)", "hlc_rifle_M14DMR", 375],
 	["Troy M14 SOPMOD", "hlc_rifle_m14sopmod", 450],
 	["Mk14 EBR-RI", "rhs_weap_m14ebrri", 450],
@@ -95,26 +97,25 @@ rifleArray = compileFinal str
 	["M4A1 (M320)", "rhs_m4a1_m320", 400],
 
 //AKs
+
 	["AK-74M", "rhs_weap_ak74m", 325],
 	["AK-74M (folded)", "rhs_weap_ak74m_folded", 325],
-		//["AK-74M (camo)", "rhs_weap_ak74m_camo", 325],
-		//["AK-74M (desert)", "rhs_weap_ak74m_desert", 325],
+		//["AK-74M (camo)", "rhs_weap_ak74m_camo", 550],
+		//["AK-74M (desert)", "rhs_weap_ak74m_desert", 550],
 	["AK-74M (2 mag)", "rhs_weap_ak74m_2mag", 325],
-		//["AK-74M (2 mag and camo)", "rhs_weap_ak74m_2mag_camo", 325],
+		//["AK-74M (2 mag and camo)", "rhs_weap_ak74m_2mag_camo", 550],
 	["AK-74M (GP-25 Kostyor)", "rhs_weap_ak74m_gp25", 400],
-
-	["AK74", "hlc_rifle_ak74", 300],
-	["AKS74", "hlc_rifle_aks74", 300],
-	["AKS74U", "hlc_rifle_aks74u", 300],
-	["AKS74 GP30", "hlc_rifle_aks74_GL", 400],
-	
-	["A47", "hlc_rifle_ak47", 375],
-	["AKM", "hlc_rifle_akm", 375],
-	["AKM GP25", "hlc_rifle_akmgl", 450],
-	
-	["RPK", "hlc_rifle_rpk", 375],
 	["AK12", "hlc_rifle_ak12", 325],
-	
+
+	["Izhmash AK47", "hlc_rifle_ak47", 375],
+	["Izhmash EAK971", "hlc_rifle_aek971", 500],
+	["Izhmash AKS74", "hlc_rifle_aks74", 300],
+	["Izhmash AKS74 GL", "hlc_rifle_aks74_GL", 700],
+	["Izhmash AKS74U", "hlc_rifle_aks74u", 300],
+	["Izhmash AK74", "hlc_rifle_ak74", 300],
+	["Izhmash AKS74 GP30", "hlc_rifle_aks74_GL", 400],
+	["Izhmash AKM", "hlc_rifle_akm", 375],
+	["Izhmash AKM GL GP25", "hlc_rifle_akmgl", 450],
 	
 
 //FALs
@@ -146,6 +147,7 @@ rifleArray = compileFinal str
 	["Bushmaster .300 Carbine", "hlc_rifle_Bushmaster300", 400],
 	["AR15 .300 Dissipator", "hlc_rifle_vendimus", 400],
 	["Rock River Arms LAR-15 AMR", "hlc_rifle_SAMR", 350],
+	["Rock River Arms LAR-15 AMR N", "hlc_rifle_samr2", 350],
 		//["AAC Honey-Badger", "hlc_rifle_honeybase", 400],
 	["AAC Honey-Badger Carbine", "hlc_rifle_honeybadger", 400],
 
@@ -179,12 +181,13 @@ rifleArray = compileFinal str
 		//["Steyr AUGSR Heavy (Black)", "hlc_rifle_augsrhbar_b", 350],
 	["Steyr AUGA3 Rifle (Green)", "hlc_rifle_auga3", 350],
 		//["Steyr AUGA3 Rifle (Blue)", "hlc_rifle_auga3_bl", 350],
-	["Steyr AUGA3 Rifle (Black)", "hlc_rifle_auga3_b", 350],
+		//["Steyr AUGA3 Rifle (Black)", "hlc_rifle_auga3_b", 350],
 	["Steyr AUGA3 with M203A1 (Green)", "hlc_rifle_auga3_GL", 425],
 		//["Steyr AUGA3 with M203A1 (Blue)", "hlc_rifle_auga3_GL_BL", 425],
 		//["Steyr AUGA3 with M203A1 (Black)", "hlc_rifle_auga3_GL_B", 425],
 
 // Sniper Rifles
+	["M21", "hlc_rifle_M21", 900],
 	["SVD-M Dragunov", "rhs_weap_svdp", 1000],
 		//["SVD-M Dragunov (camo)", "rhs_weap_svdp_wd", 1000],
 	["SVD-S Dragunov", "rhs_weap_svds", 1000],
@@ -192,7 +195,8 @@ rifleArray = compileFinal str
 		//["M2010 ESR (camo)", "rhs_weap_XM2010_wd", 1250],
 		//["M2010 ESR (desert)", "rhs_weap_XM2010_d", 1250],
 		//["M2010 ESR (semi-arid)", "rhs_weap_XM2010_sa", 1250],
-	["H&K PSG1", "hlc_rifle_psg1", 1100]
+	["H&K PSG1", "hlc_rifle_psg1", 1700]
+
 
 
 //LEGACY GUNS
@@ -242,6 +246,8 @@ rifleArray = compileFinal str
 lmgArray = compileFinal str
 [
 	["PKP (Pecheneg)", "rhs_weap_pkp", 450],
+	["Izhmash RPK12", "hlc_rifle_RPK12", 450],
+	["Izhmash RPK", "hlc_rifle_rpk", 450],
 	["M249 PIP(SAW)", "rhs_weap_m249_pip", 375],
 	["M240B", "rhs_weap_m240B", 450],
 	["M60 (no optic)", "hlc_lmg_m60", 450],
@@ -336,7 +342,10 @@ throwputArray = compileFinal str
 	["Plamya-M", "rhs_mag_plamyam", 100],
 	["PMN-2 AP", "rhs_mine_pmn2", 300],
 	["TM-62M AT", "rhs_mine_tm62m", 350],
-	["M67 Frag Grenade", "rhs_mag_m67", 100]
+	["M67 Frag Grenade", "rhs_mag_m67", 100],
+	["M84 Stun Grenade", "rhs_ammo_m84", 100],
+	["M19 AT", "rhs_mine_M19_ammo", 300]
+
 	
 	//["M84 Stun Grenade", "rhs_ammo_m84", 100],
 	//["M19 AT", "rhs_mine_M19_ammo", 300]
@@ -374,7 +383,7 @@ ammoArray = compileFinal str
 	["7N10 RPK-74 45Rnd", "rhs_45Rnd_545X39_7N10_AK", 45],
 	["7N22 RPK-74 45Rnd", "rhs_45Rnd_545X39_7N22_AK", 45],
 	["762x54mmR 100Rnd", "rhs_100Rnd_762x54mmR", 150],
-	["7N1 10Rnd", "rhs_10Rnd_762x54mmR_7N1", 15],
+	["7N1 10Rnd", "rhs_10Rnd_762x54mmR_7N1", 50],
 	["M14 20Rnd", "20Rnd_762x51_Mag", 25],
 	["Mk262 30Rnd", "rhs_mag_30Rnd_556x45_Mk262_Stanag", 30],
 	["Mk318 30Rnd", "rhs_mag_30Rnd_556x45_Mk318_Stanag", 30],
@@ -385,18 +394,21 @@ ammoArray = compileFinal str
 	[".300 Win Mag 5Rnd", "rhsusf_5Rnd_300winmag_xm2010", 50],
 	["M240 100Rnd", "rhsusf_100Rnd_762x51", 100],
 	["M249 100Rnd", "rhsusf_100Rnd_556x45_soft_pouch", 100],
-	["M249 200Rnd", "rhsusf_200Rnd_556x45_soft_pouch", 150], 
+	["M249 200Rnd", "rhsusf_200Rnd_556x45_soft_pouch", 200], 
 	["7.62x51mm Ball 100Rnd", "hlc_100Rnd_762x51_B_M60E4", 150],
 	["7.62x51mm Tracer 100Rnd", "hlc_100Rnd_762x51_T_M60E4", 150],
 	["7.62x51mm Mixed 100Rnd", "hlc_100Rnd_762x51_M_M60E4	", 150],
 	["5.45x39mm Ball 30Rnd", "hlc_30Rnd_545x39_B_AK", 30],
 	["5.45x39mm Tracer 30Rnd", "hlc_30Rnd_545x39_T_AK", 30],
 	["5.45x39mm EPR 30Rnd", "hlc_30Rnd_545x39_EP_AK", 30],
+	["5.45x39mm S 30Rnd", "hlc_30Rnd_545x39_S_AK", 30],
 	["5.45x39mm Mixed 45Rnd", "hlc_45Rnd_545x39_t_rpk", 45],
-	["7.62x39mm Ball 30Rnd", "hlc_30Rnd_762x39_b_ak", 45],
+	["7.62x39mm Ball 30Rnd", "hlc_30Rnd_762x39_b_ak", 30],
 	["7.62x39mm Tracer 30Rnd", "hlc_30Rnd_762x39_t_ak", 45],
 	["7.62x39mm Tracer 45Rnd", "hlc_45Rnd_762x39_t_rpk", 60],
-	["7.62x39mm Mixed 45Rnd", "hlc_45Rnd_762x39_m_rpk", 65],
+	["7.62x39mm Mixed 45Rnd", "hlc_45Rnd_762x39_m_rpk", 60],
+	["7.62x39mm Tracer 45Rnd", "HLC_45Rnd_762x39_T_RPK", 60],
+	["7.62x39mm Mixed 75Rnd", "hlc_75Rnd_762x39_m_rpk", 85],
 	["7.62x51mm Ball 20Rnd", "hlc_20Rnd_762x51_B_fal", 30],
 	["7.62x51mm Tracer 20Rnd", "hlc_20Rnd_762x51_t_fal", 25],
 	["7.62x51mm Subsonic 20Rnd", "hlc_20Rnd_762x51_S_fal", 30],
