@@ -451,3 +451,18 @@ randomCargoItems = [
   ["Rangefinder", ["box_west_basic", "box_east_basic"]],                                // Rangefinder
   ["Laserdesignator", ["box_west_basic", "box_east_basic"]]                             // Laser Designator
 ];
+
+// Used for random loadout selection for AI
+// Passed to createRandomSolider
+randomAILoadouts = [
+  [
+    ["rhs_uniform_cu_ucp_patchless", "rhs_uniform_cu_ocp_82nd","rhs_uniform_cu_ocp_101st","rhs_uniform_cu_ocp_10th"],         // Uniforms
+    ["rhsusf_iotv_ocp", "rhsusf_iotv_ocp_grenadier", "rhsusf_iotv_ocp_medic", "rhsusf_iotv_ocp_rifleman"],                    // Vests
+    ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m4_carryhandle","rhs_m4_m320"]                                          // Rifles
+  ],
+  [
+    ["rhs_uniform_msv_emr", "rhs_uniform_vdv_emr", "rhs_uniform_emr_patchless"],                                              // Uniforms
+    ["rhs_6b23_digi", "rhs_6b23_digi_crew", "rhs_6b23_digi_medic", "rhs_6b23_digi_rifleman"],                                 // Vests
+    ["hlc_rifle_aks74","hlc_rifle_aks74_GL","hlc_rifle_aks74u","hlc_rifle_ak74"]                                              // Rifles
+  ]
+];
