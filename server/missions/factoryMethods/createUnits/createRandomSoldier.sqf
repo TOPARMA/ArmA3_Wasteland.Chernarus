@@ -19,7 +19,7 @@ private [
   "_position",
   "_loadout",
   "_launcher",
-  "mode",
+  "_mode",
   "_soldier"
 ];
 
@@ -31,7 +31,7 @@ _mode = [_this, 4, "NONE"] call BIS_fnc_param;
 
 _uniformTypes = _loadout select 0;
 _vestTypes = _loadout select 1;
-_headTypes = _load select 2;
+_headTypes = _loadout select 2;
 _weaponTypes = _loadout select 3;
 _launcherSetup = [_loadout, 4, []] call BIS_fnc_param;
 

@@ -6,7 +6,7 @@
 
 if (!isServer) exitWith {};
 
-private ["_group", "_pos", "_nbUnits", "_uPos", "_unit"];
+private ["_group", "_pos", "_nbUnits", "_uPos", "_unit", "_launcher", "_loadout", "_radius"];
 
 _group = _this select 0;
 _pos = _this select 1;
