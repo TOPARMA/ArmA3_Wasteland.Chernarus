@@ -468,13 +468,15 @@ aiLoadoutsBasic = [
     ["rhs_uniform_cu_ucp_patchless", "rhs_uniform_cu_ocp_82nd","rhs_uniform_cu_ocp_101st","rhs_uniform_cu_ocp_10th"],         // Uniforms
     ["rhsusf_iotv_ocp", "rhsusf_iotv_ocp_grenadier", "rhsusf_iotv_ocp_medic", "rhsusf_iotv_ocp_rifleman"],                    // Vests
     ["rhsusf_ach_helmet_camo_ocp", "rhs_Booniehat_ocp", "rhsusf_patrolcap_ocp"],                                              // Headgear
-    ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m4_carryhandle","rhs_m4_m320"]                                          // Rifles
+    ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m4_carryhandle","rhs_m4_m320"],                                         // Rifles
+    ["rhsusf_assault_eagleaiii_ocp", "rhs_weap_M136", "rhs_m136_mag"]                                                         // Backpack, Launcher, Missile
   ],
   [
     ["rhs_uniform_msv_emr", "rhs_uniform_vdv_emr", "rhs_uniform_emr_patchless"],                                              // Uniforms
     ["rhs_6b23_digi", "rhs_6b23_digi_crew", "rhs_6b23_digi_medic", "rhs_6b23_digi_rifleman"],                                 // Vests
     ["rhs_6b27m_digi", "rhs_6b27m_digi_bala", "rhs_6b28", "rhs_6b28_ess_bala", "rhs_Booniehat_digi", "rhs_fieldcap"],         // Headgear
-    ["hlc_rifle_aks74","hlc_rifle_aks74_GL","hlc_rifle_aks74u","hlc_rifle_ak74"]                                              // Rifles
+    ["hlc_rifle_aks74","hlc_rifle_aks74_GL","hlc_rifle_aks74u","hlc_rifle_ak74"],                                             // Rifles
+    ["rhs_assault_umbts", "rhs_weap_rpg7", "rhs_rpg7_PG7VL_mag"]                                                              // Backpack, Launcher, Missile
   ]
 ];
 

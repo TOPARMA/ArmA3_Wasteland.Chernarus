@@ -126,8 +126,10 @@ _setupVars =
 
 _setupObjects =
 {
-	private ["_starts", "_startDirs", "_waypoints"];
+	private ["_starts", "_startDirs", "_waypoints", "_loadout"];
 	call compile preprocessFileLineNumbers format ["mapConfig\convoys\%1.sqf", _missionLocation];
+
+	_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
 
 	_createVehicle =
 	{
@@ -144,18 +146,18 @@ _setupObjects =
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
+		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 		_soldier moveInDriver _vehicle;
 
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
+		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 		_soldier moveInCargo [_vehicle, 0];
 
 		if !(_type isKindOf "Truck_F") then
 		{
-			_soldier = [_aiGroup, _position] call createRandomSoldier;
+			_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 			_soldier moveInGunner _vehicle;
 
-			_soldier = [_aiGroup, _position] call createRandomSoldier;
+			_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 
 			if (_vehicle emptyPositions "commander" > 0) then
 			{

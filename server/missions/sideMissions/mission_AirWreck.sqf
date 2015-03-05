@@ -9,7 +9,7 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_wreckPos", "_wreck", "_box1", "_box2"];
+private ["_nbUnits", "_wreckPos", "_wreck", "_box1", "_box2", "_loadout"];
 
 _setupVars =
 {
@@ -37,7 +37,8 @@ _setupObjects =
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
 
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup;
+	_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
+	[_aiGroup, _missionPos, _loadout, _nbUnits] call createRandomGroup;
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> typeOf _wreck >> "picture");
 	_missionHintText = "A helicopter has come down under enemy fire!";
