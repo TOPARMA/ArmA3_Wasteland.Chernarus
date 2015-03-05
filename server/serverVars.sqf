@@ -452,17 +452,39 @@ randomCargoItems = [
   ["Laserdesignator", ["box_west_basic", "box_east_basic"]]                             // Laser Designator
 ];
 
-// Used for random loadout selection for AI
-// Passed to createRandomSolider
-randomAILoadouts = [
+
+aiRandomClasses = [
+  "C_man_1_3_F",
+  "C_man_polo_1_F",
+  "C_man_polo_2_F",
+  "C_man_polo_3_F",
+  "C_man_polo_4_F",
+  "C_man_polo_5_F",
+  "C_man_polo_6_F"
+];
+
+aiLoadoutsBasic = [
   [
     ["rhs_uniform_cu_ucp_patchless", "rhs_uniform_cu_ocp_82nd","rhs_uniform_cu_ocp_101st","rhs_uniform_cu_ocp_10th"],         // Uniforms
     ["rhsusf_iotv_ocp", "rhsusf_iotv_ocp_grenadier", "rhsusf_iotv_ocp_medic", "rhsusf_iotv_ocp_rifleman"],                    // Vests
+    ["rhsusf_ach_helmet_camo_ocp", "rhs_Booniehat_ocp", "rhsusf_patrolcap_ocp", "", ""],                                      // Headgear
     ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m4_carryhandle","rhs_m4_m320"]                                          // Rifles
   ],
   [
     ["rhs_uniform_msv_emr", "rhs_uniform_vdv_emr", "rhs_uniform_emr_patchless"],                                              // Uniforms
     ["rhs_6b23_digi", "rhs_6b23_digi_crew", "rhs_6b23_digi_medic", "rhs_6b23_digi_rifleman"],                                 // Vests
+    ["rhs_6b27m_digi", "rhs_6b27m_digi_bala", "rhs_6b28", "rhs_6b28_ess_bala", "rhs_Booniehat_digi", "rhs_fieldcap"],         // Headgear
     ["hlc_rifle_aks74","hlc_rifle_aks74_GL","hlc_rifle_aks74u","hlc_rifle_ak74"]                                              // Rifles
   ]
+];
+
+aiLoadoutsCrewman = [
+  [
+    ["rhs_uniform_FROG01_wd", "rhs_uniform_FROG01_m81"],                                  // Uniforms
+    ["hlc_smg_mp5k_PDW", "hlc_smg_mp5a3", "hlc_smg_9mmar", "hlc_rifle_auga2para"]         // Rifles
+  ],
+  [
+    ["rhs_uniform_df15"],                                                                 // Uniforms
+    ["hlc_rifle_saiga12k", "rhs_weap_ak74m_folded", "hlc_rifle_aks74u"]                   // Rifles
+  ] 
 ];
