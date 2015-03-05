@@ -467,7 +467,7 @@ aiLoadoutsBasic = [
   [
     ["rhs_uniform_cu_ucp_patchless", "rhs_uniform_cu_ocp_82nd","rhs_uniform_cu_ocp_101st","rhs_uniform_cu_ocp_10th"],         // Uniforms
     ["rhsusf_iotv_ocp", "rhsusf_iotv_ocp_grenadier", "rhsusf_iotv_ocp_medic", "rhsusf_iotv_ocp_rifleman"],                    // Vests
-    ["rhsusf_ach_helmet_camo_ocp", "rhs_Booniehat_ocp", "rhsusf_patrolcap_ocp", "", ""],                                      // Headgear
+    ["rhsusf_ach_helmet_camo_ocp", "rhs_Booniehat_ocp", "rhsusf_patrolcap_ocp"],                                              // Headgear
     ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m4_carryhandle","rhs_m4_m320"]                                          // Rifles
   ],
   [
