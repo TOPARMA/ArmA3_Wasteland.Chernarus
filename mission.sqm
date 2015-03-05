@@ -2082,7 +2082,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=102;
+		items=125;
 		class Item0
 		{
 			position[]={428.31763,634.75702,15125.764};
@@ -2644,18 +2644,19 @@ class Mission
 		};
 		class Item82
 		{
-			position[]={7054.3154,6.0127869,2624.5029};
+			position[]={7022.2725,6.0127869,2604.2241};
 			name="TERRITORY_0_CHERNOGORSK_B";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=50;
+			a=60;
 			b=50;
+			angle=144.632;
 		};
 		class Item83
 		{
-			position[]={7050.5171,6.0127869,2626.105};
+			position[]={7017.1172,6.0127869,2605.3489};
 			name="FLAG_0_CHERNOGORSK_B";
 			text="B";
 			type="mil_flag";
@@ -2665,19 +2666,19 @@ class Mission
 		};
 		class Item84
 		{
-			position[]={7221.397,6.8493814,2237.6169};
+			position[]={7219.6377,6.7625504,2237.4409};
 			name="TERRITORY_0_CHERNOGORSK_C";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=60;
-			b=35;
+			a=50;
+			b=30;
 			angle=-9.5256004;
 		};
 		class Item85
 		{
-			position[]={7216.1133,6.5230689,2239.9614};
+			position[]={7216.4648,6.56604,2239.0806};
 			name="FLAG_0_CHERNOGORSK_C";
 			text="C";
 			type="mil_flag";
@@ -2687,19 +2688,19 @@ class Mission
 		};
 		class Item86
 		{
-			position[]={6669.9893,6,2618.3418};
+			position[]={6498.9629,6.0001159,2494.2976};
 			name="TERRITORY_0_CHERNOGORSK_A";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=60;
-			b=10;
-			angle=-52.050026;
+			a=45;
+			b=35;
+			angle=129.63689;
 		};
 		class Item87
 		{
-			position[]={6669.4067,6,2620.4023};
+			position[]={6497.5762,6.0000968,2492.4922};
 			name="FLAG_0_CHERNOGORSK_A";
 			text="A";
 			type="mil_flag";
@@ -2804,6 +2805,246 @@ class Mission
 			name="Town_27";
 			type="Empty";
 			colorName="ColorRed";
+		};
+		class Item102
+		{
+			position[]={4769,9.5,2535};
+			name="VehStore1_landSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-206.70099;
+		};
+		class Item103
+		{
+			position[]={4725,9.5,2551};
+			name="VehStore1_heliSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-27.849197;
+		};
+		class Item104
+		{
+			position[]={4712,10,2516};
+			name="VehStore1_planeSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-27.134336;
+		};
+		class Item105
+		{
+			position[]={8416,360.5,6685};
+			name="VehStore3_landSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-206.70099;
+		};
+		class Item106
+		{
+			position[]={8346.1904,360,6689.5098};
+			name="VehStore3_heliSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-27.849197;
+		};
+		class Item107
+		{
+			position[]={12271.712,33.996021,9137.8008};
+			name="FLAG_1_BEREZINO_A";
+			text="A";
+			type="mil_flag";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=0.5;
+			b=0.5;
+		};
+		class Item108
+		{
+			position[]={12731.353,5.9899998,9653.2949};
+			name="FLAG_1_BEREZINO_B";
+			text="B";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item109
+		{
+			position[]={11956.501,54,9087.0313};
+			name="FLAG_1_BEREZINO_C";
+			text="C";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item110
+		{
+			position[]={12273.614,34,9139.1377};
+			name="TERRITORY_1_BEREZINO_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=35;
+			b=55;
+			angle=-27.293501;
+		};
+		class Item111
+		{
+			position[]={12739.826,5.9964356,9653.6494};
+			name="TERRITORY_0_BEREZINO_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=55;
+			b=65;
+			angle=-258.56299;
+		};
+		class Item112
+		{
+			position[]={11960.273,53.993538,9089.5742};
+			name="TERRITORY_0_BEREZINO_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=30;
+			b=45;
+			angle=38.236599;
+		};
+		class Item113
+		{
+			position[]={4072.5881,338.97321,10772.646};
+			name="TERRITORY_2_NWAF_B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=40;
+			b=30;
+			angle=62.9319;
+		};
+		class Item114
+		{
+			position[]={4671.958,338.99667,10445.545};
+			name="TERRITORY_2_nwaf_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=20;
+			b=22;
+			angle=-211.377;
+		};
+		class Item115
+		{
+			position[]={4617.0625,338.95877,9591.5791};
+			name="TERRITORY_2_NWAF_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=40;
+			b=18;
+			angle=576.10022;
+		};
+		class Item116
+		{
+			position[]={4672.5889,338.9982,10446.067};
+			name="FLAG_2_NWAF_C";
+			text="C";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item117
+		{
+			position[]={4629.4775,338.96606,9586.2813};
+			name="FLAG_2_NWAF_A";
+			text="A";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item118
+		{
+			position[]={4072.2827,338.96432,10775.878};
+			name="FLAG_2_NWAF_B";
+			text="B";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item119
+		{
+			position[]={10274.528,6,1876.9502};
+			name="FLAG_3_ELEKTRO_A";
+			text="A";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item120
+		{
+			position[]={10482.731,6,2355.7493};
+			name="FLAG_3_ELEKTRO_B";
+			text="B";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item121
+		{
+			position[]={10433.984,6,2589.8335};
+			name="FLAG_3_ELEKTRO_C";
+			text="C";
+			type="mil_flag";
+			colorName="ColorYellow";
+			a=0.5;
+			b=0.5;
+		};
+		class Item122
+		{
+			position[]={10483.57,6,2354.8999};
+			name="TERRITORY_3_ELEKTRO_B";
+			text="B";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=20;
+			b=15;
+			angle=55.835999;
+		};
+		class Item123
+		{
+			position[]={10436.851,6,2590.0002};
+			name="TERRITORY_3_ELEKTRO_C";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=25;
+			b=40;
+			angle=206.17999;
+		};
+		class Item124
+		{
+			position[]={10276.7,6,1878.3966};
+			name="TERRITORY_3_ELEKTRO_A";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorYellow";
+			fillName="DiagGrid";
+			a=40;
+			b=25;
+			angle=8.3120098;
 		};
 	};
 };
