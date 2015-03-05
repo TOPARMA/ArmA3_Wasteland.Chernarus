@@ -52,7 +52,7 @@ _soldier addHeadgear (_headTypes call BIS_fnc_selectRandom);
 
 if(_launcher && count _launcherSetup == 3) then {
   _soldier addBackpack (_launcherSetup select 0);
-  _solder addWeapon (_launcherSetup select 1);
+  _soldier addWeapon (_launcherSetup select 1);
   _soldier addMagazine (_launcherSetup select 2);
   _soldier addMagazine (_launcherSetup select 2);
 };
