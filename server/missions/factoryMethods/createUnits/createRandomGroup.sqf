@@ -16,7 +16,7 @@ _radius = [_this, 4, 10, [0]] call BIS_fnc_param;
 
 for "_i" from 1 to _nbUnits do
 {
-	_launcher = ((_i + 5) % 7 == 0));
+	_launcher = ((_i + 5) % 7 == 0);
 	_uPos = _pos vectorAdd ([[random _radius, 0, 0], random 360] call BIS_fnc_rotateVector2D);
 	_unit = [_group, _uPos, _loadout, _launcher, "Form"] call createRandomSoldier;
 	_unit setPosATL _uPos;
