@@ -344,21 +344,22 @@ throwputArray = compileFinal str
 	["TM-62M AT", "rhs_mine_tm62m", 350],
 	["M67 Frag Grenade", "rhs_mag_m67", 100],
 	["M84 Stun Grenade", "rhs_ammo_m84", 100],
-	["M19 AT", "rhs_mine_M19_ammo", 300]
+	["M19 AT", "rhs_mine_M19_ammo", 300],
 
-	
-	//["M84 Stun Grenade", "rhs_ammo_m84", 100],
-	//["M19 AT", "rhs_mine_M19_ammo", 300]
+//Community recommended Mines be put back in
+
 	//["Mini Grenade", "MiniGrenade", 50],
 	//["Frag Grenade", "HandGrenade", 100],
-	//["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 200],
-	//["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 250],
-	//["APERS Mine", "APERSMine_Range_Mag", 300],
+	["APERS Tripwire Mine", "APERSTripMine_Wire_Mag", 200],
+	["APERS Bounding Mine", "APERSBoundingMine_Range_Mag", 250],
+	["APERS Mine", "APERSMine_Range_Mag", 300],
 	//["Claymore Charge", "ClaymoreDirectionalMine_Remote_Mag", 350],
-	//["M6 SLAM Mine", "SLAMDirectionalMine_Wire_Mag", 350],
+	["M6 SLAM Mine", "SLAMDirectionalMine_Wire_Mag", 350],
 	//["AT Mine", "ATMine_Range_Mag", 400],
-	//["Explosive Charge", "DemoCharge_Remote_Mag", 450],
-	//["Explosive Satchel", "SatchelCharge_Remote_Mag", 500],
+	["Explosive Charge", "DemoCharge_Remote_Mag", 450],
+	["Explosive Satchel", "SatchelCharge_Remote_Mag", 500]
+
+
 	//["Smoke Grenade (White)", "SmokeShell", 50],
 	//["Smoke Grenade (Purple)", "SmokeShellPurple", 50],
 	//["Smoke Grenade (Blue)", "SmokeShellBlue", 50],
