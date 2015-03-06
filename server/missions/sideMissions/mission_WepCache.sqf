@@ -9,7 +9,7 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_box1", "_box2"];
+private ["_nbUnits", "_box1", "_box2", "_loadout"];
 
 _setupVars =
 {
@@ -33,7 +33,8 @@ _setupObjects =
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
 
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup;
+	_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
+	[_aiGroup, _missionPos, _loadout, _nbUnits] call createRandomGroup;
 
 	_missionHintText = "A weapon cache has been spotted near the marker.";
 };

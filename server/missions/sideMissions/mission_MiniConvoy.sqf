@@ -41,7 +41,9 @@ _setupObjects =
 
 	_createVehicle =
 	{
-		private ["_type", "_position", "_direction", "_vehicle", "_soldier"];
+		private ["_type", "_position", "_direction", "_vehicle", "_soldier", "_loadout"];
+
+		_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
 
 		_type = _this select 0;
 		_position = _this select 1;
@@ -54,17 +56,17 @@ _setupObjects =
 		_vehicle setDir _direction;
 		_aiGroup addVehicle _vehicle;
 
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
+		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 		_soldier moveInDriver _vehicle;
 
-		_soldier = [_aiGroup, _position] call createRandomSoldier;
+		_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 		_soldier moveInCargo [_vehicle, 0];
 
 		switch (true) do
 		{
 			case (_type isKindOf "Offroad_01_armed_base_F"):
 			{
-				_soldier = [_aiGroup, _position] call createRandomSoldier;
+				_soldier = [_aiGroup, _position, _loadout] call createRandomSoldier;
 				_soldier moveInGunner _vehicle;
 			};
 			case (_type isKindOf "C_Van_01_box_F"):

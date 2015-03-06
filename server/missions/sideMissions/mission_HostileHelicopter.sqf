@@ -7,7 +7,7 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf"
 
-private ["_vehicleClass", "_vehicle", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_box1", "_box2"];
+private ["_vehicleClass", "_vehicle", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_box1", "_box2", "_loadout"];
 
 _setupVars =
 {
@@ -18,6 +18,7 @@ _setupVars =
 _setupObjects =
 {
 	_missionPos = markerPos (((call cityList) call BIS_fnc_selectRandom) select 0);
+	_loadout = aiLoadoutsCrewman call BIS_fnc_selectRandom;
 
 	_vehicleClass = if (missionDifficultyHard) then
 	{
@@ -45,7 +46,7 @@ _setupObjects =
 
 		// add a driver/pilot/captain to the vehicle
 		// the little bird, orca, and hellcat do not require gunners and should not have any passengers
-		_soldier = [_aiGroup, _position] call createRandomSoldierC;
+		_soldier = [_aiGroup, _position, _loadout] call createRandomCrewman;
 		_soldier moveInDriver _vehicle;
 
 		switch (true) do
@@ -53,17 +54,17 @@ _setupObjects =
 			case (_type isKindOf "Heli_Transport_01_base_F"):
 			{
 				// these choppers have 2 turrets so we need 2 gunners
-				_soldier = [_aiGroup, _position] call createRandomSoldierC;
+				_soldier = [_aiGroup, _position, _loadout] call createRandomCrewman;
 				_soldier moveInTurret [_vehicle, [1]];
 
-				_soldier = [_aiGroup, _position] call createRandomSoldierC;
+				_soldier = [_aiGroup, _position, _loadout] call createRandomCrewman;
 				_soldier moveInTurret [_vehicle, [2]];
 			};
 
 			case (_type isKindOf "Heli_Attack_01_base_F" || _type isKindOf "Heli_Attack_02_base_F"):
 			{
 				// these choppers need 1 gunner
-				_soldier = [_aiGroup, _position] call createRandomSoldierC;
+				_soldier = [_aiGroup, _position, _loadout] call createRandomCrewman;
 				_soldier moveInGunner _vehicle;
 			};
 		};

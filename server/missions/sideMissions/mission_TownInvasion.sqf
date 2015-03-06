@@ -9,7 +9,7 @@ if (!isServer) exitwith {};
 
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1"];
+private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1", "_loadout"];
 
 _setupVars =
 {
@@ -57,7 +57,8 @@ _setupObjects =
 
 	// spawn some rebels/enemies :)
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup2;
+	_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
+	[_aiGroup, _missionPos, _loadout, _nbUnits] call createRandomGroup;
 
 	// move them into buildings
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;

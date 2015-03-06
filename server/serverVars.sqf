@@ -451,3 +451,42 @@ randomCargoItems = [
   ["Rangefinder", ["box_west_basic", "box_east_basic"]],                                // Rangefinder
   ["Laserdesignator", ["box_west_basic", "box_east_basic"]]                             // Laser Designator
 ];
+
+
+aiRandomClasses = [
+  "C_man_1_3_F",
+  "C_man_polo_1_F",
+  "C_man_polo_2_F",
+  "C_man_polo_3_F",
+  "C_man_polo_4_F",
+  "C_man_polo_5_F",
+  "C_man_polo_6_F"
+];
+
+aiLoadoutsBasic = [
+  [
+    ["rhs_uniform_cu_ucp_patchless"],                                                                                         // Uniforms
+    ["rhsusf_iotv_ocp", "rhsusf_iotv_ocp_grenadier", "rhsusf_iotv_ocp_medic", "rhsusf_iotv_ocp_rifleman"],                    // Vests
+    ["rhsusf_ach_bare", "rhs_Booniehat_ocp", "rhsusf_patrolcap_ocp", "rhsusf_ach_helmet_m81"],                                // Headgear
+    ["rhs_weap_m16a4","rhs_weap_m16a4_grip","rhs_weap_m4_carryhandle","rhs_m4_m320"],                                         // Rifles
+    ["rhsusf_assault_eagleaiii_ocp", "rhs_weap_M136", "rhs_m136_mag"]                                                         // Backpack, Launcher, Missile
+  ],
+  [
+    ["rhs_uniform_emr_patchless"],                                                                                            // Uniforms
+    ["rhs_6b23_digi", "rhs_6b23_digi_crew", "rhs_6b23_digi_medic", "rhs_6b23_digi_rifleman"],                                 // Vests
+    ["rhs_6b27m_digi", "rhs_6b27m_digi_bala", "rhs_6b28", "rhs_6b28_ess_bala", "rhs_Booniehat_digi", "rhs_fieldcap"],         // Headgear
+    ["hlc_rifle_aks74","hlc_rifle_aks74_GL","hlc_rifle_aks74u","hlc_rifle_ak74"],                                             // Rifles
+    ["rhs_assault_umbts", "rhs_weap_rpg7", "rhs_rpg7_PG7VL_mag"]                                                              // Backpack, Launcher, Missile
+  ]
+];
+
+aiLoadoutsCrewman = [
+  [
+    ["rhs_uniform_cu_ucp_patchless"],                                                     // Uniforms
+    ["hlc_smg_mp5k_PDW", "hlc_smg_mp5a3", "hlc_smg_9mmar", "hlc_rifle_auga2para"]         // Rifles
+  ],
+  [
+    ["rhs_uniform_emr_patchless"],                                                        // Uniforms
+    ["hlc_rifle_saiga12k", "rhs_weap_ak74m_folded", "hlc_rifle_aks74u"]                   // Rifles
+  ] 
+];

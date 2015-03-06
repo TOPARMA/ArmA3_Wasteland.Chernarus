@@ -9,7 +9,7 @@
 if (!isServer) exitwith {};
 #include "mainMissionDefines.sqf";
 
-private ["_vehicle", "_vehicleName", "_vehDeterminer"];
+private ["_vehicle", "_vehicleName", "_vehDeterminer", "_loadout"];
 
 // setupVars must be defined in the top mission file
 
@@ -166,7 +166,8 @@ _setupObjects =
 	reload _vehicle;
 
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos, _nbUnits] call createCustomGroup;
+	_loadout = aiLoadoutsBasic call BIS_fnc_selectRandom;
+	[_aiGroup, _missionPos, _loadout, _nbUnits] call createRandomGroup;
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");
