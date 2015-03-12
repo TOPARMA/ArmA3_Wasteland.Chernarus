@@ -48,6 +48,11 @@ if (!isDedicated) then
 			[player] joinSilent createGroup playerSide;
 			player setVariable ["playerSpawning", true, true];
 
+			//=================================================
+			// UnComment to activate Building Position Finding 
+			// _nul = [] execVM "buildingPositionLocater.sqf";
+			//=================================================
+
 			execVM "client\init.sqf";
 		}
 		else // Headless

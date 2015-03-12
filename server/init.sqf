@@ -46,7 +46,12 @@ addMissionEventHandler ["HandleDisconnect",
 }];
 
 //Execute Server Side Scripts.
+
 call compile preprocessFileLineNumbers "server\antihack\setup.sqf";
+
+//Execute static building placement - This uses information from Splendid Camera - GID - Object Positioning System
+[] execVM "mapConfig\createBuildings.sqf";
+
 [] execVM "server\admins.sqf";
 [] execVM "server\serverVars.sqf";
 _serverCompileHandle = [] spawn compile preprocessFileLineNumbers "server\functions\serverCompile.sqf"; // scriptDone stays stuck on false when using execVM on Linux
