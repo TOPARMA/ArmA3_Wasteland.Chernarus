@@ -2050,7 +2050,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=102;
+		items=94;
 		class Item0
 		{
 			position[]={428.31763,634.75702,15125.764};
@@ -2689,70 +2689,8 @@ class Mission
 		};
 		class Item93
 		{
-			position[]={12731.353,5.9899998,9653.2949};
-			name="FLAG_1_BEREZINO_B";
-			text="B";
-			type="mil_flag";
-			colorName="ColorYellow";
-			a=0.5;
-			b=0.5;
-		};
-		class Item94
-		{
-			position[]={12739.826,5.9964356,9653.6494};
-			name="TERRITORY_0_BEREZINO_B";
-			markerType="RECTANGLE";
-			type="Empty";
-			colorName="ColorYellow";
-			fillName="DiagGrid";
-			a=55;
-			b=65;
-			angle=-258.56299;
-		};
-		class Item95
-		{
 			position[]={8612.25,189.29224,11870.796};
 			name="Town_28";
-			type="Empty";
-			colorName="ColorRed";
-		};
-		class Item96
-		{
-			position[]={4332.6099,299.90366,6572.9746};
-			name="Mission_3_1";
-			type="Empty";
-		};
-		class Item97
-		{
-			position[]={4313.8936,291.88751,6684.2813};
-			name="heliSpawn_10_1";
-			type="Empty";
-			colorName="ColorGreen";
-		};
-		class Item98
-		{
-			position[]={4424.0645,279.45901,6752.6201};
-			name="Town_22_1";
-			type="Empty";
-			colorName="ColorRed";
-		};
-		class Item99
-		{
-			position[]={4151.5078,309.19171,6567.354};
-			name="Mission_3_2";
-			type="Empty";
-		};
-		class Item100
-		{
-			position[]={4132.7915,299.55429,6678.6606};
-			name="heliSpawn_10_2";
-			type="Empty";
-			colorName="ColorGreen";
-		};
-		class Item101
-		{
-			position[]={4242.9624,288.1647,6746.9995};
-			name="Town_22_2";
 			type="Empty";
 			colorName="ColorRed";
 		};
