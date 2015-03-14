@@ -19,7 +19,7 @@ _marker = createMarker ["TERRITORY_1_BEREZINO_B", _pos];
 _marker setMarkerShape "RECTANGLE";
 _marker setMarkerBrush "DiagGrid";
 _marker setMarkerSize [55, 65];
-_marker setMarkerDir 258.56299;
+_marker setMarkerDir -258.56299;
 _marker setMarkerColor "ColorYellow";
 _marker setMarkerType "Empty";
 

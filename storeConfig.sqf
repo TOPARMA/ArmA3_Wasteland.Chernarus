@@ -67,6 +67,9 @@ rifleArray = compileFinal str
 //SHOTGUN
 	["Izhmash Saiga12K", "hlc_rifle_saiga12k", 400],
 
+// Underwater Gun
+	["SDAR Underwater Rifle", "arifle_SDAR_F", 100],
+
 
 //Mx
 	["M14", "hlc_rifle_M14", 375],
@@ -265,6 +268,7 @@ launcherArray = compileFinal str
 
 //AFRF
 	["9K38 Igla AA", "rhs_weap_igla", 1500],
+	//["Titan MPRL AA", "launch_I_Titan_F", 1500],
 	["RPG-26", "rhs_weap_rpg26", 700],
 	["RPG-7", "rhs_weap_rpg7", 400],
 	["RShG-2", "rhs_weap_rshg2", 700],
@@ -329,21 +333,21 @@ staticGunsArray = compileFinal str
 throwputArray = compileFinal str
 [
 
-	["RGD-5", "rhs_mag_rgd5", 100],
+	//["RGD-5", "rhs_mag_rgd5", 100],
 	["RGD-2 (white smoke)", "rhs_mag_rdg2_white", 50],
 	["RGD-2 (black smoke)", "rhs_mag_rdg2_black", 50],
 		//["NSP-N (yellow flare)", "rhs_mag_nspn_yellow", 50],
 	["NSP-N (red flare)", "rhs_mag_nspn_red", 50],
 		//["NSP-N (green flare)", "rhs_mag_nspn_green", 50],
 	["NSP-D (red flare)", "rhs_mag_nspd", 50],
-	["Fakel", "rhs_mag_fakel", 100],
-	["Fakel-S", "rhs_mag_fakels", 100],
-	["Zarya-2", "rhs_mag_zarya2", 100],
-	["Plamya-M", "rhs_mag_plamyam", 100],
-	["PMN-2 AP", "rhs_mine_pmn2", 300],
-	["TM-62M AT", "rhs_mine_tm62m", 350],
+	//["Fakel", "rhs_mag_fakel", 100],
+	//["Fakel-S", "rhs_mag_fakels", 100],
+	//["Zarya-2", "rhs_mag_zarya2", 100],
+	//["Plamya-M", "rhs_mag_plamyam", 100],
+	//["PMN-2 AP", "rhs_mine_pmn2", 300],
+	//["TM-62M AT", "rhs_mine_tm62m", 350],
 	["M67 Frag Grenade", "rhs_mag_m67", 100],
-	["M84 Stun Grenade", "rhs_ammo_m84", 100],
+	//["M84 Stun Grenade", "rhs_ammo_m84", 100],
 	["M19 AT", "rhs_mine_M19_ammo", 300],
 
 //Community recommended Mines be put back in
@@ -492,7 +496,7 @@ ammoArray = compileFinal str
 	//[".45 ACP 11Rnd Mag", "11Rnd_45ACP_Mag", 15],
 	//[".45 ACP 30Rnd Vermin Mag", "30Rnd_45ACP_MAG_SMG_01", 20],
 	//[".45 ACP 30Rnd Tracer (Green) Mag", "30Rnd_45ACP_Mag_SMG_01_tracer_green", 15],
-	//["5.56mm 20Rnd Underwater Mag", "20Rnd_556x45_UW_mag", 10],
+	["5.56mm 20Rnd Underwater Mag", "20Rnd_556x45_UW_mag", 10],
 	//["5.56mm 30Rnd STANAG Mag", "30Rnd_556x45_Stanag", 20],
 	//["5.56mm 30Rnd Tracer (Green) Mag", "30Rnd_556x45_Stanag_Tracer_Green", 15],
 	//["5.56mm 30Rnd Tracer (Yellow) Mag", "30Rnd_556x45_Stanag_Tracer_Yellow", 15],
@@ -517,7 +521,7 @@ ammoArray = compileFinal str
 		//	["PCML Anti-Tank Missile", "NLAW_F", 500],                // Direct damage: very high | Splash damage: low    | Guidance: laser, ground vehicles
 		//	["Titan Anti-Tank Missile", "Titan_AT", 1000],             // Direct damage: high      | Splash damage: low    | Guidance: mouse, laser, ground vehicles
 		//	["Titan Anti-Personnel Missile", "Titan_AP", 1000],        // Direct damage: low       | Splash damage: high   | Guidance: mouse, laser
-		//	["Titan Anti-Air Missile", "Titan_AA", 1000],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
+	//["Titan Anti-Air Missile", "Titan_AA", 650],              // Direct damage: low       | Splash damage: medium | Guidance: aircraft
 	["40mm HE Grenade Round", "1Rnd_HE_Grenade_shell", 125],
 	["40mm 3Rnd HE Grenades", "3Rnd_HE_Grenade_shell", 250],
 	["40mm Smoke Round (White)", "1Rnd_Smoke_Grenade_shell", 50],
@@ -1179,7 +1183,7 @@ landArray = compileFinal str
 
 
 //AFRF
-	["Kamaz-63968 VDV", "rhs_typhoon_vdv", 800, "vehicle"],
+		["Kamaz-63968 VDV", "rhs_typhoon_vdv", 1500, "vehicle"],
 
 		//======== in for testing (maybe radar placement)=========
 		//["Kung Truck Shelter", "rhs_typhoon_vdv", 600, "vehicle"],
@@ -1370,7 +1374,7 @@ armoredArray = compileFinal str
 	["PRP-3 TV", "rhs_prp3_tv", 15000, "vehicle"],
 	["PRP-3 VDV", "rhs_prp3_vdv", 155000, "vehicle"],
 	["PRP-3 VV", "rhs_prp3_vv", 15000, "vehicle"],
-	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 22000, "vehicle"],
+	["ZSU-23-4 (TV)", "rhs_zsu234_aa", 32000, "vehicle"],
 
 
 //USAF
@@ -1556,11 +1560,12 @@ planesArray = compileFinal str
 
 
 //AFRF
-	["Su-25SM Grey", "RHS_Su25SM_vvs", 110000, "vehicle"],
-	["Su-25SM Camo", "RHS_Su25SM_vvsc", 110000, "vehicle"],
+	//["Su-25SM Grey", "RHS_Su25SM_vvs", 150000, "vehicle"],
+	//["Su-25SM Camo", "RHS_Su25SM_vvsc", 150000, "vehicle"],
 
 //USAF
-	["A-10A Thunderbolt II", "rhs_a10", 110000, "vehicle"]
+	//["A-10A Thunderbolt II", "rhs_a10", 175000, "vehicle"]
+	["C-130J", "RHS_C130J", 10000, "vehicle"]
 
 /*
 	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
