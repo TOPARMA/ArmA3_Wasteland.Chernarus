@@ -183,7 +183,7 @@ launcherArray = compileFinal str
 	["M136 (HP)", "rhs_weap_M136_hp", 700],
 	["9K38 Igla AA", "rhs_weap_igla", 1500],
 	["FIM-92F", "rhs_weap_fim92", 1500],    //20k
-	["FGM-148 Javelin", "rhs_weap_fgm148", 3500],  //20k
+	["FGM-148 Javelin", "rhs_weap_fgm148", 3500]  //20k
 ];
 
 
