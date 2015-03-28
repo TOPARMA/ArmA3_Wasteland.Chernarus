@@ -2775,10 +2775,10 @@ class Mission
 		class Item96
 		{
 			position[]={13385.734,5.7798057,6249.2681};
-			name="GenStore2_objSpawn_1";
+			name="GenStore4_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
-			angle=217.65065;
+			angle=217.651;
 		};
 		class Item97
 		{
