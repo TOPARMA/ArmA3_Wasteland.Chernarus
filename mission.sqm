@@ -2273,7 +2273,7 @@ class Mission
 		};
 		class Item22
 		{
-			position[]={6842.2871,6,2540.7139};
+			position[]={6839.6641,6,2546.1191};
 			name="GenStore1_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2281,7 +2281,7 @@ class Mission
 		};
 		class Item23
 		{
-			position[]={8721.8096,213.99507,11636.887};
+			position[]={8733.7324,213.99503,11654.62};
 			name="GunStore3_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2289,7 +2289,7 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={2718.7729,200.33261,5204.4165};
+			position[]={2778.9504,207.5062,5279.9541};
 			name="GunStore4_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2327,7 +2327,7 @@ class Mission
 		};
 		class Item29
 		{
-			position[]={10493.743,6,2341.8433};
+			position[]={10485.771,6,2346.2205};
 			name="GunStore2_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2343,7 +2343,7 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={3766.3909,310.98999,8886.9463};
+			position[]={3829.8113,310.98999,8926.2861};
 			name="GenStore3_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2638,7 +2638,7 @@ class Mission
 		};
 		class Item77
 		{
-			position[]={12238.694,19.093533,9468.752};
+			position[]={12239.982,18.676497,9474.9541};
 			name="VehStore5_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -2759,7 +2759,7 @@ class Mission
 		};
 		class Item94
 		{
-			position[]={1328.7042,331,13407.193};
+			position[]={1323.9808,331,13403.916};
 			name="GunStore1_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
