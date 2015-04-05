@@ -79,6 +79,7 @@ rifleArray = compileFinal str
 	//["AK-74M (2 mag and camo)", "rhs_weap_ak74m_2mag_camo", 550],
 	["AK-74M (GP-25 Kostyor)", "rhs_weap_ak74m_gp25", 400],
 	["AK12", "hlc_rifle_ak12", 325],
+	["AK12 GL", "hlc_rifle_ak12gl", 450],
 	["Izhmash AK47", "hlc_rifle_ak47", 375],
 	["Izhmash EAK971", "hlc_rifle_aek971", 500],
 	["Izhmash AKS74", "hlc_rifle_aks74", 300],
