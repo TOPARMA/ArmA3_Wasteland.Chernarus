@@ -420,6 +420,7 @@ accessoriesArray = compileFinal str
 	["MP5/10", "hlc_muzzle_Agendasix10mm", 150, "item"],
 	["AAC M4-2000 Steyr", "hlc_muzzle_snds_AUG", 150, "item"],
 	["AWC Agenda Six Steyr 9mm", "hlc_muzzle_snds_a6AUG", 150, "item"],
+	["Honey Badger suppressor", "muzzle_HBADGER", 150, "item"],
 	["1P29", "rhs_acc_1p29", 150, "item"],
 	["1P63", "rhs_acc_1p63", 150, "item"],
 	["1PN93-1 (Night vision)", "rhs_acc_1pn93_1", 200, "item"],
