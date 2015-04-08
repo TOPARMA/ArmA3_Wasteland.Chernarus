@@ -5,11 +5,17 @@
 //	@file Name: mission_VehicleCapture.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy, JoSchaap, AgentRev
 //	@file Created: 08/12/2012 15:19
+//
+// Update: Motavar@judgement.net
+// Port: A3Wasteland 
+// Updated For Vehicle Radar
+// Date: 4/5/15
+// 
 
 if (!isServer) exitwith {};
 #include "mainMissionDefines.sqf";
 
-private ["_vehicle", "_vehicleName", "_vehDeterminer", "_loadout"];
+private ["_vehicle", "_vehicleName", "_vehDeterminer", "_isRadarVehicle", "_loadout"];
 
 // setupVars must be defined in the top mission file
 
@@ -22,6 +28,13 @@ _setupObjects =
 
 	switch (true) do
 	{
+
+		// RADAR VEHICLE
+		case (_vehicle isKindOf "rhs_typhoon_vdv"):
+		{
+		     _vehicle setVariable["isRadarVeh", true, true];
+		};
+
 		// GMG MRAPs
 		/*case ({ _vehicle isKindOf _x } count ["MRAP_01_gmg_base_F","MRAP_02_gmg_base_F","MRAP_03_gmg_base_F"] > 0):
 		{
@@ -189,11 +202,21 @@ _failedExec =
 
 _successExec =
 {
+
+	//RADAR VEHICLE 
+	_isRadarVehicle = _vehicle getVariable ["isRadarVeh", false];
+
 	// Mission completed
 	_vehicle lock 1;
-	_vehicle setVariable ["R3F_LOG_disabled", false, true];
+
+	if (_isRadarVehicle) then {
+		_vehicle setVariable ["R3F_LOG_disabled", true, true];
+	} else {
+		_vehicle setVariable ["R3F_LOG_disabled", false, true];
+	};
 
 	_successHintMessage = format ["The %1 has been captured, well done.", _vehicleName];
 };
+
 
 _this call mainMissionProcessor;

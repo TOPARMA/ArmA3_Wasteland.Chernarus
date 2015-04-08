@@ -4,6 +4,12 @@
 //	@file Name: clientCompile.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy, [GoT] JoSchaap, MercyfulFate, AgentRev
 //	@file Args:
+//
+// Update: Motavar@judgement.net
+// Port: A3Wasteland 
+// Radar Vehicle
+// Date: 4/5/15
+// 
 
 mf_notify_client = "client\functions\notifyClient.sqf" call mf_compile;
 mf_util_playUntil = "client\functions\playUntil.sqf" call mf_compile;
@@ -78,6 +84,7 @@ timeSync = "client\functions\clientTimeSync.sqf" call mf_compile;
 
 // Update scripts
 updateTeamKiller = "client\functions\updateTeamKiller.sqf" call mf_compile;
+updateRadarMarkers = "client\functions\UpdatePlayerRadarMarkers.sqf" call mf_compile;
 
 // Team-kill system
 teamkillAction = "client\functions\doTeamKillAction.sqf" call mf_compile;
