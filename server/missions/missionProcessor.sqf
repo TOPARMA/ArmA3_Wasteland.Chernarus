@@ -3,6 +3,12 @@
 // ******************************************************************************************
 //	@file Name: missionProcessor.sqf
 //	@file Author: AgentRev
+//
+// Update: Motavar@judgement.net
+// Port: A3Wasteland 
+// Updated For Vehicle Radar
+// Date: 4/5/15
+// 
 
 if (!isServer) exitwith {};
 
@@ -158,18 +164,39 @@ else
 		_lastPos set [2, (_lastPos select 2) - _floorHeight];
 	};
 
+//# MISSION COMPLETED, GO BACK TO THE FILE THAT CALLED US AND COMPLETE THE SUCCESSEXEC CODE:
+//#####################################
 	if (!isNil "_successExec") then { call _successExec };
+
 
 	if (!isNil "_vehicle" && {typeName _vehicle == "OBJECT"}) then
 	{
-		_vehicle setVariable ["R3F_LOG_disabled", false, true];
-		_vehicle setVariable ["A3W_missionVehicle", true, true];
 
-		if (!isNil "fn_manualVehicleSave") then
+		//# RADAR VEHICLE: NO SAVING, NO TOWING
+		_tmp = _vehicle getVariable["isRadarVeh", false];
+
+		//# IF RADAR VEHICLE
+		if (_tmp) then
 		{
-			_vehicle call fn_manualVehicleSave;
+			_vehicle setVariable ["A3W_missionVehicle", true, true];
+		}
+
+		else
+
+		//# IF NOT RADAR VEHICLE THEN DO SOME CHANGES
+		{
+			_vehicle setVariable ["R3F_LOG_disabled", false, true];
+			_vehicle setVariable ["A3W_missionVehicle", true, true];
+			
+			if (!isNil "fn_manualVehicleSave") then
+			{
+				_vehicle call fn_manualVehicleSave;
+			};
+
 		};
 	};
+
+//#####################################
 
 	if (!isNil "_vehicles" && {typeName _vehicles == "ARRAY"}) then
 	{

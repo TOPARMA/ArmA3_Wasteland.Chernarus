@@ -3,6 +3,12 @@
 // ******************************************************************************************
 //	@file Name: setupServerPVars.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy, [404] Pulse, AgentRev, MercyfulFate
+//
+// Update: Motavar@judgement.net
+// Port: A3Wasteland 
+// Vehicle Radar 
+// Date: 4/5/15
+// 
 
 pvar_teamSwitchList = [];
 publicVariable "pvar_teamSwitchList";
@@ -20,6 +26,9 @@ currentDate = [];
 publicVariable "currentDate";
 currentInvites = [];
 publicVariable "currentInvites";
+clientRadarMarkers = [];
+publicVariable "clientRadarMarkers";
+
 
 #define PVAL (_this select 1)
 
