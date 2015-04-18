@@ -20,12 +20,8 @@ civilianVehicles =
 [
   "C_Quadbike_01_F",
   "rhs_tigr_vdv",
-  "rhs_tigr_vv",
-  "rhs_tigr_vmf",
-  "rhs_uaz_vmf",
-  "rhs_uaz_vdv",
-  "rhs_uaz_vv",
-  "rhs_uaz_msv"
+  "C_Offroad_01_F",
+  "rhsusf_m1025_w"
 ];
 
 //Light Military Vehicle List - Random Spawns
@@ -145,7 +141,8 @@ staticWeaponsList =
 //Object List - Random Helis.
 staticHeliList =
 [
-  "B_Heli_Light_01_F",
+//  "B_Heli_Light_01_F",
+  "rhs_uh60m_mev2",
   "rhs_ka60_c"
   // don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];

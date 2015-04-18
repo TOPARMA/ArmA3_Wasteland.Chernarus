@@ -22,7 +22,8 @@ _result = [];
 _allowed = [];
 
 // get compatible attachments using asdg getCompatibleAttachments
-_attachments = [_weapon] call asdg_jointrails_fnc_getCompatibleAttachments;
+//_attachments = [_weapon] call asdg_jointrails_fnc_getCompatibleAttachments;
+_attachments = [_weapon] call asdg_fnc_compatibleItems;
 
 // if amount parameter is greater than zero and
 // compatible attachments have been found

@@ -111,7 +111,8 @@ if (_showAmmo) then
 		_base = inheritsFrom _weapon;
 		_scope = getNumber(_weapon >> "scope");
 		_type = getNumber(_weapon >> "type");
-		_acc = [_itemData] call asdg_jointrails_fnc_getCompatibleAttachments;
+//		_acc = [_itemData] call asdg_jointrails_fnc_getCompatibleAttachments;
+		_acc = [_itemData] call asdg_fnc_compatibleItems;
 
 		_configMags = [];
 		{

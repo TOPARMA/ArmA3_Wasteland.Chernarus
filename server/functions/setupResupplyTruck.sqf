@@ -4,7 +4,7 @@
 //	@file Name: setupResupplyTruck.sqf
 //	@file Author: AgentRev
 
-_this addAction ["<img image='client\icons\repair.paa'/> Resupply", "client\functions\fn_resupplytruck.sqf", [], 51, true, true, "", "vehicle _this != _this && _this distance _target <= 15"];
+_this addAction ["<img image='client\icons\repair.paa'/> Resupply", "client\functions\fn_resupplytruck.sqf", [], 51, true, true, "", "vehicle _this != _this && _this distance _target <= 40"];  //40 to make reloading planes easier
 
 if (!isServer) exitWith {};
 

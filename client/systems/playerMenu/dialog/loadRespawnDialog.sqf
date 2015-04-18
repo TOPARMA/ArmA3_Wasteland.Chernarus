@@ -241,7 +241,10 @@ _selLocChanged =
 				_isValid = true;
 				_location call _getPlayersInfo;
 
-				if (_enemyPlayers > _friendlyPlayers) then
+//Enemy Player Check
+				//if (_enemyPlayers > _friendlyPlayers) then
+				if (_enemyPlayers != 0) then
+
 				{
 					_textStr = _textStr + "[<t color='#ff0000'>Blocked by enemy</t>] ";
 				}
@@ -473,7 +476,7 @@ while {!isNull _display} do
 		_location call _getPlayersInfo;
 
 		private "_picture";
-		_enabled = true;
+		_enabled = false;
 
 		if (_isBeacon) then
 		{
@@ -492,7 +495,14 @@ while {!isNull _display} do
 		}
 		else
 		{
-			_enabled = (_enemyPlayers <= _friendlyPlayers);
+
+//# Enable spawning only if town is clear
+
+				//_enabled = (_enemyPlayers <= _friendlyPlayers);
+				if (_enemyPlayers == 0) then {
+					_enabled = true;
+				};
+
 		};
 
 		if (isNil "_picture") then

@@ -21,7 +21,7 @@
 	["Town_13", 200, "Mogilevka"],
 	["Town_14", 200, "Kozlovka"],
 	["Town_15", 200, "Tulga"],
-	["Town_16", 200, "Sosnovka"],
+	["Town_16", 200, "Myshkino"],
 	//["Town_17", 200, "Pustoshka"],
 	["Town_18", 100, "Kavanino"],
 	["Town_19", 200, "Novy Sobor"],
@@ -34,7 +34,9 @@
 	["Town_26", 200, "Balto"],
 	//["Town_27", 200, "Komarovo"],
 	["Town_28", 200, "Gvozdno"],
-	["Town_29", 150, "Shalka"]    
+	["Town_29", 150, "Shalka"]
+     	//["Town_30", 150, "Olsha"]
+
 	//["Town_16", 150, "Chalkeia"],
 	//["Town_17", 150, "Oreokastro"],
 	//["Town_18", 100, "Dump"],
