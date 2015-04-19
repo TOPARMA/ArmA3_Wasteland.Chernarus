@@ -182,6 +182,44 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
 				if (_object isKindOf "Plane") then
 				{
 					_object setDir markerDir _marker;
+
+		//A10: set/remove weapon systems
+					if (typeOf _object == "rhs_a10") then {
+						//AIM-9 Sidewinder
+						_object removeWeaponGlobal "rhs_weap_sidewinderlauncher";
+						
+						//AGM-65 Maverick
+						_object removeWeaponGlobal "rhs_weap_agm65";
+
+						//LAU-61 pod
+						_object removeWeaponGlobal "rhs_weap_ffarlauncher";
+
+						//GBU-12 Paveway II
+						_object removeWeaponGlobal "rhs_weap_gbu12";
+
+						//Flare Launcher
+						_object setAmmo ["cmflareLauncher", 96];
+					};
+	
+
+		//Su-25: set/remove weapon systems
+					if (typeOf _object == "RHS_Su25SM_vvs" || typeOf _object == "RHS_Su25SM_vvsc") then {
+						//R73 AA
+						_object removeWeaponGlobal "rhs_weap_r73_Launcher";
+						_object addMagazineGlobal "rhs_mag_gsh30_bt_250";
+
+						//S-8 Pod
+						_object removeWeaponGlobal "rhs_weap_s8";
+
+						//FAB 250
+						_object removeWeaponGlobal "rhs_weap_fab250";
+
+						//Flare Launcher
+						//_object removeWeaponGlobal "CMFlareLauncher";
+						_object setAmmo ["CMFlareLauncher", 96];
+
+					};
+
 				}
 				else
 				{

@@ -5,6 +5,9 @@
 //	@file Name: payload.sqf
 //	@file Author: AgentRev, Tonic, AWA (OpenDayZ.net)
 //	@file Created: 01/06/2013 21:31
+//
+// Modified for "_whitelistedESCArray" for RHS Menu
+
 
 if (isDedicated) exitWith {};
 
@@ -36,7 +39,9 @@ if (isNil "_cheatFlag") then
 		for "_i" from 0 to (count _x - 1) do
 		{
 			_ctrlCfg = _x select _i;
-			if (getText (_ctrlCfg >> "action") != "" || getText (_ctrlCfg >> "onButtonClick") != "") exitWith
+//			if (getText (_ctrlCfg >> "action") != "" || getText (_ctrlCfg >> "onButtonClick") != "") exitWith
+
+if (((getText (_ctrlCfg >> "action") != "" || getText (_ctrlCfg >> "onButtonClick") != "")) &&	{((getText (_ctrlCfg >> "text")) select [0, 64]) != "RHS - Game Options";}) exitWith
 			{
 				_cheatFlag = ["hack menu", format ["foreign Esc menu button '%1'", (getText (_ctrlCfg >> "text")) select [0, 64]]];
 			};

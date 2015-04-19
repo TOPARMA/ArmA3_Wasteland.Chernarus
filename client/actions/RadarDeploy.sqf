@@ -54,9 +54,9 @@ private["_deployStatus", "_player", "_stringEscapePercent", "_totalDuration", "_
 
 	
 	// PRECONDITION: Check the vehicle is alive
-	if(getDammage _radarTank == 1) exitWith {
+	if(getDammage _radarStation == 1) exitWith {
 		player globalChat "Vehicle Damaged";
-	     deleteVehicle _radarTank;
+	     deleteVehicle _radarStation;
 	};
 
 

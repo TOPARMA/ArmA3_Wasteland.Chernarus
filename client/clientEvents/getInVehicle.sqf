@@ -62,6 +62,10 @@ if !(playerSide in [BLUFOR,OPFOR]) then
 //# DETECT IF RADAR VEHICLE. IF SO, DO NOT ALLOW THE CLIENT TO ENTER IF THE RADAR IS ONLINE *(because they would drive away while online)
 //===================================================================================================
 	_radarStation = (nearestobjects [getpos player, ["rhs_typhoon_vdv"],  10] select 0);
+
+	//Error Check
+	if (isNil "_radarStation") exitwith {};
+
 	_isRadarVehicle = _radarStation getVariable "isRadarVeh";
 	_deployStatus = _radarStation getVariable "deployed";
 

@@ -31,6 +31,6 @@ _markers = [];
 	};
 } forEach currentTerritoryDetails;
 
-diag_log format ["updateConnectingClients [Player: %1] [JIP: %2]", _player, _JIP];
+//diag_log format ["updateConnectingClients [Player: %1] [JIP: %2]", _player, _JIP];
 
 [[[_markers, true], "territory\client\updateTerritoryMarkers.sqf"], "BIS_fnc_execVM", _player, false] call BIS_fnc_MP;

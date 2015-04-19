@@ -37,7 +37,9 @@ _bPos set [2, (_bPos select 2) + 0.05];
 
 //create the cashier station
 _desk = createVehicle ["Land_CashDesk_F", _base, [], 0, "None"];
-//_deskPos = [(_bPos select 0) + 1.2 * sin _pDir, (_bPos select 1) + 1.2 * cos _pDir, _bPos select 2];
+//_desk = createVehicle ["OfficeTable_01_old_F", _base, [], 0, "None"];
+	//_deskPos = [(_bPos select 0) + 1.2 * sin _pDir, (_bPos select 1) + 1.2 * cos _pDir, _bPos select 2];
+
 _deskPos = _bPos vectorAdd ([[0, -0.8, 0], -_pDDirMod] call BIS_fnc_rotateVector2D);
 _desk setPosATL _deskPos;
 _desk setDir _pDDirMod;

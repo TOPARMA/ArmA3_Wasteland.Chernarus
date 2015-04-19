@@ -26,3 +26,8 @@ TOParma ArmA 3 Wasteland is a harsh survival sandbox mission where 2 teams and i
        KoS - His_Shadow
        KoS - Bewilderbeest
        404 - Del1te
+
+
+*Chernarus Port* collarborators:
+
+	TACX - Motavar (motavar@judgement.net)

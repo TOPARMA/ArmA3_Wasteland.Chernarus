@@ -4,7 +4,8 @@
 //	@file Name: fn_resupplyTruck.sqf
 //	@file Author: Wiking, AgentRev
 
-#define RESUPPLY_TRUCK_DISTANCE 20
+
+#define RESUPPLY_TRUCK_DISTANCE 40
 #define REARM_TIME_SLICE 10
 #define REPAIR_TIME_SLICE 1
 #define REFUEL_TIME_SLICE 1
@@ -86,26 +87,112 @@ _resupplyThread = [_truck, _unit, _vehicle, _price] spawn
 		};
 	};
 
+
+
+
+
+
 	_checkAbortConditions =
 	{
 		// Abort everything if vehicle is no longer local, otherwise commands won't do anything
 		if (!local _vehicle) then
 		{
+
+				//Aborted: We want to make sure they didn't acquire weapons they weren't supposed to have:
+					//A10: set/remove weapon systems
+					if (typeOf _vehicle == "rhs_a10") then {
+						//AIM-9 Sidewinder
+						_vehicle removeWeaponGlobal "rhs_weap_sidewinderlauncher";
+						
+						//AGM-65 Maverick
+						_vehicle removeWeaponGlobal "rhs_weap_agm65";
+
+						//LAU-61 pod
+						_vehicle removeWeaponGlobal "rhs_weap_ffarlauncher";
+
+						//GBU-12 Paveway II
+						_vehicle removeWeaponGlobal "rhs_weap_gbu12";
+
+						//Flare Launcher
+						_vehicle setAmmo ["cmflareLauncher", 96];
+					};
+	
+
+					//Su-25: set/remove weapon systems
+					if (typeOf _vehicle == "RHS_Su25SM_vvs" || typeOf _vehicle == "RHS_Su25SM_vvsc") then {
+						//R73 AA
+						_vehicle removeWeaponGlobal "rhs_weap_r73_Launcher";
+						_vehicle addMagazineGlobal "rhs_mag_gsh30_bt_250";
+
+						//S-8 Pod
+						_vehicle removeWeaponGlobal "rhs_weap_s8";
+
+						//FAB 250
+						_vehicle removeWeaponGlobal "rhs_weap_fab250";
+
+						//Flare Launcher
+						_vehicle setAmmo ["CMFlareLauncher", 96];
+
+					};
+
 			_crew = crew _vehicle;
 			_text = format ["Vehicle resupply aborted by %1", if (count _crew > 0 && !isStreamFriendlyUIEnabled) then { name (_crew select 0) } else { "another player" }];
 			[_text, 5] call mf_notify_client;
 			mutexScriptInProgress = false;
 			breakOut "fn_resupplyTruck";
+
 		};
 
 		// Abort everything if truck not in proximity or player gets out of vehicle
 		if (_vehicle distance _truck > RESUPPLY_TRUCK_DISTANCE || vehicle _unit != _vehicle) then
 		{
 			if (_started) then { ["Vehicle resupply aborted", 5] call mf_notify_client };
+
+				//Aborted: We want to make sure they didn't acquire weapons they weren't supposed to have:
+					//A10: set/remove weapon systems
+					if (typeOf _vehicle == "rhs_a10") then {
+						//AIM-9 Sidewinder
+						_vehicle removeWeaponGlobal "rhs_weap_sidewinderlauncher";
+						
+						//AGM-65 Maverick
+						_vehicle removeWeaponGlobal "rhs_weap_agm65";
+
+						//LAU-61 pod
+						_vehicle removeWeaponGlobal "rhs_weap_ffarlauncher";
+
+						//GBU-12 Paveway II
+						_vehicle removeWeaponGlobal "rhs_weap_gbu12";
+
+						//Flare Launcher
+						_vehicle setAmmo ["cmflareLauncher", 96];
+					};
+	
+
+					//Su-25: set/remove weapon systems
+					if (typeOf _vehicle == "RHS_Su25SM_vvs" || typeOf _vehicle == "RHS_Su25SM_vvsc") then {
+						//R73 AA
+						_vehicle removeWeaponGlobal "rhs_weap_r73_Launcher";
+						_vehicle addMagazineGlobal "rhs_mag_gsh30_bt_250";
+
+						//S-8 Pod
+						_vehicle removeWeaponGlobal "rhs_weap_s8";
+
+						//FAB 250
+						_vehicle removeWeaponGlobal "rhs_weap_fab250";
+
+						//Flare Launcher
+						_vehicle setAmmo ["CMFlareLauncher", 96];
+
+					};
+
 			mutexScriptInProgress = false;
 			breakOut "fn_resupplyTruck";
 		};
 	};
+
+
+
+
 
 	_started = false;
 	call _checkAbortConditions;
@@ -237,6 +324,9 @@ _resupplyThread = [_truck, _unit, _vehicle, _price] spawn
 
 					_vehicle addMagazineTurret [_mag, _turretPath];
 
+
+//motavar: maybe setting ammo amounts lower should go here?
+
 					sleep (REARM_TIME_SLICE / 2);
 					call _checkAbortConditions;
 				};
@@ -245,6 +335,49 @@ _resupplyThread = [_truck, _unit, _vehicle, _price] spawn
 	} forEach _turretsArray;
 
 	_vehicle setVehicleAmmoDef 1; // Full ammo reset just to be sure
+
+
+
+//Now that the vehicle ammo is loaded we are going to change some of the numbers around
+//Please reference server/functions/SpawnStoreObject, this should match the initial vehicle loadout from purchase
+
+//A10: set/remove weapon systems
+					if (typeOf _vehicle == "rhs_a10") then {
+						//AIM-9 Sidewinder
+						_vehicle removeWeaponGlobal "rhs_weap_sidewinderlauncher";
+						
+						//AGM-65 Maverick
+						_vehicle removeWeaponGlobal "rhs_weap_agm65";
+
+						//LAU-61 pod
+						_vehicle removeWeaponGlobal "rhs_weap_ffarlauncher";
+
+						//GBU-12 Paveway II
+						_vehicle removeWeaponGlobal "rhs_weap_gbu12";
+
+						//Flare Launcher
+						_vehicle setAmmo ["cmflareLauncher", 96];
+					};
+	
+
+		//Su-25: set/remove weapon systems
+					if (typeOf _vehicle == "RHS_Su25SM_vvs" || typeOf _vehicle == "RHS_Su25SM_vvsc") then {
+						//R73 AA
+						_vehicle removeWeaponGlobal "rhs_weap_r73_Launcher";
+						_vehicle addMagazineGlobal "rhs_mag_gsh30_bt_250";
+
+						//S-8 Pod
+						_vehicle removeWeaponGlobal "rhs_weap_s8";
+
+						//FAB 250
+						_vehicle removeWeaponGlobal "rhs_weap_fab250";
+
+						//Flare Launcher
+						_vehicle setAmmo ["CMFlareLauncher", 96];
+
+					};
+
+
 
 	if (damage _vehicle > 0.001) then
 	{
@@ -305,3 +438,7 @@ _resupplyThread = [_truck, _unit, _vehicle, _price] spawn
 		};
 	}]];
 //};
+
+
+
+

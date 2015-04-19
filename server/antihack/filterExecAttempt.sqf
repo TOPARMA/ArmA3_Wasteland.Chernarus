@@ -57,8 +57,9 @@ if (_packetName == "BIS_fnc_MP_packet") then
 		[
 			"BIS_fnc_effectKilledAirDestruction",
 			"BIS_fnc_effectKilledAirDestructionStage2",
-			"BIS_fnc_effectKilledSecondaries"/*,
-			"JTS_FNC_SENT"*/ // PM Compact by JTS
+			"BIS_fnc_effectKilledSecondaries",
+			"rhs_fnc_flashbang_effect"
+			//"JTS_FNC_SENT" // PM Compact by JTS
 		];
 
 		if (!_whitelisted) then
